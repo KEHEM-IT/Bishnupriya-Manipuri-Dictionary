@@ -24,7 +24,7 @@ const speak = (text: string, lang: string) => {
 onMounted(async () => {
     try {
         const term = route.params.word as string;
-        const response = await axios.get(`/api/dictionary/search?term=${encodeURIComponent(term)}&language=bengali`);
+        const response = await axios.get(`/api/dictionary/search?term=${encodeURIComponent(term)}&language=bishnupriya`);
         const results = response.data;
         if (Array.isArray(results) && results.length > 0) {
             word.value = results[0];

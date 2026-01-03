@@ -1,0 +1,704 @@
+[
+    {
+        "pron": [
+            "stans",
+            "Ḍhaṅa"
+        ],
+        "bn": "ঢঙ",
+        "en": "stance",
+        "bn_syns": [
+            "উন্নততর মনোভাব ভঙ্গি",
+            "ঢঙ",
+            "ভঙ্গি",
+            "অবস্থান",
+            "ভঙ্গিমা",
+            "সরকার-বিরোধী অবস্থান"
+        ],
+        "en_syns": [
+            "posture",
+            "body position",
+            "pose",
+            "attitude"
+        ],
+        "sents": [
+            "In the second rounds, Simms switched to a southpaw <b>stance</b> , which paid quick dividends.",
+            "I once again implore that you reconsider your <b>stance</b> on this matter."
+        ]
+    },
+    {
+        "pron": [
+            "",
+            "Ḍhalā"
+        ],
+        "bn": "ঢলা",
+        "en": "incline",
+        "bn_syns": [
+            "ঢালু করা",
+            "মাথা হেলানো",
+            "ঢালু হওয়া",
+            "গড়িয়ে দেওয়া",
+            "গড়ানো",
+            "ঝুাঁক",
+            "ঢলা",
+            "আনত করান",
+            "নত করা",
+            "প্রবর্তিত করা",
+            "রত করা",
+            "মন টানা",
+            "প্রণত হত্তয়া",
+            "টাল হত্তয়া",
+            "আনত হত্তয়া",
+            "নত হত্তয়া",
+            "প্রবর্তিত হত্তয়া",
+            "অবনত হত্তয়া",
+            "রত হত্তয়া",
+            "ঝোঁকবিশিষ্ট হত্তয়া",
+            "ঝোঁক হত্তয়া",
+            "ঝোঁকা",
+            "ঝোঁকবিশিষ্ট করান",
+            "ঝোঁক দেত্তয়া"
+        ],
+        "en_syns": [
+            "slope",
+            "gradient",
+            "pitch",
+            "ramp",
+            "bank",
+            "ascent",
+            "rise",
+            "upslope",
+            "dip",
+            "descent",
+            "declivity",
+            "downslope",
+            "hill",
+            "grade",
+            "downgrade",
+            "predispose",
+            "lead",
+            "make",
+            "make of a mind",
+            "dispose",
+            "prejudice",
+            "bias",
+            "prompt",
+            "induce",
+            "influence",
+            "sway",
+            "persuade",
+            "convince"
+        ],
+        "sents": [
+            "Rather it is designed to advise the parties of facts upon which they can make an informed decision as to whether the judge's interest could possibly <b>incline</b> him or her to pre-judge the issues.",
+            "Obesity is not funny and my personal experience of it doesn't <b>incline</b> me to humour, nor to condemnation."
+        ]
+    },
+    {
+        "pron": [
+            "drəm",
+            "Ḍhāka"
+        ],
+        "bn": "ঢাক",
+        "en": "drum",
+        "bn_syns": [
+            "কানের পর্দা",
+            "ঢক্কানিনাদ",
+            "ঢাক, ঢোল, মৃদঙ্গ, ডম্বরু ইঃ",
+            "ঢাক বাজান",
+            "ঢাকি",
+            "ঢাক",
+            "ভেরী",
+            "ডঙ্কা",
+            "বাদ্যযন্ত্র",
+            "কর্ণপটহ",
+            "পটহ",
+            "ঢেঁড়ি",
+            "কেদার"
+        ],
+        "en_syns": [
+            "tap",
+            "beat",
+            "rap",
+            "thud",
+            "thump",
+            "tattoo",
+            "thrum",
+            "percussion instrument",
+            "bongo",
+            "tom-tom",
+            "snare drum",
+            "kettledrum",
+            "bodhrán",
+            "tambour"
+        ],
+        "sents": [
+            "Each track seems to be accented with an exotic instrument like the Indian <b>drum</b> , bass conga, Moroccan clay drums, and the wah-wah bass.",
+            "Another work along the same lines is Curse Upon Iron, which replaces the bass drum with a shaman <b>drum</b> and adds female voices to the choir."
+        ]
+    },
+    {
+        "pron": [
+            "t(y)o͝oˈrēn",
+            "Ḍhākanāttaẏālā baṛa thālā"
+        ],
+        "bn": "ঢাকনাত্তয়ালা বড় থালা",
+        "en": "tureen",
+        "bn_syns": [
+            "সুপ রাখিবার গামলাবিশেষ",
+            "ঢাকনাত্তয়ালা বড় থালা"
+        ],
+        "en_syns": [],
+        "sents": [
+            "The fish are rapidly boiled in an aromatic broth and are removed to a platter; the broth is served in a <b>tureen</b> .",
+            "The soup arrived in a steaming <b>tureen</b> , accompanied by a separate plate full of tender pork, salted duck egg, crispy pak choi, sliced carrot and Chinese mushroom."
+        ]
+    },
+    {
+        "pron": [
+            "əˈbet",
+            "Ḍhākā dēttaẏā"
+        ],
+        "bn": "ঢাকা দেত্তয়া",
+        "en": "abet",
+        "bn_syns": [
+            "অসৎ কাজে মদত দেওয়া",
+            "সাহায্য করা",
+            "ঢাকা দেত্তয়া",
+            "পোষকতা করা"
+        ],
+        "en_syns": [
+            "assist",
+            "aid",
+            "help",
+            "lend a hand to",
+            "support",
+            "back",
+            "encourage",
+            "cooperate with",
+            "collaborate with",
+            "work with",
+            "connive with",
+            "collude with",
+            "go along with",
+            "be in collusion with",
+            "be hand in glove with",
+            "side with",
+            "second",
+            "endorse",
+            "sanction",
+            "promote",
+            "incite",
+            "champion",
+            "further",
+            "expedite"
+        ],
+        "sents": [
+            "Police seized computer gear and hundreds of photos, and charged two people with <b>abetting</b> prostitution.",
+            "The implication is that business schools are aiding and <b>abetting</b> accounting fraud and other misdeeds by failing to teach their students not to commit crimes."
+        ]
+    },
+    {
+        "pron": [
+            "ˈdrəmər",
+            "Ḍhāki"
+        ],
+        "bn": "ঢাকি",
+        "en": "drummer",
+        "bn_syns": [
+            "ঢাকি"
+        ],
+        "en_syns": [],
+        "sents": [
+            "Her sumptuous meals caused <b>drummers</b> to arrange their schedules so they could stay at Miss Cora's.",
+            "a <b>drummer</b> in electronic software"
+        ]
+    },
+    {
+        "pron": [
+            "slōp",
+            "Ḍhāla"
+        ],
+        "bn": "ঢাল",
+        "en": "slope",
+        "bn_syns": [
+            "ঢালু অবস্থান বা দিক",
+            "ঢাল",
+            "ঢল",
+            "ঢালু স্থান",
+            "খাড়াই",
+            "নতি"
+        ],
+        "en_syns": [
+            "slant",
+            "incline",
+            "tilt",
+            "drop away",
+            "fall away",
+            "decline",
+            "descend",
+            "shelve",
+            "lean",
+            "rise",
+            "ascend",
+            "climb",
+            "gradient",
+            "angle",
+            "inclination",
+            "pitch",
+            "ascent",
+            "declivity",
+            "fall",
+            "tip",
+            "downslope",
+            "upslope",
+            "grade",
+            "downgrade",
+            "upgrade"
+        ],
+        "sents": [
+            "We show that the effective reflectance of the bottom is proportional to the average cosine of the bottom <b>slope</b> .",
+            "Differences in the <b>slope</b> of regression lines were evaluated by analysis of variance."
+        ]
+    },
+    {
+        "pron": [
+            "SHēld",
+            "Ḍhāla"
+        ],
+        "bn": "ঢাল",
+        "en": "shield",
+        "bn_syns": [
+            "রক্ষা করা",
+            "ঢাকা দেত্তয়া",
+            "প্রতিহত ঠেকান",
+            "প্রতিহত রোকা",
+            "ঢাল",
+            "রক্ষক",
+            "আত্মরক্ষার্থ আবরণ",
+            "আত্মরক্ষার্থ কর্ম",
+            "রক্ষণোপায়"
+        ],
+        "en_syns": [
+            "protect",
+            "cover",
+            "screen",
+            "shade",
+            "save",
+            "safeguard",
+            "preserve",
+            "defend",
+            "secure",
+            "guard",
+            "cushion",
+            "insulate",
+            "escutcheon",
+            "buckler",
+            "target"
+        ],
+        "sents": [
+            "uranium shutters <b>shield</b> the cobalt radioactive source",
+            "The entire imaging set-up was covered by dark foil to <b>shield</b> the root from light, which could interfere with root growth."
+        ]
+    },
+    {
+        "pron": [
+            "pôr",
+            "Ḍhālā"
+        ],
+        "bn": "ঢালা",
+        "en": "pour",
+        "bn_syns": [
+            "স্রোতের ন্যায় প্রবাহিত হওয়া বা করান",
+            "বহা বা বহান",
+            "প্রবহন",
+            "ঢালিয়া পড়া",
+            "বর্ষণ",
+            "প্রবহণ",
+            "স্রোতাধারে নির্গমন",
+            "ঢালিয়া ফেলা",
+            "ঢালা",
+            "বহান",
+            "বহা",
+            "স্রোতের ন্যায় নির্গত করান",
+            "বর্ষণ করা",
+            "প্রবল বৃষ্টিপাত হত্তয়া",
+            "ছুটা",
+            "গড়াইয়া দেত্তয়া",
+            "গড়ান"
+        ],
+        "en_syns": [
+            "stream",
+            "flow",
+            "run",
+            "gush",
+            "course",
+            "jet",
+            "spurt",
+            "surge",
+            "spill"
+        ],
+        "sents": [
+            "Her husband, it reminded readers, stayed at home changing nappies while she <b>poured herself into</b> frocks.",
+            "They have warned offenders that officers will <b>pour</b> the drink down the drain, as well as contacting their parents."
+        ]
+    },
+    {
+        "pron": [
+            "ˈfoundrē",
+            "Ḍhālā'iẏēra kārakhānā"
+        ],
+        "bn": "ঢালাইয়ের কারখানা",
+        "en": "foundry",
+        "bn_syns": [
+            "ঢালাইয়ের কারখানা",
+            "ঢালাই-বিদ্যা"
+        ],
+        "en_syns": [
+            "metalworks"
+        ],
+        "sents": [
+            "However, there is more to manufacturing than the industries which once provided the bulk of the jobs in mills, factories and <b>foundries</b> .",
+            "At the outset of war in 1939, Mary had the choice of working in the land army or at a shipping yard in the brass <b>foundry</b> ."
+        ]
+    },
+    {
+        "pron": [
+            "prō-,prəˌkrastəˈnāSHən",
+            "Ḍhimētētālā"
+        ],
+        "bn": "ঢিমেতেতালা",
+        "en": "procrastination",
+        "bn_syns": [
+            "দীর্ঘসূত্রতা",
+            "নলপত",
+            "গতিক্রিয়া",
+            "ঢিমেতেতালা"
+        ],
+        "en_syns": [
+            "cunctation",
+            "shillyshally"
+        ],
+        "sents": [
+            "your first tip is to avoid <b>procrastination</b>",
+            "your first tip is to avoid <b>procrastination</b>"
+        ]
+    },
+    {
+        "pron": [
+            "slak",
+            "Ḍhilā"
+        ],
+        "bn": "ঢিলা",
+        "en": "slack",
+        "bn_syns": [
+            "নিরুদ্যম",
+            "উদ্যমহীন",
+            "অবহেলা করা",
+            "অবহেলা করান",
+            "হ্রাস পাত্তয়া",
+            "হ্রাস করা",
+            "ঢিলা",
+            "ফসকা",
+            "ধীরজ",
+            "আলগা",
+            "শিথিল",
+            "মন্থর",
+            "পরিশ্রমবিমুখ",
+            "আগ্রহশূন্য",
+            "অবহেলাকারী",
+            "ধীরগতি",
+            "নরম",
+            "ঢলকো"
+        ],
+        "en_syns": [
+            "looseness",
+            "play",
+            "give",
+            "idle",
+            "shirk",
+            "be lazy",
+            "be indolent",
+            "waste time",
+            "lounge about",
+            "goof off",
+            "loose",
+            "limp",
+            "hanging",
+            "flexible"
+        ],
+        "sents": [
+            "Suddenly I felt my jaw nearly go <b>slack</b> .",
+            "They say they have no idea when or how Beggs got into the country because of <b>slack</b> EU border controls."
+        ]
+    },
+    {
+        "pron": [
+            "vi(ə)r",
+            "Ḍhilā karā"
+        ],
+        "bn": "ঢিলা করা",
+        "en": "veer",
+        "bn_syns": [
+            "গতি পরিবর্তন করা",
+            "বাতাসের দিক পরিবর্তিত হওয়া",
+            "ঢিলা করা",
+            "দিক্পরিবর্তন করা",
+            "মানসিক ধারণা বদলান",
+            "গতিপরিবর্তন করা",
+            "গতিপরিবর্তন করান",
+            "উজানে যাত্তয়া",
+            "উজানে নেত্তয়া",
+            "মোড় ফেরা",
+            "মোড় ফেরান"
+        ],
+        "en_syns": [
+            "turn",
+            "swerve",
+            "curve",
+            "swing",
+            "sheer",
+            "career",
+            "weave",
+            "wheel",
+            "change direction",
+            "change course",
+            "go off course",
+            "deviate"
+        ],
+        "sents": [
+            "Shane <b>veered</b> the subject off course and Andrew felt a rush of gratitude.",
+            "As we arrived at the river, the cold easterly gale had <b>veered</b> to a light westerly breeze with a touch of warmth in it, perfect for river trouting."
+        ]
+    },
+    {
+        "pron": [
+            "ˈsēˌsô",
+            "Ḍhēm̐kikala"
+        ],
+        "bn": "ঢেঁকিকল",
+        "en": "seesaw",
+        "bn_syns": [
+            "ঢেঁকিকলে চড়িয়া ত্তঠানামা করা",
+            "দ্বিধাগ্রস্ত হত্তয়া",
+            "করা",
+            "ক্রমাগত পরিবর্তন",
+            "ঢেঁকিকল",
+            "বারংবার পরিবর্তন"
+        ],
+        "en_syns": [
+            "fluctuate",
+            "swing",
+            "go up and down",
+            "rise and fall",
+            "oscillate",
+            "alternate",
+            "yo-yo",
+            "vary",
+            "teeter-totter"
+        ],
+        "sents": [
+            "the emotional <b>seesaw</b> of a first love affair",
+            "<b>seesaw</b> interest rates"
+        ]
+    },
+    {
+        "pron": [
+            "ˈōkrə",
+            "Ḍhēm̐ṛaśa"
+        ],
+        "bn": "ঢেঁড়শ",
+        "en": "okra",
+        "bn_syns": [],
+        "en_syns": [
+            "gumbo"
+        ],
+        "sents": [
+            "April is a great time to plant peppers, cucumbers, eggplants, squash and heat-loving <b>okra</b> .",
+            "She was slumped on the table and was building a wall with her mashed potatoes so that her muffin wouldn't touch the <b>okra</b> ."
+        ]
+    },
+    {
+        "pron": [
+            "sərj",
+            "Ḍhē'u"
+        ],
+        "bn": "ঢেউ",
+        "en": "surge",
+        "bn_syns": [
+            "তরঙ্গায়িত হত্তয়া",
+            "ঢেউ ওঠা",
+            "ঢেউ",
+            "ঊর্মি",
+            "স্ফীতি",
+            "উত্থাল তরঙ্গ",
+            "দোল"
+        ],
+        "en_syns": [
+            "gush",
+            "rush",
+            "stream",
+            "flow",
+            "burst",
+            "pour",
+            "cascade",
+            "spill",
+            "overflow",
+            "sweep",
+            "roll",
+            "outpouring"
+        ],
+        "sents": [
+            "I held back the <b>surge</b> of emotions stirred by her words.",
+            "Even consciously, she could feel her newly found power <b>surge</b> through her veins."
+        ]
+    },
+    {
+        "pron": [
+            "bərp",
+            "Ḍhēkura"
+        ],
+        "bn": "ঢেকুর",
+        "en": "burp",
+        "bn_syns": [
+            "উদ্গার তোলা",
+            "ঢেঁকুর",
+            "ঢেকুর"
+        ],
+        "en_syns": [
+            "belch",
+            "eructate",
+            "eruct",
+            "bolk",
+            "rout",
+            "ruck",
+            "eructation",
+            "ventosity"
+        ],
+        "sents": [
+            "My mom said that they wouldn't cover their mouths when they <b>burped</b> , and she would laugh about it.",
+            "Finally she lets out a loud <b>burp</b> , mumbles, ‘Excuse me’ and returns inside."
+        ]
+    },
+    {
+        "pron": [
+            "braSH",
+            "Ḍhēkura"
+        ],
+        "bn": "ঢেকুর",
+        "en": "brash",
+        "bn_syns": [
+            "উদ্ধত",
+            "বেপরোয়া",
+            "ঢেকুর",
+            "উদ্গার",
+            "দুর্বিনীত",
+            "হঠকারী",
+            "ধৃষ্ট",
+            "দু:সাহসী"
+        ],
+        "en_syns": [
+            "self-assertive",
+            "pushy",
+            "cocksure",
+            "cocky",
+            "self-confident",
+            "arrogant",
+            "bold",
+            "audacious",
+            "brazen",
+            "bumptious",
+            "overweening",
+            "puffed up",
+            "forward",
+            "impudent",
+            "insolent",
+            "rude"
+        ],
+        "sents": [
+            "How, after all, could they be blamed for their <b>brash</b> vulgarity, when wealth came to them so easily?",
+            "Visually, it's an astonishing piece of adrenaline-fuelled cinema at its <b>brash</b> , flashy best."
+        ]
+    },
+    {
+        "pron": [
+            "gəlp",
+            "Ḍhōka"
+        ],
+        "bn": "ঢোক",
+        "en": "gulp",
+        "bn_syns": [
+            "গ্রাস করা",
+            "ঢোক খেলা",
+            "ঢোঁক",
+            "গবগব করে গেলা",
+            "কষ্টে ঢোঁক গেলা",
+            "খাবি খাওয়া",
+            "শ্বাসরুদ্ধ হওয়া",
+            "মুখভর্তি পানীয়",
+            "গ্রাস",
+            "কবল",
+            "ঢোক"
+        ],
+        "en_syns": [
+            "swallow",
+            "guzzle (down)",
+            "quaff",
+            "swill down",
+            "down",
+            "swig",
+            "knock back",
+            "chug",
+            "chugalug",
+            "mouthful",
+            "draft"
+        ],
+        "sents": [
+            "The two boys paused at the cross walk and took a <b>gulp</b> of water.",
+            "She is a slow thoughtful eater and I <b>gulp</b> my food down but other than that we had lots in common."
+        ]
+    },
+    {
+        "pron": [
+            "",
+            "Ḍhōkāna"
+        ],
+        "bn": "ঢোকান",
+        "en": "insert",
+        "bn_syns": [
+            "ভিতরে স্থাপন করা",
+            "সন্নিবেশিত করা",
+            "ঢোকান",
+            "নিবেশিত করা",
+            "সেঁধিয়ে দেওয়া",
+            "কোনো কিছুর ভেতরে, ফাঁকে প্রবেশ করানো",
+            "ঢোকানো"
+        ],
+        "en_syns": [
+            "enclosure",
+            "insertion",
+            "supplement",
+            "circular",
+            "advertisement",
+            "pamphlet",
+            "leaflet",
+            "ad",
+            "put",
+            "place",
+            "push",
+            "thrust",
+            "slide",
+            "slip",
+            "load",
+            "fit",
+            "slot",
+            "lodge",
+            "install",
+            "pop",
+            "stick"
+        ],
+        "sents": [
+            "These contract notices were issued before legal guidance was available so the GLA was unable to notify its intention to <b>insert</b> such a clause in the final contract.",
+            "When a virus comes in contact with a host cell, a virus can <b>insert</b> its genetic material into its host, literally taking over the host's functions."
+        ]
+    }
+]

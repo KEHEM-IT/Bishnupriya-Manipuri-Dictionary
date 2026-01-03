@@ -1,0 +1,4748 @@
+[
+    {
+        "pron": [
+            "at,ät",
+            "Ē"
+        ],
+        "bn": "এ",
+        "en": "at",
+        "bn_syns": [
+            "আভিমুখ্য",
+            "সম্পর্কে",
+            "-তে",
+            "-এতে",
+            "অভিমুখে",
+            "অভি-",
+            "প্রতি",
+            "ইত্যাদি",
+            "এট দি রেট অফ"
+        ],
+        "en_syns": [
+            "astatine"
+        ],
+        "sents": [
+            "there's nothing to laugh <b>at</b>!",
+            "it happened <b>at</b> night"
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ē"
+        ],
+        "bn": "এ",
+        "en": "Apr.",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Ē."
+        ],
+        "bn": "এ .",
+        "en": "in.",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Ē.Ḍi."
+        ],
+        "bn": "এ.ডি.",
+        "en": "A.D.",
+        "bn_syns": [
+            "এ.ডি.",
+            "বার্ষিক তিথির আবর্তন"
+        ],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈpastē,ˈpāstē",
+            "Ēm̐ēṭala"
+        ],
+        "bn": "এঁেটল",
+        "en": "pasty",
+        "bn_syns": [
+            "মাংসের বড়া বিশেষ",
+            "মাংসের বড়া",
+            "এঁেটল",
+            "আঠাল",
+            "চটচট",
+            "পঙ্কিল",
+            "ফ্যাকাশে",
+            "ফিকে",
+            "বিবর্ণ",
+            "পাণ্ডুবর্ণের",
+            "অসুস্থ",
+            "চটপট",
+            "রোগাক্রান্ত",
+            "রোগগ্রস্ত",
+            "কাই-কাই"
+        ],
+        "en_syns": [
+            "pale",
+            "pallid",
+            "wan",
+            "colorless",
+            "anemic",
+            "ashen",
+            "white",
+            "gray",
+            "pasty-faced",
+            "washed out",
+            "sallow"
+        ],
+        "sents": [
+            "We dressed for action by a mucky duck pond, more layers than so far this season, the butchers useful for a <b>pasty</b> .",
+            "Sam's face was <b>pasty</b> , he had black rings around his eyes."
+        ]
+    },
+    {
+        "pron": [
+            "T͟His",
+            "Ē'i"
+        ],
+        "bn": "এই",
+        "en": "this",
+        "bn_syns": [
+            "ইহা",
+            "এই",
+            "এটি",
+            "এটা",
+            "এ",
+            "এতৎ",
+            "এইজন",
+            "এইটি"
+        ],
+        "en_syns": [],
+        "sents": [
+            "what do you mean by <b>this</b>?",
+            "So I'm moaning about it, and F asks me what I think of <b>this</b> guy at the end of the bar."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ē'i"
+        ],
+        "bn": "এই",
+        "en": "these",
+        "bn_syns": [
+            "এই সকল",
+            "এই",
+            "এইজন",
+            "এইটি"
+        ],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈhätˌbed",
+            "Ē'i āstānāẏa"
+        ],
+        "bn": "এই আস্তানায়",
+        "en": "hotbed",
+        "bn_syns": [
+            "দ্রুত ফচল উত্পাদানার্থ যে জমি কাচে ঢাকিয়া সার গাঁজাইয়া গরম করা হয়"
+        ],
+        "en_syns": [
+            "breeding ground",
+            "den",
+            "nest",
+            "stronghold",
+            "flashpoint",
+            "cradle",
+            "seedbed"
+        ],
+        "sents": [
+            "The combination of young, broke music fans and high-speed Internet access has made campuses <b>hotbeds</b> of illegal downloading - something the RIAA has asked school administrators to change.",
+            "And everyone is set to benefit because the <b>hotbed</b> of gardening rivalry will ensure the town is adorned with colour."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ē'ica - bōmā"
+        ],
+        "bn": "এইচ - বোমা",
+        "en": "H-bomb",
+        "bn_syns": [
+            "উদজান বোমা"
+        ],
+        "en_syns": [],
+        "sents": [
+            "Behind me is the research facility established and feared during the Cold War, the facility that led to the development of many of Russia's weapons of mass destruction including the Russian <b>H-bomb</b> .",
+            "The joint chiefs of staff sexed up the threat of an imminent Soviet nuclear attack to get the <b>H-bomb</b> approved."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ē'ica'ā'ibhi"
+        ],
+        "bn": "এইচআইভি",
+        "en": "HIV",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "<b>HIV</b> infection"
+        ]
+    },
+    {
+        "pron": [
+            "ādz",
+            "Ē'iḍasa"
+        ],
+        "bn": "এইডস",
+        "en": "AIDS",
+        "bn_syns": [],
+        "en_syns": [
+            "acquired immune deficiency syndrome"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "T͟Həs",
+            "Ē'ibhābē"
+        ],
+        "bn": "এইভাবে",
+        "en": "thus",
+        "bn_syns": [
+            "এইরূপে",
+            "এমতে",
+            "এই পর্যন্ত",
+            "এইভাবে",
+            "ঐভাবে",
+            "ঐ ধরনে",
+            "এই প্রকারে",
+            "এইরুপে",
+            "এতদনুসারে",
+            "এই মাত্রা",
+            "দূর পর্যন্ত"
+        ],
+        "en_syns": [
+            "frankincense",
+            "olibanum",
+            "consequently",
+            "as a consequence",
+            "in consequence",
+            "thereby",
+            "so",
+            "that being so",
+            "therefore",
+            "ergo",
+            "accordingly",
+            "hence",
+            "as a result",
+            "for that reason",
+            "ipso facto",
+            "because of that",
+            "on that account"
+        ],
+        "sents": [
+            "How many of us take what we're handed on a platter because nothing better has come along <b>thus</b> far?",
+            "The number of patents is <b>thus</b> the measurable result of the R&D efforts of a country."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ē'isā"
+        ],
+        "bn": "এইসা",
+        "en": "tremendously",
+        "bn_syns": [
+            "এইসা"
+        ],
+        "en_syns": [
+            "hugely",
+            "staggeringly",
+            "enormously"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "wən",
+            "Ēka"
+        ],
+        "bn": "এক",
+        "en": "one",
+        "bn_syns": [
+            "একখানি",
+            "",
+            "এক",
+            "একে",
+            "কোন একজন",
+            "যেকেহ",
+            "একখানা",
+            "একটি লোক",
+            "একটি বস্তু",
+            "একসংখ্যা",
+            "এক অঙ্ক",
+            "একক",
+            "একতা",
+            "একটি",
+            "একজন",
+            "একটা",
+            "গোটা",
+            "একই",
+            "জনৈক",
+            "কোন এক",
+            "অনির্দিষ্ট একটি",
+            "অনির্দিষ্ট একজন",
+            "প্রথম"
+        ],
+        "en_syns": [
+            "unit",
+            "item",
+            "monad",
+            "i",
+            "unity",
+            "ace",
+            "single",
+            "unitary"
+        ],
+        "sents": [
+            "The variety of style is probably too wide for <b>one</b> person's taste, but the quality remains high.",
+            "multiply five by <b>one</b>"
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēka - ṭryāka mana"
+        ],
+        "bn": "এক - ট্র্যাক মন",
+        "en": "one-track mind",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "Sometimes it's hard to be the girl who has a <b>one-track mind</b> all the time…",
+            "Today's media has a <b>one-track mind</b> that repeats sound bites and is rarely able to provide detailed and relevant news coverage."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēka - rātē sṭyānḍa"
+        ],
+        "bn": "এক - রাতে স্ট্যান্ড",
+        "en": "one-night stand",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "She added that she came to realize that a relationship should be based on more than just a drunken <b>one-night stand</b> .",
+            "It was the first time I was getting this serious in a relationship, you know my life was full of <b>one-night stands</b> ."
+        ]
+    },
+    {
+        "pron": [
+            "wən ˈəpmənˌSHip",
+            "Ēka upmanship"
+        ],
+        "bn": "এক upmanship",
+        "en": "one-upmanship",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "The vanity, selfishness and <b>one-upmanship</b> that typified governmental culture in the eighties was exemplified by the narcissism implicit in the leisure complex.",
+            "Who knows, we may have someone whose interests lie not in party political bickering, nor <b>one-upmanship</b> , not wrong-footing the other party, but in Bedford."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēka ana ēka"
+        ],
+        "bn": "এক অন এক",
+        "en": "one-on-one",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "tif",
+            "Ēka cumuka mada"
+        ],
+        "bn": "এক চুমুক মদ",
+        "en": "tiff",
+        "bn_syns": [
+            "বন্ধু বা প্রণয়ীদের মধ্যে সামান্য কলহ",
+            "সামান্য ঝগড়া করা",
+            "এক চুমুক মদ",
+            "সামান্য কলহ",
+            "মান"
+        ],
+        "en_syns": [
+            "quarrel",
+            "squabble",
+            "argument",
+            "disagreement",
+            "fight",
+            "falling-out",
+            "rift",
+            "difference of opinion",
+            "dispute",
+            "row",
+            "wrangle",
+            "altercation",
+            "contretemps",
+            "disputation",
+            "shouting match",
+            "blowup",
+            "duel",
+            "run-in",
+            "spat",
+            "scrap",
+            "set-to"
+        ],
+        "sents": [
+            "Remember that you're too important to deal with employees' petty <b>tiffs</b> .",
+            "Their <b>tiff</b> has all the characteristics of a domestic argument, with Rodriguez cast in the subservient ‘wife’ role."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēka ṭu ēka"
+        ],
+        "bn": "এক টু এক",
+        "en": "one-to-one",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "Maehul is being treated on the Sonrise programme which entails him having up to 25 hours a week of <b>one-to-ones</b> with volunteers in a specially adapted playroom at their home.",
+            "Lisa found herself being nominated to have a few <b>one-to-ones</b> with Nash, telling her she was toeing the line."
+        ]
+    },
+    {
+        "pron": [
+            "ˈre(ə)riNG",
+            "Ēka pāẏē khāṛā"
+        ],
+        "bn": "এক পায়ে খাড়া",
+        "en": "raring",
+        "bn_syns": [
+            "উত্সাহী",
+            "ব্যগ্র",
+            "অত্যন্ত আগ্রহী",
+            "এক পায়ে খাড়া"
+        ],
+        "en_syns": [
+            "eager",
+            "keen",
+            "enthusiastic",
+            "impatient",
+            "longing",
+            "desperate",
+            "ready",
+            "dying",
+            "itching"
+        ],
+        "sents": [
+            "Whitehead was satisfied with her own performance because she was just returning from injury but now she is back to full fitness and <b>raring</b> to go.",
+            "He had taken Lewis's best shots, and was still <b>raring</b> to go."
+        ]
+    },
+    {
+        "pron": [
+            "ˈyi(ə)rliNG",
+            "Ēka bachara baẏasī"
+        ],
+        "bn": "এক বছর বয়সী",
+        "en": "yearling",
+        "bn_syns": [
+            "এক থেকে দুই বছর বয়সী পশু",
+            "এক বছর বয়সী",
+            "এক বত্সর মেয়াদী"
+        ],
+        "en_syns": [
+            "tot",
+            "bambino",
+            "toddler"
+        ],
+        "sents": [
+            "There was a numerical trend for correlations to be higher for <b>yearling</b> bulls and lower for preharvest heifers.",
+            "A typical March farm scene includes calved cows, young calves, <b>yearling</b> cattle and older finishing cattle."
+        ]
+    },
+    {
+        "pron": [
+            "ˈanəˌgram",
+            "Ēka bākyānśēra barṇasamūhēra sthānaparibartanadbārā bhinna śabda gaṭhana"
+        ],
+        "bn": "এক বাক্যাংশের বর্ণসমূহের স্থানপরিবর্তনদ্বারা ভিন্ন শব্দ গঠন",
+        "en": "anagram",
+        "bn_syns": [
+            "কোনো শব্দ বা শব্দগুচ্ছের অক্ষরগুলিকে এদিক-ওদিক করে গঠিত শব্দ বা শব্দগুচ্ছ"
+        ],
+        "en_syns": [
+            "anagrammatise",
+            "anagrammatize"
+        ],
+        "sents": [
+            "So we made a joke of it, signing off his articles with pseudonyms ranging from the obvious Dario G to the <b>anagrammatical</b> Dan U. Arsedish.",
+            "This was proved in a study where people were given <b>anagrams</b> of words to solve."
+        ]
+    },
+    {
+        "pron": [
+            "sām",
+            "Ēka'i"
+        ],
+        "bn": "একই",
+        "en": "same",
+        "bn_syns": [
+            "একঘেয়ে",
+            "পরিবর্তনহীন",
+            "",
+            "সেই",
+            "একই",
+            "অনুরূপ",
+            "সম",
+            "সদৃশ",
+            "একরকম",
+            "অভিন্ন",
+            "অবিভিন্ন",
+            "এক",
+            "একই তলে অবস্থিত",
+            "তাহাই",
+            "অপরিবর্তিত",
+            "অপরিবর্তনীয়"
+        ],
+        "en_syns": [
+            "same thing",
+            "aforementioned",
+            "aforesaid",
+            "above-mentioned",
+            "identical",
+            "selfsame",
+            "very same",
+            "one and the same"
+        ],
+        "sents": [
+            "The rate of price rises since January actually exceeds the rate for <b>same</b> period last year.",
+            "All age groups are welcome to participate and sponsorship of <b>same</b> would be very welcome."
+        ]
+    },
+    {
+        "pron": [
+            "ˈro͝om-,ˈro͞omˌmāt",
+            "Ēka'i gharē bāsindā"
+        ],
+        "bn": "একই ঘরে বাসিন্দা",
+        "en": "roommate",
+        "bn_syns": [
+            "একই ঘরে বাসিন্দা"
+        ],
+        "en_syns": [
+            "roomy",
+            "roomie"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈtēmstər",
+            "Ēka'i jōẏālē ābad'dha paśura cālaka"
+        ],
+        "bn": "একই জোয়ালে আবদ্ধ পশুর চালক",
+        "en": "teamster",
+        "bn_syns": [
+            "একই জোয়ালে আবদ্ধ পশুর চালক",
+            "যে চালক গাড়ি-টানা বা লাঙ্গল-টানা জন্তুর জোড়াকে চালায়"
+        ],
+        "en_syns": [
+            "trucker",
+            "truck driver"
+        ],
+        "sents": [
+            "And due to its popularity with mafia types (part of the Godfather was filmed here), besides a few hoodlums in concrete slippers, one-time <b>teamster</b> leader Jimmy Hoffa is supposedly in there too.",
+            "He had been a <b>teamster</b> in his pioneering days in the Centre, and appreciated his big old draft horses far more than he appreciated most people."
+        ]
+    },
+    {
+        "pron": [
+            "ˈtē(m)ˌmāt",
+            "Ēka'i dalēra khēlōẏāṛa"
+        ],
+        "bn": "একই দলের খেলোয়াড়",
+        "en": "teammate",
+        "bn_syns": [
+            "একই দলের খেলোয়াড়"
+        ],
+        "en_syns": [
+            "mate"
+        ],
+        "sents": [
+            "I have had chats with him as a mate and as a <b>teammate</b> and I can tell him where he is going wrong and what he is doing right.",
+            "Will and his <b>teammates</b> played in Gniezno in Poland in a tournament consisting of two pools."
+        ]
+    },
+    {
+        "pron": [
+            "əˈlīk",
+            "Ēka'ibhābē"
+        ],
+        "bn": "একইভাবে",
+        "en": "alike",
+        "bn_syns": [
+            "সমানভাবে",
+            "অভিন্ন",
+            "একই ভাবে",
+            "সমরূপে",
+            "অনুরূপভাবে",
+            "তুল্যরূপে",
+            "একইভাবে",
+            "সমভাবে",
+            "সদৃশ"
+        ],
+        "en_syns": [
+            "similarly",
+            "(just) the same",
+            "in the same way/manner/fashion",
+            "equally",
+            "likewise",
+            "identically",
+            "similar",
+            "(much) the same",
+            "indistinguishable",
+            "identical",
+            "uniform",
+            "interchangeable",
+            "cut from the same cloth",
+            "like (two) peas in a pod",
+            "like Tweedledum and Tweedledee",
+            "much of a muchness"
+        ],
+        "sents": [
+            "But family tensions and feuds bring their own stresses at this time of year and can ruin the big day for children and adults <b>alike</b> .",
+            "Both warrior and martyr <b>alike</b> join forces in the town and attempt to keep the peace."
+        ]
+    },
+    {
+        "pron": [
+            "ˈsōlōist",
+            "Ēkaka"
+        ],
+        "bn": "একক",
+        "en": "soloist",
+        "bn_syns": [
+            "একক গায়ক",
+            "একক"
+        ],
+        "en_syns": [],
+        "sents": [
+            "When he did have strong bass or tenor <b>soloists</b> , Handel could and did write strong parts for them.",
+            "he appears as a concerto <b>soloist</b> with all the great British orchestras"
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēkaka"
+        ],
+        "bn": "একক",
+        "en": "singles",
+        "bn_syns": [
+            "আলাদা করা",
+            "বাছিয়া লত্তয়া",
+            "সরাইয়া লত্তয়া",
+            "স্বতন্ত্র করা",
+            "পৃথক্ করা",
+            "এক",
+            "দ্বন্দ্বক্রীড়া",
+            "এক রান"
+        ],
+        "en_syns": [
+            "select",
+            "pick out",
+            "choose",
+            "decide on",
+            "target",
+            "earmark",
+            "mark out",
+            "separate out",
+            "set apart/aside",
+            "bingle"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈsiNGgəl",
+            "Ēkaka"
+        ],
+        "bn": "একক",
+        "en": "single",
+        "bn_syns": [
+            "আলাদা করা",
+            "বাছিয়া লত্তয়া",
+            "সরাইয়া লত্তয়া",
+            "স্বতন্ত্র করা",
+            "পৃথক্ করা",
+            "এক",
+            "দ্বন্দ্বক্রীড়া",
+            "এক রান",
+            "একটি",
+            "একক",
+            "অবিবাহিত",
+            "মাত্র একজন",
+            "একমাত্র",
+            "অনূঢ়",
+            "অনূঢ়া",
+            "অযৌগিক",
+            "অযুগ্ন",
+            "অনন্য",
+            "অবিভক্ত",
+            "অভঙ্গ",
+            "আন্তরিক"
+        ],
+        "en_syns": [
+            "select",
+            "pick out",
+            "choose",
+            "decide on",
+            "target",
+            "earmark",
+            "mark out",
+            "separate out",
+            "set apart/aside",
+            "bingle",
+            "one (only)",
+            "sole",
+            "lone",
+            "solitary",
+            "by itself/oneself",
+            "unaccompanied",
+            "alone"
+        ],
+        "sents": [
+            "a <b>single</b> to Dundalk, please",
+            "Boredom among children is common in those families with a <b>single</b> child."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēkaka - sēksa"
+        ],
+        "bn": "একক - সেক্স",
+        "en": "single-sex",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Ēkaka aṅka"
+        ],
+        "bn": "একক অঙ্ক",
+        "en": "single-digit",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Ēkaka paribāra"
+        ],
+        "bn": "একক পরিবার",
+        "en": "single-family",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "",
+            "Ēkaka pitā bā mātā"
+        ],
+        "bn": "একক পিতা বা মাতা",
+        "en": "single parent",
+        "bn_syns": [
+            "সন্তানপালনকারী স্ত্রী-বিচ্ছিন্ন স্বামী বা স্বামী-বিচ্ছিন্ন স্ত্রী"
+        ],
+        "en_syns": [],
+        "sents": [
+            "Britain has the highest proportion of children being brought up in <b>single-parent</b> households in Europe.",
+            "Alternative models of family, including a matrifocal family or a <b>single-parent</b> household, are rendered pathological."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēkaka praẏāsa"
+        ],
+        "bn": "একক প্রয়াস",
+        "en": "bootstraps",
+        "bn_syns": [
+            "একক প্রয়াস"
+        ],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Ēkaka sbacchandabhābē"
+        ],
+        "bn": "একক স্বচ্ছন্দভাবে",
+        "en": "single-handedly",
+        "bn_syns": [],
+        "en_syns": [
+            "single-handed"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˌsīməlˈtānēəslē",
+            "Ēkakālē"
+        ],
+        "bn": "এককালে",
+        "en": "simultaneously",
+        "bn_syns": [
+            "এককালে",
+            "একসঙ্গে"
+        ],
+        "en_syns": [
+            "at (one and) the same time",
+            "at the same instant/moment",
+            "at once",
+            "concurrently",
+            "concomitantly",
+            "(all) together",
+            "in unison",
+            "in concert",
+            "in chorus"
+        ],
+        "sents": [
+            "it works <b>simultaneously</b> as character study, teen drama and sci-fi thriller",
+            "the telethon was broadcast <b>simultaneously</b> on 31 US networks"
+        ]
+    },
+    {
+        "pron": [
+            "ˈblätər",
+            "Ēkakhaṇḍa kāli-śōṣaka kāgaja"
+        ],
+        "bn": "একখণ্ড কালি-শোষক কাগজ",
+        "en": "blotter",
+        "bn_syns": [
+            "একখণ্ড কালি-শোষক কাগজ"
+        ],
+        "en_syns": [
+            "blotting paper"
+        ],
+        "sents": [
+            "He glanced down at the <b>blotter</b> on his desk: there were papers covered with tiny Rris script there.",
+            "A <b>blotter</b> on the desk, one of those desk diary appointment things?"
+        ]
+    },
+    {
+        "pron": [
+            "ˈnärlē",
+            "Ēkagum̐ẏē"
+        ],
+        "bn": "একগুঁয়ে",
+        "en": "gnarly",
+        "bn_syns": [
+            "জেদী",
+            "অবাধ্য",
+            "একগুঁয়ে",
+            "গ্রন্থিযুক্ত",
+            "খুঁতখুঁতে",
+            "ছিদ্রান্বেষী",
+            "গ্রন্থিল",
+            "খিট্খিটে"
+        ],
+        "en_syns": [
+            "knobbed",
+            "gnarled",
+            "knotted",
+            "knotty"
+        ],
+        "sents": [
+            "One of only a handful of female big-wave surfers, Gerhardt joined the ranks of some 50 men who conquered Mavericks' <b>gnarly</b> 25-foot waves.",
+            "OK, if a <b>gnarly</b> croc fought a Great White, who'd win?"
+        ]
+    },
+    {
+        "pron": [
+            "ˈäbstənit",
+            "Ēkagum̐ẏē"
+        ],
+        "bn": "একগুঁয়ে",
+        "en": "obstinate",
+        "bn_syns": [
+            "জেদি",
+            "ট্যাঁটা",
+            "একগুঁয়ে",
+            "গোঁয়ার",
+            "বেয়াড়া",
+            "জেদী",
+            "অবাধ্য",
+            "অবাধগতি",
+            "অটল",
+            "দৃঢ়",
+            "স্থির",
+            "দুর্দমনীয়",
+            "অবুঝ",
+            "ঠেঁটা",
+            "খেঁচড়া",
+            "ঘেঁচড়া",
+            "ডানপিটে",
+            "অনমনীয়",
+            "জিদপূর্ণ",
+            "চিমড়া",
+            "জিদি",
+            "চিমড়ে",
+            "একরোখা",
+            "নাছোড়বান্দা",
+            "অপ্রতিরোধ্য"
+        ],
+        "en_syns": [
+            "stubborn",
+            "unyielding",
+            "inflexible",
+            "unbending",
+            "intransigent",
+            "intractable",
+            "obdurate",
+            "mulish",
+            "bullheaded",
+            "stubborn as a mule",
+            "pigheaded",
+            "self-willed",
+            "strong-willed",
+            "headstrong",
+            "willful",
+            "contrary",
+            "perverse",
+            "recalcitrant",
+            "refractory",
+            "uncooperative",
+            "unmanageable",
+            "stiff-necked",
+            "rigid",
+            "uncompromising",
+            "implacable",
+            "unrelenting",
+            "immovable",
+            "unshakable",
+            "persistent",
+            "tenacious",
+            "pertinacious",
+            "dogged",
+            "single-minded"
+        ],
+        "sents": [
+            "Taureans, signified by the bull, were often described as <b>obstinate</b> and inflexible, while Pisceans could be risk-takers and daredevils.",
+            "This person is the most opinionated, wrong, <b>obstinate</b> person I've seen in this courtroom."
+        ]
+    },
+    {
+        "pron": [
+            "ˈstəbərn",
+            "Ēkagum̐ẏē"
+        ],
+        "bn": "একগুঁয়ে",
+        "en": "stubborn",
+        "bn_syns": [
+            "একগুঁয়ে",
+            "অনমনীয়",
+            "",
+            "জেদী",
+            "অবাধ্য",
+            "কঠিন",
+            "অদম্য",
+            "গোঁয়ার"
+        ],
+        "en_syns": [
+            "obstinate",
+            "headstrong",
+            "willful",
+            "strong-willed",
+            "pigheaded",
+            "obdurate",
+            "difficult",
+            "contrary",
+            "perverse",
+            "recalcitrant",
+            "inflexible",
+            "iron-willed",
+            "uncompromising",
+            "unbending",
+            "stiff-necked",
+            "bloody-minded",
+            "balky",
+            "pertinacious",
+            "refractory",
+            "contumacious"
+        ],
+        "sents": [
+            "And then there is that <b>stubborn</b> streak in him that always fired him up.",
+            "I'm too <b>stubborn</b> to admit that I'm in love with him."
+        ]
+    },
+    {
+        "pron": [
+            "ˈsiNGˌsôNG",
+            "Ēkaghēẏē surē ābr̥tta"
+        ],
+        "bn": "একঘেয়ে সুরে আবৃত্ত",
+        "en": "singsong",
+        "bn_syns": [
+            "একঘেয়ে সুরে আবৃত্ত"
+        ],
+        "en_syns": [
+            "singalong"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈbôrdəm",
+            "Ēkaghēẏēmi"
+        ],
+        "bn": "একঘেয়েমি",
+        "en": "boredom",
+        "bn_syns": [
+            "ক্লান্তিকর অবস্থা",
+            "একঘেয়েমি",
+            "বিষণ্ণতা",
+            "উদাসীনতা"
+        ],
+        "en_syns": [
+            "weariness",
+            "ennui",
+            "apathy",
+            "unconcern",
+            "frustration",
+            "dissatisfaction",
+            "restlessness",
+            "restiveness",
+            "lethargy",
+            "lassitude",
+            "tedium",
+            "dullness",
+            "monotony",
+            "repetitiveness",
+            "flatness",
+            "dreariness",
+            "deadliness"
+        ],
+        "sents": [
+            "Sometimes a long period of whittling away at the front-runner can lead to <b>boredom</b> and apathy.",
+            "The relentless <b>boredom</b> , fear and frustration hung over her head like a black storm cloud."
+        ]
+    },
+    {
+        "pron": [
+            "ikˈsklo͞osiv",
+            "Ēkacēṭiẏā"
+        ],
+        "bn": "একচেটিয়া",
+        "en": "exclusive",
+        "bn_syns": [
+            "একচেটিয়া",
+            "স্বতন্ত্র",
+            "প্রবেশে বাধাদায়ক",
+            "ভোগে বাধাদায়ক",
+            "বাধাদায়ক",
+            "বহিষ্কারক",
+            "বর্জনকর",
+            "খাপ খাত্তয়ানর অসাধ্য",
+            "অমিশুক"
+        ],
+        "en_syns": [
+            "scoop",
+            "exposé",
+            "special",
+            "select",
+            "chic",
+            "high-class",
+            "elite",
+            "fashionable",
+            "stylish",
+            "elegant",
+            "premier",
+            "grade A",
+            "expensive",
+            "upscale",
+            "upmarket",
+            "high-toned",
+            "posh",
+            "ritzy",
+            "classy",
+            "tony",
+            "spendy"
+        ],
+        "sents": [
+            "They may use such information to write <b>exclusive</b> stories, but the ‘leaker’ may mislead reporters.",
+            "Some blends are <b>exclusive</b> to a restaurant, such as Meringue White Tea - with nonfermented leaves - that she makes for Hyeholde"
+        ]
+    },
+    {
+        "pron": [
+            "ˈnänˈstäp",
+            "Ēkaṭānā uṛānēra"
+        ],
+        "bn": "একটানা উড়ানের",
+        "en": "nonstop",
+        "bn_syns": [],
+        "en_syns": [
+            "nonstop flight",
+            "continuously",
+            "continually",
+            "incessantly",
+            "unceasingly",
+            "ceaselessly",
+            "all the time",
+            "constantly",
+            "perpetually",
+            "around/round the clock",
+            "day and night",
+            "steadily",
+            "relentlessly",
+            "persistently",
+            "24-7",
+            "continuous",
+            "constant",
+            "continual",
+            "perpetual",
+            "incessant",
+            "unceasing",
+            "ceaseless",
+            "endless",
+            "uninterrupted",
+            "round-the-clock",
+            "unremitting",
+            "relentless",
+            "persistent",
+            "never-ending"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "an",
+            "Ēkaṭi"
+        ],
+        "bn": "একটি",
+        "en": "an",
+        "bn_syns": [
+            "একটি",
+            "একটা"
+        ],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Ēkaṭi khādyatālikā anuyāẏī"
+        ],
+        "bn": "একটি খাদ্যতালিকা অনুযায়ী",
+        "en": "a la carte",
+        "bn_syns": [
+            "খাদ্যতালিকা অনুযায়ী"
+        ],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Ēkaṭi lā mōḍa"
+        ],
+        "bn": "একটি লা মোড",
+        "en": "a la mode",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Ēkaṭibārēra"
+        ],
+        "bn": "একটিবারের",
+        "en": "onetime",
+        "bn_syns": [
+            "একটিবারের",
+            "প্রাক্তন",
+            "কোন এক সময়কার"
+        ],
+        "en_syns": [
+            "once",
+            "former",
+            "quondam",
+            "sometime",
+            "erstwhile",
+            "old",
+            "one-time"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "",
+            "Ēkataraphā"
+        ],
+        "bn": "একতরফা",
+        "en": "one-sided",
+        "bn_syns": [
+            "অসমান",
+            "একতরফা",
+            "একদেশদর্শী",
+            "পক্ষপাতমূলক",
+            "পক্ষপাতী",
+            "সংস্কারদুষ্ট",
+            "একটিমাত্র তল",
+            "দিকবিশিষ্ট",
+            "আংশিক",
+            "একপেশে"
+        ],
+        "en_syns": [
+            "biased",
+            "prejudiced",
+            "partisan",
+            "partial",
+            "preferential",
+            "discriminatory",
+            "slanted",
+            "colored",
+            "inequitable",
+            "unfair",
+            "unjust"
+        ],
+        "sents": [
+            "The paper has never published details of these <b>one-sided</b> conversations for fear of legal reprisals.",
+            "The information that's in there isn't biased or <b>one-sided</b> ."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēkatalā"
+        ],
+        "bn": "একতলা",
+        "en": "ground floor",
+        "bn_syns": [
+            "নিচের তলা",
+            "একতলা",
+            "অট্টালিকার সর্বনিম্ন তল"
+        ],
+        "en_syns": [
+            "ground level",
+            "first floor"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈhärməˌnīz",
+            "Ēkatāna karāna"
+        ],
+        "bn": "একতান করান",
+        "en": "harmonize",
+        "bn_syns": [
+            "একতান হওয়া বা করান",
+            "মিল করা",
+            "একতান করান",
+            "মিল খাত্তয়ান",
+            "সমন্বয়পূর্ণ করান",
+            "খাপ খাত্তয়ান",
+            "মিশ খাত্তয়ান",
+            "একতান হত্তয়া",
+            "সমন্বয়পূর্ণ হত্তয়া",
+            "খাপ খাত্তয়া"
+        ],
+        "en_syns": [
+            "coordinate",
+            "go together",
+            "match",
+            "blend",
+            "mix",
+            "balance",
+            "be compatible",
+            "be harmonious",
+            "suit each other"
+        ],
+        "sents": [
+            "we <b>harmonize</b> a scale using only the notes from that particular key",
+            "But don't stop there; remember that any lighting fixtures must also <b>harmonize</b> with the rest of the room's furnishings."
+        ]
+    },
+    {
+        "pron": [
+            "ˈsəmˌtīm",
+            "Ēkadā"
+        ],
+        "bn": "একদা",
+        "en": "sometime",
+        "bn_syns": [
+            "প্রাক্তন",
+            "ভূপূর্ব",
+            "একদা",
+            "পূর্বে"
+        ],
+        "en_syns": [
+            "former",
+            "past",
+            "previous",
+            "prior",
+            "foregoing",
+            "late",
+            "erstwhile",
+            "one-time",
+            "ex-",
+            "quondam",
+            "someday",
+            "one day",
+            "one of these (fine) days",
+            "at a future date",
+            "sooner or later",
+            "by and by",
+            "in due course",
+            "in the fullness of time",
+            "in the long run"
+        ],
+        "sents": [
+            "James, who is based in NYC, built a house in Galway <b>sometime</b> ago and spends as much time possible there, where he has a number of horses.",
+            "From that involvement he segued to the film industry and worked as a writer, assistant director, editor and <b>sometime</b> actor."
+        ]
+    },
+    {
+        "pron": [
+            "swərv",
+            "Ēkadikē phērā"
+        ],
+        "bn": "একদিকে ফেরা",
+        "en": "swerve",
+        "bn_syns": [
+            "বিপথে যাত্তয়া",
+            "একদিকে ফেরা",
+            "গতিপথ পরিবর্তন করা",
+            "হঠাৎ দিক বদলানো",
+            "ঘুরিয়ে নেওয়া",
+            "আচমকা পথ-পরিবর্তন"
+        ],
+        "en_syns": [
+            "curve",
+            "curl",
+            "deviation",
+            "twist",
+            "veer",
+            "deviate",
+            "skew",
+            "diverge",
+            "sheer",
+            "weave",
+            "zigzag",
+            "change direction",
+            "tack"
+        ],
+        "sents": [
+            "Being world class is not just holding glittering events but roads on which traffic can move at an average and safe speed of at least 40 kmph. without frequent <b>swerves</b> and stops to avoid potholes.",
+            "As if on cue, a motorist, seeing the grisly scene before him, <b>swerves</b> in order to crush this cannibal rat."
+        ]
+    },
+    {
+        "pron": [
+            "gle(ə)r",
+            "Ēkadr̥ṣṭi"
+        ],
+        "bn": "একদৃষ্টি",
+        "en": "glare",
+        "bn_syns": [
+            "ঝলসে ওঠা",
+            "চকচক করা",
+            "চোখে লাগা",
+            "মসৃণ ও কাচের মতো",
+            "চক্মক্ করা",
+            "জ্বলন্ত দৃষ্টিতে তাকান",
+            "তীব্রভাবে ঝলমল করা",
+            "তীব্রভাবে দীপ্তি িপাত্তয়া",
+            "তীব্রদৃষ্টিতে তাকান",
+            "জ্বলজ্বল করা",
+            "একদৃষ্টি",
+            "ঠাউর",
+            "তীক্ষ্নদৃষ্টি",
+            "জ্বলন্ত দৃষ্টি",
+            "কঠোর স্থিরদৃষ্টি",
+            "কাচের মত উজ্জ্বল উপুরিভাগ"
+        ],
+        "en_syns": [
+            "scowl",
+            "glower",
+            "stare angrily",
+            "look daggers",
+            "frown",
+            "lower",
+            "give someone a black look",
+            "look threateningly",
+            "give someone a dirty look",
+            "angry stare",
+            "black look",
+            "threatening look",
+            "dirty look"
+        ],
+        "sents": [
+            "Capping the atrium is a dome, with a glazed section cut at an angle to admit north light and eliminate <b>glare</b> and solar gain.",
+            "Change the monitor location or tilt it to eliminate <b>glare</b> from lights or windows."
+        ]
+    },
+    {
+        "pron": [
+            "ˈglouər",
+            "Ēkadr̥ṣṭitē tākāna"
+        ],
+        "bn": "একদৃষ্টিতে তাকান",
+        "en": "glower",
+        "bn_syns": [
+            "কটমট করে",
+            "ভীতিজনকভাবে তাকানো",
+            "একদৃষ্টিতে তাকান",
+            "ক্রুদ্ধভাবে তাকান"
+        ],
+        "en_syns": [
+            "scowl",
+            "glare",
+            "frown",
+            "black look",
+            "dirty look",
+            "look daggers",
+            "lower",
+            "give someone a black look",
+            "give someone a dirty look"
+        ],
+        "sents": [
+            "He turned away from her, hiding the <b>glower</b> on his face.",
+            "I kicked at it and peered up into the branches, meeting her glowing eyes with a <b>glower</b> ."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēkadharaṇēra dhām̐dhāra"
+        ],
+        "bn": "একধরণের ধাঁধার",
+        "en": "jigsaw puzzle",
+        "bn_syns": [
+            "একধরণের ধাঁধার খেলা"
+        ],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈôtəˌkrat",
+            "Ēkanāẏaka"
+        ],
+        "bn": "একনায়ক",
+        "en": "autocrat",
+        "bn_syns": [
+            "স্বৈরাচারী ব্যক্তি",
+            "একনায়ক",
+            "একতন্ত্রী শাসক",
+            "স্বৈরাচারী শাসক"
+        ],
+        "en_syns": [
+            "absolute ruler",
+            "dictator",
+            "despot",
+            "tyrant"
+        ],
+        "sents": [
+            "And he was, if you like, an absolute <b>autocrat</b> , a ruler.",
+            "Somewhere even the dictators and <b>autocrats</b> who send ambassadors to dialogue with ambassadors from free states know that to be true."
+        ]
+    },
+    {
+        "pron": [
+            "ˈdikˌtātər",
+            "Ēkanāẏaka"
+        ],
+        "bn": "একনায়ক",
+        "en": "dictator",
+        "bn_syns": [
+            "একনায়ক",
+            "শাসক",
+            "রাজা",
+            "উত্পীড়ক",
+            "সার্বভৌম শাসক"
+        ],
+        "en_syns": [
+            "autocrat",
+            "absolute ruler",
+            "despot",
+            "tyrant",
+            "oppressor",
+            "autarch"
+        ],
+        "sents": [
+            "Stalin has metamorphosed into a totalitarian <b>dictator</b> intent on conquest, and the storm clouds of a new conflict gather.",
+            "The realism of the Romans about the relationships between power and consent can be seen in the office of <b>dictator</b> , for dictatorship was a constitutional office in republican Rome."
+        ]
+    },
+    {
+        "pron": [
+            "dikˈtātərˌSHip,ˈdiktātər-",
+            "Ēkanāẏakatantra"
+        ],
+        "bn": "একনায়কতন্ত্র",
+        "en": "dictatorship",
+        "bn_syns": [
+            "একনায়কতন্ত্র",
+            "স্বৈরতন্ত্র",
+            "শাসন"
+        ],
+        "en_syns": [
+            "absolute rule",
+            "undemocratic rule",
+            "despotism",
+            "tyranny",
+            "autocracy",
+            "autarchy",
+            "authoritarianism",
+            "totalitarianism",
+            "fascism",
+            "oppression",
+            "repression"
+        ],
+        "sents": [
+            "I remember replying that this was a quite hopeless analysis, absolutely disastrous to the left since it bound them to a state capitalist <b>dictatorship</b> .",
+            "The bombings draw attention to the brutal military <b>dictatorship</b> ."
+        ]
+    },
+    {
+        "pron": [
+            "əˈsīd",
+            "Ēkapāśē"
+        ],
+        "bn": "একপাশে",
+        "en": "aside",
+        "bn_syns": [
+            "আলাদাভাবে",
+            "একধারে",
+            "তফাতে",
+            "সরাইয়া",
+            "একপাশে",
+            "আত্মগত",
+            "পৃথগ্ভাবে",
+            "একান্তে",
+            "গোপনে",
+            "আপনমনে",
+            "স্বগত"
+        ],
+        "en_syns": [
+            "whispered remark",
+            "confidential remark",
+            "stage whisper",
+            "digression",
+            "incidental remark",
+            "obiter dictum",
+            "to one side",
+            "to the side",
+            "on one side",
+            "apart",
+            "away",
+            "separately"
+        ],
+        "sents": [
+            "I think it is a reasonable and economically responsible move to put funding <b>aside</b> for future public service superannuation.",
+            "Her father pushed <b>aside</b> a plate full of sandwiches, and went through the report thoughtfully, while listening to her narration."
+        ]
+    },
+    {
+        "pron": [
+            "",
+            "Ēkaprakāra khudrē bām̐dhākapi"
+        ],
+        "bn": "একপ্রকার খুদ্রে বাঁধাকপি",
+        "en": "Brussels sprout",
+        "bn_syns": [
+            "একপ্রকার খুদ্রে বাঁধাকপি"
+        ],
+        "en_syns": [],
+        "sents": [
+            "Brassica vegetables such as broccoli, <b>Brussels sprouts</b> , cabbage and cauliflower are rich in indole - 3-carbinol, which may reduce the risk of prostate cancer.",
+            "But chiefly he fulfills a statistician's dream with his minute record of <b>Brussels sprouts</b> , cabbages, and tulips planted, harvested, and planted again."
+        ]
+    },
+    {
+        "pron": [
+            "finCH",
+            "Ēkaprakāra gāẏaka pakṣī"
+        ],
+        "bn": "একপ্রকার গায়ক পক্ষী",
+        "en": "finch",
+        "bn_syns": [
+            "একপ্রকার গায়ক পক্ষী"
+        ],
+        "en_syns": [],
+        "sents": [
+            "Their bills are slimmer than those of most <b>finches</b> .",
+            "Birdsong enters the cottage from front and back - blackbirds, robins, <b>finches</b> ."
+        ]
+    },
+    {
+        "pron": [
+            "jät",
+            "Ēkaphōm̐ṭā"
+        ],
+        "bn": "একফোঁটা",
+        "en": "jot",
+        "bn_syns": [
+            "বিন্দু",
+            "অত্যল্প পরিমাপ",
+            "সংক্ষেপে বা তাড়াতাড়ি টুকিয়া লওয়া",
+            "লেশ",
+            "অত্যল্প পরিমাণ",
+            "একফোঁটা"
+        ],
+        "en_syns": [
+            "write down",
+            "note down",
+            "make a note of",
+            "take down",
+            "put on paper",
+            "scribble",
+            "scrawl",
+            "iota",
+            "scrap",
+            "shred",
+            "whit",
+            "grain",
+            "crumb",
+            "ounce",
+            "(little) bit",
+            "jot or tittle",
+            "speck",
+            "atom",
+            "particle",
+            "scintilla",
+            "trace",
+            "hint",
+            "smidgen",
+            "tad"
+        ],
+        "sents": [
+            "There is not one <b>jot</b> of evidence that such an experience actually occurred in the infancy of one of Freud's patients.",
+            "I'm finally ready for Christmas, and there's not a <b>jot</b> of snow to be found."
+        ]
+    },
+    {
+        "pron": [
+            "wəns",
+            "Ēkabāra"
+        ],
+        "bn": "একবার",
+        "en": "once",
+        "bn_syns": [
+            "একটিবারও",
+            "একবারমাত্র",
+            "অতীতে কখনো",
+            "পূর্বে কোনো একসময়ে",
+            "একসময়",
+            "একবারও",
+            "একবার",
+            "একবার মাত্র",
+            "একদা",
+            "একদিন",
+            "পূর্বে"
+        ],
+        "en_syns": [
+            "as soon as",
+            "when",
+            "after",
+            "the instant",
+            "the second",
+            "the minute",
+            "the moment",
+            "on one occasion",
+            "one time",
+            "one single time"
+        ],
+        "sents": [
+            "if she <b>once</b> got an idea in her head you'd never move it",
+            "The date of commencement will be confirmed <b>once</b> people have indicated an interest in taking part."
+        ]
+    },
+    {
+        "pron": [
+            "",
+            "Ēkabāra - ōbhāra"
+        ],
+        "bn": "একবার - ওভার",
+        "en": "once-over",
+        "bn_syns": [],
+        "en_syns": [
+            "look-over"
+        ],
+        "sents": [
+            "She leaned back on Mephisto, and gave him a <b>once-over</b> .",
+            "After 1,000 rounds I'll take the piece to a gunsmith for a trigger job, and have him give the cylinder a <b>once-over</b> ."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēkabōrē"
+        ],
+        "bn": "একবোরে",
+        "en": "futilely",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈsimələrlē",
+            "Ēkabhābē"
+        ],
+        "bn": "একভাবে",
+        "en": "similarly",
+        "bn_syns": [
+            "একভাবে",
+            "একইভাবে",
+            "ঐভাবে"
+        ],
+        "en_syns": [
+            "likewise",
+            "in similar fashion",
+            "in like manner",
+            "comparably",
+            "correspondingly",
+            "uniformly",
+            "indistinguishably",
+            "analogously",
+            "homogeneously",
+            "equivalently",
+            "in the same way",
+            "the same",
+            "identically"
+        ],
+        "sents": [
+            "a <b>similarly</b> priced property",
+            "It also has a class and breeding that sets it apart from its <b>similarly</b> priced German rivals."
+        ]
+    },
+    {
+        "pron": [
+            "əˈgrēd",
+            "Ēkamata"
+        ],
+        "bn": "একমত",
+        "en": "agreed",
+        "bn_syns": [
+            "একমত",
+            "অনুমত",
+            "অনুমোদিত"
+        ],
+        "en_syns": [
+            "in agreement"
+        ],
+        "sents": [
+            "Certainly it should try and do so if both parties are <b>agreed</b> that they would like the matter resolved on the affidavits.",
+            "The parties filed an <b>agreed</b> statement of facts to establish much of the factual background."
+        ]
+    },
+    {
+        "pron": [
+            "əˈgrē",
+            "Ēkamata"
+        ],
+        "bn": "একমত",
+        "en": "agree",
+        "bn_syns": [
+            "মন করা",
+            "সম্মত হত্তয়া",
+            "রাজী হত্তয়া",
+            "মানা",
+            "মানিয়া লত্তয়া",
+            "মানাইয়া চলা",
+            "পটা",
+            "খাপ খাত্তয়া",
+            "খাপা",
+            "সমন্বয়সাধন করা",
+            "মত করা",
+            "একমত হত্তয়া",
+            "মত দেত্তয়া",
+            "মন চাত্তয়া",
+            "মিলা",
+            "মিলিয়া মিশিয়া থাকা",
+            "মিল হত্তয়া",
+            "অন্বয়যুক্ত হত্তয়া",
+            "মীমাংসা করা",
+            "অনুযায়ী হত্তয়া",
+            "অন্বিত হত্তয়া",
+            "শোভন হত্তয়া",
+            "বনা",
+            "রাজি",
+            "সম্মত হওয়া",
+            "স্বাস্থ্যসম্মত হওয়া"
+        ],
+        "en_syns": [
+            "concur",
+            "be of the same mind/opinion",
+            "see eye to eye",
+            "be in sympathy",
+            "be united",
+            "be as one man"
+        ],
+        "sents": [
+            "Then both <b>agreed</b> on the idea that it is an individuals' responsibility.",
+            "If the Cabinet <b>agrees</b> the recommendation it will mean that you and the other residents will need to move to another home."
+        ]
+    },
+    {
+        "pron": [
+            "",
+            "Ēkamanā"
+        ],
+        "bn": "একমনা",
+        "en": "single-minded",
+        "bn_syns": [
+            "অকপট",
+            "একমনা",
+            "অনন্যচিত্তে",
+            "একমন"
+        ],
+        "en_syns": [
+            "determined",
+            "committed",
+            "unswerving",
+            "unwavering",
+            "resolute",
+            "purposeful",
+            "devoted",
+            "dedicated",
+            "uncompromising",
+            "tireless",
+            "tenacious",
+            "persistent",
+            "indefatigable",
+            "dogged",
+            "pertinacious"
+        ],
+        "sents": [
+            "I doubt, however, whether <b>single-minded</b> dedication is the best means of judging a successful leader.",
+            "Once a field of interest has been chosen, dedication and <b>single-minded</b> pursuit of excellence is boundless."
+        ]
+    },
+    {
+        "pron": [
+            "sōl",
+            "Ēkamātra"
+        ],
+        "bn": "একমাত্র",
+        "en": "sole",
+        "bn_syns": [
+            "পদতল",
+            "পাদতল",
+            "চরণতল",
+            "পাদমূল",
+            "জুতার তলি",
+            "তলে পরান",
+            "সোল",
+            "একমাত্র",
+            "অদ্বিতীয়",
+            "মাত্র",
+            "কেবল",
+            "অবিবাহিত",
+            "অনন্য"
+        ],
+        "en_syns": [
+            "resole",
+            "only",
+            "one (and only)",
+            "single",
+            "solitary",
+            "lone",
+            "unique",
+            "exclusive",
+            "isolated"
+        ],
+        "sents": [
+            "They had a thick <b>sole</b> with a short heel and were entirely black except for the dark blue laces that tied up the side.",
+            "Courts rarely grant <b>sole</b> custody or even joint physical custody to fathers, and standard visitation is just a few days a month."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēkamātra santāna"
+        ],
+        "bn": "একমাত্র সন্তান",
+        "en": "only child",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Ēkamukha ḍhākā kācēra nala"
+        ],
+        "bn": "একমুখ ঢাকা কাচের নল",
+        "en": "test tube",
+        "bn_syns": [
+            "একমুখ ঢাকা কাচের নল"
+        ],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Ēkamukhō"
+        ],
+        "bn": "একমুখো",
+        "en": "one-way",
+        "bn_syns": [
+            "একমুখো",
+            "একই দিকে ক্রিয়াশীল",
+            "একমুখী"
+        ],
+        "en_syns": [],
+        "sents": [
+            "The scene ends with the sobbing woman screaming for a sympathetic witness on the other side of a <b>one-way</b> mirror.",
+            "Nor is this a <b>one-way</b> process: the best American universities are now competing hard for the brightest British students."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēkayōgē"
+        ],
+        "bn": "একযোগে",
+        "en": "painlessly",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈsəmˌhou",
+            "Ēkarakama"
+        ],
+        "bn": "একরকম",
+        "en": "somehow",
+        "bn_syns": [
+            "কোনো প্রকারে",
+            "একরকম",
+            "যে কোন ভাবেই হউক"
+        ],
+        "en_syns": [
+            "by some means",
+            "by any means",
+            "in some way",
+            "one way or another",
+            "no matter how",
+            "by fair means or foul",
+            "by hook or by crook",
+            "come what may"
+        ],
+        "sents": [
+            "he looked different <b>somehow</b>",
+            "he looked different <b>somehow</b>"
+        ]
+    },
+    {
+        "pron": [
+            "iˈrasəbəl",
+            "Ēkarōkhā"
+        ],
+        "bn": "একরোখা",
+        "en": "irascible",
+        "bn_syns": [
+            "একরোখা"
+        ],
+        "en_syns": [
+            "irritable",
+            "quick-tempered",
+            "short-tempered",
+            "hot-tempered",
+            "testy",
+            "touchy",
+            "tetchy",
+            "edgy",
+            "crabby",
+            "petulant",
+            "waspish",
+            "dyspeptic",
+            "snappish",
+            "cross",
+            "surly",
+            "crusty",
+            "grouchy",
+            "grumpy",
+            "cranky",
+            "cantankerous",
+            "curmudgeonly",
+            "ill-natured",
+            "peevish",
+            "querulous",
+            "fractious",
+            "prickly",
+            "snippy"
+        ],
+        "sents": [
+            "When I opened James Howard Kunstler's first nonfiction book four years ago, the <b>irascible</b> , bombastic tone of his descriptions immediately put me off.",
+            "‘There wasn't a wall here before, last time I checked,’ I mutter <b>irascibly</b> into the hard concrete and slumped into the ground."
+        ]
+    },
+    {
+        "pron": [
+            "təˈgeT͟Hər",
+            "Ēkasaṅgē"
+        ],
+        "bn": "একসঙ্গে",
+        "en": "together",
+        "bn_syns": [
+            "একত্র",
+            "একই স্থানে",
+            "একই সময়ে",
+            "যুগপৎ",
+            "মিলিয়া মিশিয়া",
+            "একসঙ্গে",
+            "একত্রে মিলিয়া",
+            "পরস্পরের দিকে",
+            "একখণ্ডে",
+            "সংস্পর্শে আসিয়া",
+            "একই সময়"
+        ],
+        "en_syns": [
+            "with each other",
+            "in conjunction",
+            "jointly",
+            "in cooperation",
+            "in collaboration",
+            "in partnership",
+            "in combination",
+            "in league",
+            "in tandem",
+            "side by side",
+            "hand in hand",
+            "shoulder to shoulder",
+            "cheek by jowl",
+            "in collusion",
+            "hand in glove",
+            "in cahoots"
+        ],
+        "sents": [
+            "There are six species of spider monkey, which <b>together</b> form the genera Ateles.",
+            "We used to sit for hours <b>together</b> when we were fifteen listening again and again to his two Billie Holiday records."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēkahām̐ṭu"
+        ],
+        "bn": "একহাঁটু",
+        "en": "knee-high",
+        "bn_syns": [
+            "হাঁটুপর্যন্ত উঁচু বা গভীর",
+            "একহাঁটু"
+        ],
+        "en_syns": [
+            "knee-deep"
+        ],
+        "sents": [
+            "Pismo clams are found in <b>knee-high</b> water at low tide, burrowed about 6 inches below the sand.",
+            "She was wearing a short black skirt, <b>knee-high</b> black boots, and a pink halter top."
+        ]
+    },
+    {
+        "pron": [
+            "əˈlōn",
+            "Ēkā"
+        ],
+        "bn": "একা",
+        "en": "alone",
+        "bn_syns": [
+            "কেবল",
+            "একমাত্র",
+            "একক",
+            "নি:সঙ্গভাবে",
+            "নি:সঙ্গ",
+            "মাত্র ইহাই",
+            "একা একা",
+            "নিঃসঙ্গ",
+            "সঙ্গীহীন",
+            "শুধু নিজে",
+            "একা",
+            "একাকী",
+            "এককভাবে"
+        ],
+        "en_syns": [
+            "by oneself",
+            "on one's own",
+            "all alone",
+            "solitary",
+            "single",
+            "singly",
+            "solo",
+            "solus",
+            "unescorted",
+            "unaccompanied",
+            "partnerless",
+            "companionless",
+            "by one's lonesome"
+        ],
+        "sents": [
+            "It was never a good feeling to seem <b>alone</b> and friendless wherever you were.",
+            "It showed millions of people around the world that they're not <b>alone</b> in their desolation."
+        ]
+    },
+    {
+        "pron": [
+            "ˈsōlō",
+            "Ēkākī"
+        ],
+        "bn": "একাকী",
+        "en": "solo",
+        "bn_syns": [
+            "সোলো",
+            "একক গীত",
+            "একাকী",
+            "একমাত্র",
+            "স্বতন্ত্র"
+        ],
+        "en_syns": [
+            "unaccompanied",
+            "alone",
+            "on one's own",
+            "single-handed(ly)",
+            "by oneself",
+            "unescorted",
+            "unattended",
+            "unchaperoned",
+            "unaided",
+            "independently",
+            "stag",
+            "single-handed",
+            "companionless",
+            "independent",
+            "solitary"
+        ],
+        "sents": [
+            "American Ballet Theatre principal Susan Jaffe set the tone for an evening of extraordinary dance with her opening <b>solo</b> as the Dying Swan.",
+            "When she went <b>solo</b> she changed her name to Deborah, but found the fans only wanted Blondie."
+        ]
+    },
+    {
+        "pron": [
+            "iˈlevənTH",
+            "Ēkādaśa"
+        ],
+        "bn": "একাদশ",
+        "en": "eleventh",
+        "bn_syns": [
+            "একাদশ"
+        ],
+        "en_syns": [],
+        "sents": [
+            "after the <b>eleventh</b> programme",
+            "Monday, the <b>eleventh</b> of August"
+        ]
+    },
+    {
+        "pron": [
+            "",
+            "Ēkāntara"
+        ],
+        "bn": "একান্তর",
+        "en": "alternate",
+        "bn_syns": [
+            "পর্যায়ান্বিত হত্তয়া",
+            "পর্যায়ান্বিত করান",
+            "পালা-অনুসারে করা",
+            "পালা-অনুসারে করান",
+            "পরিবর্তন করা",
+            "বদল করা",
+            "বদলান",
+            "পালা-অনুসারে করানো",
+            "অদলবদল করা",
+            "পর্যায়ক্রমিক",
+            "একান্তরিত",
+            "একান্তর",
+            "পর্যায়ান্বিত",
+            "সবিরাম",
+            "ছাড়া-ছাড়া",
+            "পরিবর্তনশীল",
+            "পালা-অনুসারী",
+            "চঁচল",
+            "অতিরিক্ত",
+            "রক্ষিত",
+            "রিজার্ভ",
+            "অস্থির"
+        ],
+        "en_syns": [
+            "surrogate",
+            "replacement",
+            "be interspersed",
+            "occur in turn",
+            "rotate",
+            "follow one another",
+            "take turns",
+            "take it in turns",
+            "work/act in sequence",
+            "oscillate",
+            "fluctuate",
+            "every other",
+            "every second"
+        ],
+        "sents": [
+            "The upright stems have many, <b>alternate</b> , pinnately compound leaves with sharply toothed or lacerate leaflets.",
+            "Meanwhile, downstairs, Kendal collective FUNKTION will take over each Friday night with Tom Townley sharing <b>alternate</b> Fridays with Gaz Dawson and Luke Channon."
+        ]
+    },
+    {
+        "pron": [
+            "",
+            "Ēkuśa"
+        ],
+        "bn": "একুশ",
+        "en": "twenty-one",
+        "bn_syns": [
+            "একুশ"
+        ],
+        "en_syns": [
+            "blackjack",
+            "vingt-et-un"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Ēkē sam'mānē"
+        ],
+        "bn": "একে সম্মানে",
+        "en": "honorably",
+        "bn_syns": [
+            "সম্মানিত"
+        ],
+        "en_syns": [
+            "uprightly"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˌabsəˈlo͞otlē",
+            "Ēkēbārē"
+        ],
+        "bn": "একেবারে",
+        "en": "absolutely",
+        "bn_syns": [
+            "সম্পূর্ণভাবে",
+            "একেবারে",
+            "নিছক",
+            "সম্পূর্ণরূপে",
+            "পুরাপুরিভাবে",
+            "নিপট"
+        ],
+        "en_syns": [
+            "yes",
+            "indeed",
+            "of course",
+            "definitely",
+            "certainly",
+            "quite",
+            "without (a) doubt",
+            "without question",
+            "unquestionably",
+            "affirmative",
+            "by all means",
+            "completely",
+            "totally",
+            "utterly",
+            "perfectly",
+            "entirely",
+            "wholly",
+            "fully",
+            "thoroughly",
+            "unreservedly",
+            "positively",
+            "unconditionally",
+            "categorically",
+            "undoubtedly",
+            "surely",
+            "unequivocally",
+            "exactly",
+            "precisely",
+            "decisively",
+            "conclusively",
+            "manifestly",
+            "in every way",
+            "in every respect",
+            "one hundred percent",
+            "every inch",
+            "to the hilt",
+            "dead"
+        ],
+        "sents": [
+            "I have <b>absolutely</b> no idea",
+            "he <b>absolutely</b> adores that car"
+        ]
+    },
+    {
+        "pron": [
+            "ˈfôrˌfrənt",
+            "Ēkēbārē purōbhāga"
+        ],
+        "bn": "একেবারে পুরোভাগ",
+        "en": "forefront",
+        "bn_syns": [
+            "একেবারে পুরোভাগ"
+        ],
+        "en_syns": [
+            "vanguard",
+            "van",
+            "spearhead",
+            "head",
+            "lead",
+            "front",
+            "fore",
+            "front line",
+            "cutting edge",
+            "avant-garde"
+        ],
+        "sents": [
+            "We weren't in the <b>forefront</b> anymore, but we still had enough breath to talk.",
+            "We took the decision to shut the showers because public health is always at the <b>forefront</b> of any decision we make."
+        ]
+    },
+    {
+        "pron": [
+            "ˈsiNGglē",
+            "Ēkēlā"
+        ],
+        "bn": "একেলা",
+        "en": "singly",
+        "bn_syns": [
+            "একজনের পর একজন করে",
+            "একাকী",
+            "একেলা",
+            "এককভাবে"
+        ],
+        "en_syns": [
+            "one by one",
+            "one at a time",
+            "one after the other",
+            "individually",
+            "separately",
+            "by oneself",
+            "on one's own"
+        ],
+        "sents": [
+            "he talked to the players <b>singly</b> and in groups",
+            "he talked to the players <b>singly</b> and in groups"
+        ]
+    },
+    {
+        "pron": [
+            "ˈprēˌsiNGkt",
+            "Ēktiẏāra"
+        ],
+        "bn": "এক্তিয়ার",
+        "en": "precinct",
+        "bn_syns": [
+            "অট্টালিকাদির চতুষ্পার্শ্বস্থ পরিবেষ্টিত জমি",
+            "এক্তিয়ার",
+            "পরিপার্শ্ব",
+            "পুলিসথানার এলাকা",
+            "পুলিসথানার এক্তিয়ার",
+            "নির্বাচন-কেন্দ্রের এলাকা",
+            "নির্বাচন-কেন্দ্রের এক্তিয়ার"
+        ],
+        "en_syns": [
+            "area",
+            "zone",
+            "sector"
+        ],
+        "sents": [
+            "Traders are calling for an end to graffiti and vandalism plaguing a shopping <b>precinct</b> in Warminster.",
+            "The right place for \" living history \" re-enactments is a restored castle <b>precinct</b> ."
+        ]
+    },
+    {
+        "pron": [
+            "əˈmen-,əˈmēnəbəl",
+            "Ēktiẏārabhukta"
+        ],
+        "bn": "এক্তিয়ারভুক্ত",
+        "en": "amenable",
+        "bn_syns": [
+            "অনুকূল",
+            "কৈফিয়ত দিতে বাধ্য",
+            "এক্তিয়ারভুক্ত",
+            "নমনীয়",
+            "নম্র",
+            "প্রবণ",
+            "কর্তব্যপরায়ণ",
+            "বাধ্য",
+            "সহজে অভিভূত",
+            "নরম"
+        ],
+        "en_syns": [
+            "cooperative",
+            "acquiescent",
+            "compliant",
+            "accommodating",
+            "obliging",
+            "biddable",
+            "manageable",
+            "controllable",
+            "governable",
+            "persuadable",
+            "tractable",
+            "responsive",
+            "pliant",
+            "malleable",
+            "complaisant",
+            "easily handled",
+            "persuasible"
+        ],
+        "sents": [
+            "He has always been very <b>amenable</b> about having things done to him and he seems to know it is good for him.",
+            "And he came at that time to provide the assistance that I was telling you about before, and at that time he was quite an <b>amenable</b> fellow."
+        ]
+    },
+    {
+        "pron": [
+            "əˈkrilik",
+            "Ēkrā'ilika"
+        ],
+        "bn": "এক্রাইলিক",
+        "en": "acrylic",
+        "bn_syns": [
+            "এক্রাইলিক"
+        ],
+        "en_syns": [
+            "acrylic fiber"
+        ],
+        "sents": [
+            "Synthetic stuccos consist of sand suspended in a mixture of <b>acrylic</b> polymer, latex and pigments.",
+            "Rachael says initially she uses different layers of <b>acrylic</b> to build up a painted surface on the canvas, a layered process of paint and latex."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēksa - rē"
+        ],
+        "bn": "এক্স - রে",
+        "en": "x-ray",
+        "bn_syns": [
+            "এক্সরে",
+            "রঁজনরশ্মি দ্বারা গৃহীত ফোটো",
+            "অস্বচ্ছ পদার্থকে ভেদ করার ক্ষমতাযুক্ত হ্রস্ব তরঙ্গদৈর্ঘ্য বিশিষ্ট তড়িত্চুম্বক বিকিরণ",
+            "রঞ্জন-রশ্মি",
+            "এক্স-রশ্মি",
+            "এক্স-রে ছবি তোলা"
+        ],
+        "en_syns": [
+            "radiograph",
+            "radiogram",
+            "X-ray image/picture/photograph",
+            "roentgenogram",
+            "roentgen ray",
+            "x-radiation"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈeks ˌrātid",
+            "Ēksa rēṭa"
+        ],
+        "bn": "এক্স রেট",
+        "en": "X-rated",
+        "bn_syns": [],
+        "en_syns": [
+            "adult",
+            "hard-core",
+            "pornographic",
+            "blue",
+            "triple-X",
+            "XXX"
+        ],
+        "sents": [
+            "The first <b>X-rated</b> film I ever went to was The Servant.",
+            "‘I don't know how many times people have asked if our films are <b>X-rated</b> ,’ says Lieberman."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēksaṭrā lārja"
+        ],
+        "bn": "এক্সট্রা লার্জ",
+        "en": "XL",
+        "bn_syns": [
+            "এক্সট্রা লার্জ"
+        ],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "igˈzôst",
+            "Ēksasṭa"
+        ],
+        "bn": "এক্সস্ট",
+        "en": "exhaust",
+        "bn_syns": [
+            "ক্ষয় করা",
+            "সম্পূর্ণ বাহির করিয়া ফেলা",
+            "ব্যবহার করিয়া ফুরান",
+            "খালি করা",
+            "নি:শেষ করিয়া ফেলা",
+            "পরিশ্রান্ত করা",
+            "বক্তব্য নি:শেষে বলিয়া ফেলা",
+            "শেষ করা",
+            "ক্লান্ত করা",
+            "জল করা",
+            "নি:শেষে করিয়া আলোচনা করা",
+            "ব্যয় করা",
+            "এক্সস্ট"
+        ],
+        "en_syns": [
+            "tire out",
+            "wear out",
+            "overtire",
+            "fatigue",
+            "weary",
+            "tire",
+            "drain",
+            "run someone into the ground",
+            "do in",
+            "take it out of one",
+            "wipe out",
+            "knock out",
+            "burn out",
+            "poop",
+            "tucker out",
+            "exhaust system"
+        ],
+        "sents": [
+            "an <b>exhaust</b> pipe",
+            "As the aircraft gained altitude, the turbosupercharger would begin to function, taking <b>exhaust</b> gases from the engine to the turbine via the tubing."
+        ]
+    },
+    {
+        "pron": [
+            "",
+            "Ēksilēṭara"
+        ],
+        "bn": "এক্সিলেটর",
+        "en": "gas pedal",
+        "bn_syns": [
+            "এক্সিলেটর"
+        ],
+        "en_syns": [
+            "gas",
+            "gun",
+            "accelerator",
+            "throttle"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "nou",
+            "Ēkhana"
+        ],
+        "bn": "এখন",
+        "en": "now",
+        "bn_syns": [
+            "এমতাবস্থায়",
+            "ইতিমধ্যে",
+            "এক্ষণে",
+            "এই মুহূর্তে",
+            "এতিক্ষণে",
+            "তবে",
+            "এখন",
+            "বর্তমানে",
+            "সম্প্রতি",
+            "ইদানীং",
+            "আজ",
+            "তখন",
+            "অব",
+            "এইক্ষণেই",
+            "এইবার"
+        ],
+        "en_syns": [
+            "at the moment",
+            "at present",
+            "at the present (time/moment)",
+            "at this moment in time",
+            "currently",
+            "presently"
+        ],
+        "sents": [
+            "It was a different woman who <b>now</b> confidently walked into the consulting room.",
+            "There is an order about things <b>now</b> that never existed in the previous regime."
+        ]
+    },
+    {
+        "pron": [
+            "bo͝oSHt",
+            "Ēkhana ghumācchē"
+        ],
+        "bn": "এখন ঘুমাচ্ছে",
+        "en": "bushed",
+        "bn_syns": [],
+        "en_syns": [
+            "dead",
+            "beat",
+            "all in"
+        ],
+        "sents": [
+            "Despite getting really <b>bushed</b> after a night's work, Pete decided to clean up the room, especially those scattered glasses from the mirrors.",
+            "Look, Andy, I'm <b>bushed</b> , so do you think you could grab my suitcase and set it in the den?"
+        ]
+    },
+    {
+        "pron": [
+            "yet",
+            "Ēkhanō"
+        ],
+        "bn": "এখনো",
+        "en": "yet",
+        "bn_syns": [
+            "তত্সত্ত্বেও",
+            "আরত্ত",
+            "যাহা হউক",
+            "তথাপি",
+            "আর",
+            "অথচ",
+            "এখন পর্যন্ত",
+            "এযাবৎ",
+            "এই পর্যন্ত",
+            "একই সময়ে",
+            "তদ্ব্যতীত",
+            "সেই সঙ্গে",
+            "এখনো",
+            "তখনো",
+            "তখন পর্যন্ত"
+        ],
+        "en_syns": [
+            "so far",
+            "thus far",
+            "as yet",
+            "up till/to now",
+            "until now"
+        ],
+        "sents": [
+            "he made a meal which was simple <b>yet</b> tasty",
+            "The force of this threat is still unclear, <b>yet</b> its effect is already felt."
+        ]
+    },
+    {
+        "pron": [
+            "stil",
+            "Ēkhanō"
+        ],
+        "bn": "এখনো",
+        "en": "still",
+        "bn_syns": [
+            "শান্ত অবস্থা",
+            "নীরবতা",
+            "ফেনাহীন",
+            "স্তব্ধ",
+            "স্থাণু",
+            "শব্দহীন",
+            "গভীর নিস্তব্ধতা",
+            "স্থির",
+            "নিবাত",
+            "শান্ত",
+            "শান্তিপূর্ণ",
+            "নিথর",
+            "নিষ্কম্প",
+            "নিস্তরজ",
+            "নিস্পন্দ",
+            "অস্পন্দ",
+            "গতিহীন",
+            "নিশ্চল",
+            "অরব",
+            "নিঝুম",
+            "নিষ্ক্রিয়",
+            "অনড়",
+            "সংযত",
+            "নম্র",
+            "অক্ষুব্ধ",
+            "নীরব",
+            "কিন্তু",
+            "তা",
+            "পরন্তু",
+            "তথাপি",
+            "এখনত্ত",
+            "নিশ্চলভাবে",
+            "নিষ্ক্রিয়ভাবে",
+            "স্থিরবে",
+            "অবিরামভাবে",
+            "তবুত্ত",
+            "অথচ",
+            "এখনো",
+            "তত্রাচ",
+            "নিতান্ত"
+        ],
+        "en_syns": [
+            "quiet",
+            "silence",
+            "hush",
+            "calm",
+            "settle",
+            "pacify",
+            "soothe",
+            "lull",
+            "allay",
+            "subdue",
+            "quietness",
+            "quietude",
+            "stillness",
+            "soundlessness",
+            "tranquility",
+            "peace",
+            "serenity",
+            "motionless",
+            "unmoving",
+            "not moving a muscle",
+            "stock-still",
+            "immobile",
+            "inanimate",
+            "like a statue",
+            "as if turned to stone",
+            "rooted to the spot",
+            "transfixed",
+            "static",
+            "stationary",
+            "up to this time",
+            "up to the present time",
+            "until now",
+            "even now",
+            "yet"
+        ],
+        "sents": [
+            "The suprabatham from the temple loud speaker floated in the <b>still</b> air of the morning.",
+            "The beige leather furniture is <b>still</b> in place, standing on the blond-wood floor."
+        ]
+    },
+    {
+        "pron": [
+            "ˌhi(ə)rˈin",
+            "Ēkhānē"
+        ],
+        "bn": "এখানে",
+        "en": "herein",
+        "bn_syns": [
+            "ইহারে মধ্যে",
+            "এখানে",
+            "ইহার মধ্যে"
+        ],
+        "en_syns": [],
+        "sents": [
+            "Anyway, while we go to great lengths to strive for the accuracy of the information presented <b>herein</b> , mistakes will inevitably occur.",
+            "We know that <b>herein</b> lies the true source of the narrator's disconnect."
+        ]
+    },
+    {
+        "pron": [
+            "hi(ə)r",
+            "Ēkhānē"
+        ],
+        "bn": "এখানে",
+        "en": "here",
+        "bn_syns": [
+            "এইস্থানে",
+            "এখানে",
+            "এই স্থানে",
+            "অত্র"
+        ],
+        "en_syns": [
+            "hera",
+            "at/in this place",
+            "at/in this spot",
+            "at/in this location"
+        ],
+        "sents": [
+            "I may be wrong <b>here</b>",
+            "I feel like I might be coming down with a cold; one of my coworkers has a cold and is not <b>here</b> today."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēkhānē isṭa"
+        ],
+        "bn": "এখানে ইস্ট",
+        "en": "Far East",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "It does not surprise me that the <b>Far Eastern</b> countries came top.",
+            "The entire <b>Far Eastern</b> belt is a competitor destination."
+        ]
+    },
+    {
+        "pron": [
+            "ˈhirəˌbouts",
+            "Ēkhānē kōthātta"
+        ],
+        "bn": "এখানে কোথাত্ত",
+        "en": "hereabouts",
+        "bn_syns": [
+            "এখানে কোথাত্ত"
+        ],
+        "en_syns": [
+            "hereabout"
+        ],
+        "sents": [
+            "Built by William the Conqueror, it and 17,270 Yorkshire acres <b>hereabouts</b> are owned (in a constitutionally convoluted fashion) by the Duchy of Lancaster (the Queen).",
+            "Our half-mile by the water is the only accessible stretch <b>hereabouts</b> ."
+        ]
+    },
+    {
+        "pron": [
+            "iˈlevən",
+            "Ēgāra"
+        ],
+        "bn": "এগার",
+        "en": "eleven",
+        "bn_syns": [
+            "একাদশ",
+            "এগার"
+        ],
+        "en_syns": [
+            "football team"
+        ],
+        "sents": [
+            "Staff size ranges from one person devoting half time to the conference to the equivalent of <b>eleven</b> full-time staff members.",
+            "to the power of <b>eleven</b>"
+        ]
+    },
+    {
+        "pron": [
+            "əˈhed",
+            "Ēgiẏē"
+        ],
+        "bn": "এগিয়ে",
+        "en": "ahead",
+        "bn_syns": [
+            "সম্মুখে",
+            "পুরোবতীভাবে",
+            "অগ্রসর",
+            "অগ্রসার",
+            "অগ্রগামী",
+            "পুরোবতী",
+            "আগে",
+            "সামনে",
+            "সোজা সামনের দিকে",
+            "পূর্বে",
+            "এগিয়ে"
+        ],
+        "en_syns": [
+            "forward",
+            "toward the front",
+            "frontward",
+            "onward",
+            "along",
+            "leading"
+        ],
+        "sents": [
+            "we have to plan <b>ahead</b>",
+            "She spoke quietly, and her eyes darted back toward the road <b>ahead</b> ."
+        ]
+    },
+    {
+        "pron": [
+            "prō-,prəˈsēd",
+            "Ēgiẏē yāna"
+        ],
+        "bn": "এগিয়ে যান",
+        "en": "proceed",
+        "bn_syns": [
+            "অগ্রসর হত্তয়া",
+            "উত্পন্ন হত্তয়া",
+            "চলা",
+            "ক্রমাগত করিতে থাকা",
+            "নির্গত হত্তয়া",
+            "মোকদ্দমা চালান",
+            "আগান",
+            "এগন",
+            "আগুয়ান হত্তয়া",
+            "আগুসার হত্তয়া",
+            "বাড়া",
+            "অগ্রসর হওয়া",
+            "চলিতে থাকা",
+            "আরম্ভ করা",
+            "পুনরারম্ভ করা",
+            "বাহির হইয়া আশা"
+        ],
+        "en_syns": [
+            "begin",
+            "make a start",
+            "get going",
+            "move",
+            "set something in motion",
+            "take action",
+            "act",
+            "go on",
+            "go ahead",
+            "make progress",
+            "make headway"
+        ],
+        "sents": [
+            "This lawsuit, should it <b>proceed</b> , calls for close watching.",
+            "The legitimate search for assertive and disruptive methods can and should <b>proceed</b> , but this must not be confused with vandalism and violence."
+        ]
+    },
+    {
+        "pron": [
+            "ˈôlsō",
+            "Ēchāṛā'ō"
+        ],
+        "bn": "এছাড়াও",
+        "en": "also",
+        "bn_syns": [
+            "এবং",
+            "ত্ত",
+            "আরত্ত",
+            "অধিকন্তু",
+            "পর্যন্ত",
+            "অপিচ",
+            "আরো",
+            "এছাড়াও"
+        ],
+        "en_syns": [
+            "too",
+            "as well",
+            "besides",
+            "in addition",
+            "additionally",
+            "furthermore",
+            "further",
+            "moreover",
+            "into the bargain",
+            "on top (of that)",
+            "what's more",
+            "to boot",
+            "equally",
+            "and all",
+            "likewise",
+            "withal"
+        ],
+        "sents": [
+            "my cousin, <b>also</b> Seán, is younger",
+            "It makes an ideal gift and is <b>also</b> a great present for a child as it grows so quickly."
+        ]
+    },
+    {
+        "pron": [
+            "ˈazmə",
+            "Ējamā"
+        ],
+        "bn": "এজমা",
+        "en": "asthma",
+        "bn_syns": [
+            "অ্যাজমা",
+            "হাঁপানি রোগ",
+            "শ্বাসকষ্ট",
+            "এজমা",
+            "হাঁপানিরোগ",
+            "শ্বাস"
+        ],
+        "en_syns": [
+            "bronchial asthma",
+            "asthma attack"
+        ],
+        "sents": [
+            "Atopic eczema is the most common type of eczema and is linked with hay fever and <b>asthma</b> .",
+            "Our data may shed light on the role of diet in the allergy and <b>asthma</b> epidemic."
+        ]
+    },
+    {
+        "pron": [
+            "ˈājənsē",
+            "Ējēnsi"
+        ],
+        "bn": "এজেন্সি",
+        "en": "agency",
+        "bn_syns": [
+            "কর্তৃত্ব",
+            "প্রতিনিধিত্ব",
+            "দালালি",
+            "আড়তদারি",
+            "আড়ত",
+            "নিযুক্তকস্থান",
+            "পরিচালকের পদ",
+            "পরিচালকের কার্য",
+            "যন্ত্ররূপে কার্যসাধন",
+            "যন্ত্ররূপে প্রয়োগ",
+            "মাধ্যম"
+        ],
+        "en_syns": [
+            "business",
+            "organization",
+            "company",
+            "firm",
+            "office",
+            "bureau"
+        ],
+        "sents": [
+            "Bea is suggesting made-up names that sound like they could have been invented by a brand manager at an advertising <b>agency</b> .",
+            "Trafford council wants to shake up its home care service and bring in a private company or voluntary <b>agency</b> ."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ējēnsi"
+        ],
+        "bn": "এজেন্সি",
+        "en": "dealership",
+        "bn_syns": [
+            "এজেন্সি"
+        ],
+        "en_syns": [
+            "franchise"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˌet ˈal,ˌet ˈäl",
+            "Ēṭa āla."
+        ],
+        "bn": "এট আল.",
+        "en": "et al.",
+        "bn_syns": [],
+        "en_syns": [
+            "et alii"
+        ],
+        "sents": [
+            "Nonetheless, James Hansen <b>et al.</b> very much believe the goal is achievable if we act quickly and focus on all greenhouse gases, not just carbon dioxide.",
+            "Also, it goes beyond mere descriptions and includes process patterns based on the work by Wil van der Aalst <b>et al.</b>"
+        ]
+    },
+    {
+        "pron": [
+            "its",
+            "Ēṭā"
+        ],
+        "bn": "এটা",
+        "en": "it's",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "The standard that the orchestra is working at the moment is higher than <b>it's</b> ever been.",
+            "Really, <b>it's</b> as though people will write any old rubbish to see their name in print."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēṭā"
+        ],
+        "bn": "এটা",
+        "en": "it",
+        "bn_syns": [
+            "এটা",
+            "এটি",
+            "এই",
+            "ইহা",
+            "ইহাকে",
+            "এ",
+            "এতৎ",
+            "সে",
+            "তত্",
+            "উহা",
+            "ত্ত",
+            "তঁহি"
+        ],
+        "en_syns": [
+            "information technology"
+        ],
+        "sents": [
+            "stop <b>it</b>!",
+            "if <b>it</b> goes pear-shaped"
+        ]
+    },
+    {
+        "pron": [
+            "ˈitl",
+            "Ēṭā karaba"
+        ],
+        "bn": "এটা করব",
+        "en": "it'll",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "Mommy designed the state-of-the art plane from top to bottom, so <b>it'll</b> be a safe trip.",
+            "Sons and Daughters play at Glastonbury over the weekend - <b>it'll</b> be interesting to see how they do."
+        ]
+    },
+    {
+        "pron": [
+            "ˈitid",
+            "Ēṭā cā'i"
+        ],
+        "bn": "এটা চাই",
+        "en": "it'd",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "Otherwise <b>it'd</b> be the most embarrassing thing ever, you know.",
+            "It was as though <b>it'd</b> been written by someone other than Barbara."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēṭi'ēma"
+        ],
+        "bn": "এটিএম",
+        "en": "ATM",
+        "bn_syns": [
+            "এটিএठ"
+        ],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "SHərk",
+            "Ēṛā'iẏā calā"
+        ],
+        "bn": "এড়াইয়া চলা",
+        "en": "shirk",
+        "bn_syns": [
+            "এড়াইয়া চলা",
+            "পালানো",
+            "সরে পড়া"
+        ],
+        "en_syns": [
+            "evade",
+            "dodge",
+            "avoid",
+            "get out of",
+            "sidestep",
+            "shrink from",
+            "shun",
+            "skip",
+            "miss",
+            "neglect",
+            "duck (out of)",
+            "cop out of",
+            "cut"
+        ],
+        "sents": [
+            "Here Moses claims God is <b>shirking</b> responsibility for his people.",
+            "All through those weeks of killings the state and Central government kept on <b>shirking</b> their responsibilities."
+        ]
+    },
+    {
+        "pron": [
+            "əˈvoid",
+            "Ēṛātē"
+        ],
+        "bn": "এড়াতে",
+        "en": "avoid",
+        "bn_syns": [
+            "এড়ান",
+            "এড়িয়ে যাত্তয়া",
+            "পরিহার করিয়া চলা",
+            "কৌশলে পরিহার করা",
+            "পরাঙ্মুখ হত্তয়া",
+            "বেঁচে যাত্তয়া",
+            "দূরে থাকা",
+            "সরে যাত্তয়া",
+            "সরে পড়া",
+            "হঠিয়া যাত্তয়া",
+            "পরিত্যাগ করিয়া যাত্তয়া",
+            "অপবারণ করা",
+            "রহিত করা",
+            "ঠেলা",
+            "বাতিল করা",
+            "রদ করা",
+            "এড়ানো",
+            "পরিহার করা"
+        ],
+        "en_syns": [
+            "keep away from",
+            "stay away from",
+            "steer clear of",
+            "give a wide berth to",
+            "fight shy of"
+        ],
+        "sents": [
+            "he managed to <b>avoid</b> offending anyone",
+            "What is the best method for those who wish to <b>avoid</b> excessive sun exposure and dairy sources of vitamin D?"
+        ]
+    },
+    {
+        "pron": [
+            "ˈsəbtərˌfyo͞oj",
+            "Ēṛānara kauśala"
+        ],
+        "bn": "এড়ানর কৌশল",
+        "en": "subterfuge",
+        "bn_syns": [
+            "এড়ানর কৌশল"
+        ],
+        "en_syns": [
+            "trickery",
+            "intrigue",
+            "deviousness",
+            "deceit",
+            "deception",
+            "dishonesty",
+            "cheating",
+            "duplicity",
+            "guile",
+            "cunning",
+            "craftiness",
+            "chicanery",
+            "pretense",
+            "fraud",
+            "fraudulence"
+        ],
+        "sents": [
+            "Fuzzyheaded thinking suggesting that it is possible to manipulate the Northern state by <b>subterfuge</b> should also be discarded since it is not possible to transform an existing state apparatus.",
+            "Fighting subterfuge with <b>subterfuge</b> did not appeal to me."
+        ]
+    },
+    {
+        "pron": [
+            "əˈdaptər",
+            "Ēḍāpaṭāra"
+        ],
+        "bn": "এডাপটার",
+        "en": "adapter",
+        "bn_syns": [
+            "এডাপটার"
+        ],
+        "en_syns": [
+            "transcriber",
+            "arranger"
+        ],
+        "sents": [
+            "His present-day position of film <b>adapter</b> of Italian films into English stems from this early period.",
+            "There are many traps that Shakespeare film <b>adaptors</b> can fall into - too noisy, too simplified, too much emoting, acting that fails to convey the words with meaning."
+        ]
+    },
+    {
+        "pron": [
+            "ˈhi(ə)rˌbī,ˌhi(ə)rˈbī",
+            "Ētaddbārā"
+        ],
+        "bn": "এতদ্দ্বারা",
+        "en": "hereby",
+        "bn_syns": [
+            "এতদ্দ্বারা"
+        ],
+        "en_syns": [
+            "herewith"
+        ],
+        "sents": [
+            "I <b>hereby</b> declare that I consent to all of the following terms and conditions.",
+            "Fans of Sandover are <b>hereby</b> challenged to show how parts two and three don't fit these patterns."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēna bi ē"
+        ],
+        "bn": "এন বি এ",
+        "en": "NBA",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "an <b>NBA</b> game"
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēna'i"
+        ],
+        "bn": "এনই",
+        "en": "NE",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "four miles <b>NE</b> of Birmingham",
+            "<b>NE</b> Japan"
+        ]
+    },
+    {
+        "pron": [
+            "rev",
+            "Ēnajinēra pāra"
+        ],
+        "bn": "এনজিনের পার",
+        "en": "rev",
+        "bn_syns": [
+            "আবর্তিত করা",
+            "এনজিনের পার",
+            "এনজিনের আবর্তন"
+        ],
+        "en_syns": [
+            "revolutions per minute",
+            "rev up"
+        ],
+        "sents": [
+            "It responds to high <b>revs</b> and comes alive as the red rev counter homes in on the 8,000 rpm redline.",
+            "We were all nearly asleep when I heard the <b>rev</b> of a motor, the squeal of wheels."
+        ]
+    },
+    {
+        "pron": [
+            "ˈglīdər",
+            "Ēnajirnahīna bimāna"
+        ],
+        "bn": "এনজির্নহীন বিমান",
+        "en": "glider",
+        "bn_syns": [
+            "এনজির্নহীন বিমান"
+        ],
+        "en_syns": [
+            "sailplane"
+        ],
+        "sents": [
+            "I used my monkey bar technique and had no problem controlling the <b>glider</b> .",
+            "He sat back down on the porch <b>glider</b> , and continued with his widdle work."
+        ]
+    },
+    {
+        "pron": [
+            "enˈtītlmənt",
+            "Ēnaṭā'iṭēlamēnṭēra"
+        ],
+        "bn": "এনটাইটেলমেন্টের",
+        "en": "entitlement",
+        "bn_syns": [],
+        "en_syns": [
+            "right",
+            "prerogative",
+            "claim",
+            "permission",
+            "dispensation",
+            "privilege"
+        ],
+        "sents": [
+            "full <b>entitlement</b> to fees and maintenance should be offered",
+            "That long weekend can feel like a week in the sun, at a cost of two days out of an allotted annual holiday <b>entitlement</b> ."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēnasi - 17"
+        ],
+        "bn": "এনসি - 17",
+        "en": "NC-17",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "-ˈärtikə,antˈärktikə",
+            "Ēnṭārkaṭikā"
+        ],
+        "bn": "এন্টার্কটিকা",
+        "en": "Antarctica",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "the climate of <b>Antarctica</b>"
+        ]
+    },
+    {
+        "pron": [
+            "anˈtēk",
+            "Ēnṭikēra"
+        ],
+        "bn": "এন্টিকের",
+        "en": "antique",
+        "bn_syns": [
+            "বহুকেলে",
+            "পুরাকালের",
+            "বহুকালের",
+            "প্রাচীন",
+            "পুরোনো",
+            "সেকেল",
+            "দীর্ঘকাল ধরে বর্তমান"
+        ],
+        "en_syns": [
+            "antiquate",
+            "collector's item",
+            "period piece",
+            "antiquity",
+            "heirloom",
+            "old",
+            "antiquarian",
+            "collectable",
+            "old-fashioned"
+        ],
+        "sents": [
+            "You can <b>antique</b> the other way around, but remember a light base coat needs a darker glaze, whereas a dark base coat should use a light glaze.",
+            "Yet, it may be significant that it's a pitcher who holds a couple of batting records for <b>antique</b> players that should by all rights belong to a batter."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēnṭēnā"
+        ],
+        "bn": "এন্টেনা",
+        "en": "antennae",
+        "bn_syns": [
+            "শুঙ্গ",
+            "শুঁয়া",
+            "পুষ্পরুহ",
+            "আকাশ-তার",
+            "আল"
+        ],
+        "en_syns": [
+            "transmitting aerial",
+            "aerial"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "",
+            "Ēnṭri - starēra"
+        ],
+        "bn": "এন্ট্রি - স্তরের",
+        "en": "entry-level",
+        "bn_syns": [],
+        "en_syns": [
+            "introductory",
+            "elementary",
+            "basic",
+            "first",
+            "starter",
+            "junior"
+        ],
+        "sents": [
+            "There were also big wage gains in retailing and construction, two industries that hire a lot of <b>entry-level</b> workers.",
+            "The result - an <b>entry-level</b> car that feels like a luxury car."
+        ]
+    },
+    {
+        "pron": [
+            "əˈpointmənt",
+            "Ēpaẏēnṭamēnṭa"
+        ],
+        "bn": "এপয়েন্টমেন্ট",
+        "en": "appointment",
+        "bn_syns": [
+            "সাক্ষাৎ",
+            "স্থিরীকরণ",
+            "নির্ধারণ",
+            "নিয়োগ",
+            "এপয়েন্টমেন্ট",
+            "পদ",
+            "চাকুরি",
+            "চাকরি",
+            "বরণ",
+            "বিনিয়োগ",
+            "নিযুক্তি",
+            "অভিষেক",
+            "ভর্তি",
+            "চাকরী",
+            "সাক্ষাত্ ইত্যাদির জন্য পূর্বনির্ধারিত ব্যবস্থা",
+            "নির্দিষ্ট কাজ"
+        ],
+        "en_syns": [
+            "meeting",
+            "engagement",
+            "interview",
+            "arrangement",
+            "consultation",
+            "session",
+            "date",
+            "rendezvous",
+            "assignation",
+            "commitment",
+            "fixture"
+        ],
+        "sents": [
+            "I have made an <b>appointment</b> with the director at the mental health trust to talk through what she is looking for and see how it could fit with my career plans.",
+            "Students who made an <b>appointment</b> are asked to go back and do so again."
+        ]
+    },
+    {
+        "pron": [
+            "-əˌper-,äˌperiˈtēf",
+            "Ēpāriṭipha"
+        ],
+        "bn": "এপারিটিফ",
+        "en": "aperitif",
+        "bn_syns": [
+            "ক্ষুধা-উদ্রেককারী পানীয়",
+            "এপারিটিফ",
+            "ক্ষুধা-উদ্রেককর পানীয়",
+            "ক্ষুধা-উদ্রেককর মদ্যবিশেষ"
+        ],
+        "en_syns": [],
+        "sents": [
+            "We settled back in the covered patio area and had a cocktail as an <b>aperitif</b> , while perusing the menu.",
+            "It is a very dry wine best drunk as an <b>aperitif</b> , and served slightly chilled."
+        ]
+    },
+    {
+        "pron": [
+            "",
+            "Ēpisakōpāla cārca"
+        ],
+        "bn": "এপিসকোপাল চার্চ",
+        "en": "Episcopal Church",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈapiˌtīzər",
+            "Ēpēṭā'ijāra"
+        ],
+        "bn": "এপেটাইজার",
+        "en": "appetizer",
+        "bn_syns": [
+            "ক্ষুধা-উদ্রেককারী খাদ্য বা পানীয়",
+            "রুচিকর খাদ্য বা পানীয়",
+            "এপেটাইজার",
+            "ক্ষুধাবর্ধক বস্তু",
+            "ক্ষুধা উদ্রেককর বস্তু"
+        ],
+        "en_syns": [
+            "starter",
+            "first course",
+            "hors d'oeuvre",
+            "antipasto",
+            "amuse-gueule",
+            "amuse-bouche"
+        ],
+        "sents": [
+            "They have some more unusual items on their menu, fish curries and even chaat <b>appetizers</b> like bhel puri.",
+            "Along with a rotating selection of <b>appetizers</b> and main courses, every day has its signature dish."
+        ]
+    },
+    {
+        "pron": [
+            "ˈāprəl",
+            "Ēprila"
+        ],
+        "bn": "এপ্রিল",
+        "en": "April",
+        "bn_syns": [
+            "এপ্রি্",
+            "ইংরেজি সনের চতুর্থ মাস"
+        ],
+        "en_syns": [],
+        "sents": [
+            "In <b>April</b> police were called to calm residents at the home following a row over the right to smoke.",
+            "The best time to do this job is between <b>April</b> and June, immediately after flowering."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēprila phula' dibasa"
+        ],
+        "bn": "এপ্রিল ফুল ' দিবস",
+        "en": "April Fools' Day",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Ēpha'ēma"
+        ],
+        "bn": "এফএম",
+        "en": "FM",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "an <b>FM</b> radio station",
+            "an <b>FM</b> radio station"
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēphabi'ā'i"
+        ],
+        "bn": "এফবিআই",
+        "en": "FBI",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "and",
+            "Ēbaṁ"
+        ],
+        "bn": "এবং",
+        "en": "and",
+        "bn_syns": [
+            "অত:পর",
+            "অতএব",
+            "এবং",
+            "ত্ত",
+            "আরত্ত",
+            "অধিকন্তু",
+            "তথা"
+        ],
+        "en_syns": [
+            "together with",
+            "along with",
+            "with",
+            "as well as",
+            "in addition to",
+            "also",
+            "besides",
+            "furthermore",
+            "plus"
+        ],
+        "sents": [
+            "<b>and</b> how's himself?",
+            "getting better <b>and</b> better"
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēbisi ēra"
+        ],
+        "bn": "এবিসি এর",
+        "en": "ABC's",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Ēbhi"
+        ],
+        "bn": "এভি",
+        "en": "AV",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Ēmatābasthāẏa"
+        ],
+        "bn": "এমতাবস্থায়",
+        "en": "joyously",
+        "bn_syns": [],
+        "en_syns": [
+            "gleefully",
+            "joyfully"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "səCH",
+            "Ēmana"
+        ],
+        "bn": "এমন",
+        "en": "such",
+        "bn_syns": [
+            "অমনি",
+            "উহা",
+            "অনুরূপ",
+            "একই জতীয়",
+            "কিরূপ",
+            "এমন",
+            "তাদৃশ",
+            "এইসা",
+            "অমুক",
+            "হেন",
+            "তেমন",
+            "এইরুপ",
+            "অনুরুপ",
+            "ঐ জাতীয়",
+            "একই জাতীয়",
+            "এবংবিধ",
+            "এত বড়",
+            "পূর্বোল্লিখিত"
+        ],
+        "en_syns": [],
+        "sents": [
+            "Inside the closet she was astounded to find a beautiful dress of <b>such</b> fabric she had never seen.",
+            "At no previous stage this season have Celtic had <b>such</b> a lead in the championship race."
+        ]
+    },
+    {
+        "pron": [
+            "ˈēvən",
+            "Ēmana ki"
+        ],
+        "bn": "এমন কি",
+        "en": "even",
+        "bn_syns": [
+            "সমতল",
+            "মসৃণ",
+            "একই তলে অবস্থিত",
+            "সমভার",
+            "সমান",
+            "সম",
+            "সঠিক",
+            "যথাযথ",
+            "যুগ্ম",
+            "জোড়",
+            "চোস্ত",
+            "সায়াহ্ন",
+            "সন্ধ্যা",
+            "সমান করা",
+            "সমান হত্তয়া",
+            "সমতল করা",
+            "সমতল হত্তয়া",
+            "এমন কি",
+            "সঠিকভাবে",
+            "যথাযথভাবে",
+            "ঠিকঠিক",
+            "প্রায়",
+            "বাস্তবিকই",
+            "তবু",
+            "তথাপি",
+            "পর্যন্ত",
+            "তথা",
+            "চাই কি"
+        ],
+        "en_syns": [
+            "flat",
+            "smooth",
+            "uniform",
+            "featureless",
+            "unbroken",
+            "undamaged",
+            "level",
+            "plane",
+            "eve",
+            "evening",
+            "eventide",
+            "flatten",
+            "level (off/out)",
+            "smooth (off/out)",
+            "make uniform",
+            "make regular",
+            "still",
+            "yet",
+            "more",
+            "all the more"
+        ],
+        "sents": [
+            "you can <b>even</b> enter online",
+            "And this could indeed have <b>even</b> worse consequences than leaving the oppressed to rot."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēmanaṭā kakhanō"
+        ],
+        "bn": "এমনটা কখনো",
+        "en": "irritably",
+        "bn_syns": [],
+        "en_syns": [
+            "petulantly",
+            "testily",
+            "pettishly"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Ēmani"
+        ],
+        "bn": "এমনি",
+        "en": "spontaneously",
+        "bn_syns": [
+            "আপনা থেকে",
+            "এমনি",
+            "আপসে",
+            "অনায়াসে",
+            "স্বত",
+            "এমনি-এমনি"
+        ],
+        "en_syns": [
+            "without being asked",
+            "of one's own accord",
+            "voluntarily",
+            "on impulse",
+            "impulsively",
+            "on the spur of the moment",
+            "extempore",
+            "extemporaneously",
+            "off the cuff"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "-ˈzēmə,ˌemfəˈsēmə",
+            "Ēmaphisēmā"
+        ],
+        "bn": "এমফিসেমা",
+        "en": "emphysema",
+        "bn_syns": [],
+        "en_syns": [
+            "pulmonary emphysema"
+        ],
+        "sents": [
+            "Visit any ward full of lung cancer and <b>emphysema</b> patients fighting for breath.",
+            "It is enough to make one irritable and <b>emphysemic</b> ."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēmabasaḍa"
+        ],
+        "bn": "এমবসড",
+        "en": "embossed",
+        "bn_syns": [
+            "বুটা দ্বারা অঙ্কিত করা",
+            "অলঙ্কারদ্বারা সজ্জিত করা",
+            "বুটি দিয়া খচিত করা",
+            "ক্ষোদিত করা",
+            "খোদাই করা"
+        ],
+        "en_syns": [
+            "raised",
+            "brocaded",
+            "boss",
+            "stamp"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈemē",
+            "Ēmi"
+        ],
+        "bn": "এমি",
+        "en": "Emmy",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "These writers, who should have even more <b>Emmys</b> than they do, can make anything hilarious.",
+            "Take, for example, the shows that are getting accolades and <b>Emmys</b> ."
+        ]
+    },
+    {
+        "pron": [
+            "iˈmerətəs",
+            "Ēmēriṭāsa"
+        ],
+        "bn": "এমেরিটাস",
+        "en": "emeritus",
+        "bn_syns": [
+            "সম্মান ও উপাধিসহ অবসরপ্রাপ্ত"
+        ],
+        "en_syns": [],
+        "sents": [
+            "He is professor <b>emeritus</b> of English at the University of Houston.",
+            "He is a professor <b>emeritus</b> of physics at Stanford University in Palo Alto, California."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēẏāra kanḍiśanāra"
+        ],
+        "bn": "এয়ার কন্ডিশনার",
+        "en": "air conditioning",
+        "bn_syns": [
+            "বাতানুকূলতা",
+            "এয়ার কন্ডিশনার"
+        ],
+        "en_syns": [
+            "air conditioner"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Ēẏāra ṭrāphika kanṭrōlāra"
+        ],
+        "bn": "এয়ার ট্রাফিক কন্ট্রোলার",
+        "en": "air traffic controller",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈe(ə)rˌlīn",
+            "Ēẏāralā'ina"
+        ],
+        "bn": "এয়ারলাইন",
+        "en": "airline",
+        "bn_syns": [
+            "বিমান-চলাচলের পথ",
+            "নিয়মিত বিমান চলাচল",
+            "বিমান পরিবহণব্যবস্থা"
+        ],
+        "en_syns": [
+            "air hose"
+        ],
+        "sents": [
+            "The most conspicuous of a variety of both air and electrical problems has been that gun #1 (the largest gun, nearest the ship) <b>air lines</b> have continued to fail.",
+            "With the worker finally clear from our train and the <b>air line</b> now charged up, we finally got underway at 7:07 PM, having missed our scheduled 7:00 PM departure."
+        ]
+    },
+    {
+        "pron": [
+            "ˈhiT͟Hərˌto͞o,ˌhiT͟Hərˈto͞o",
+            "Ēyābaṯ"
+        ],
+        "bn": "এযাবৎ",
+        "en": "hitherto",
+        "bn_syns": [
+            "এযাবৎ",
+            "এই সময় পর্যন্ত",
+            "এই স্থান পর্যন্ত"
+        ],
+        "en_syns": [
+            "previously",
+            "formerly",
+            "earlier",
+            "before",
+            "beforehand",
+            "so far",
+            "thus far",
+            "to date",
+            "as yet",
+            "until now",
+            "until then",
+            "till now",
+            "till then",
+            "up to now",
+            "up to then",
+            "heretofore"
+        ],
+        "sents": [
+            "Was it a smoke screen for some secret <b>hitherto</b> undisclosed strategy?",
+            "Perhaps it is a <b>hitherto</b> uncovered area of Swinney's policy revolution."
+        ]
+    },
+    {
+        "pron": [
+            "əv",
+            "Ēra"
+        ],
+        "bn": "এর",
+        "en": "of",
+        "bn_syns": [
+            "মধ্যে",
+            "সম্পর্কে",
+            "হইতে",
+            "সম্পর্কান্বিত",
+            "সম্পর্কিত",
+            "বিষয়ে",
+            "কিছুর দ্বারা তৈয়ারি",
+            "আক্রান্ত হইয়া",
+            "কিছুর দ্বারা গঠিত",
+            "পূর্ণ",
+            "এর",
+            "দূরত্ব বা সময়ের হিসেবে ব্যবধান"
+        ],
+        "en_syns": [],
+        "sents": [
+            "Department <b>of</b> Finance",
+            "a salary <b>of</b> fifty thousand euro"
+        ]
+    },
+    {
+        "pron": [
+            "its",
+            "Ēra"
+        ],
+        "bn": "এর",
+        "en": "its",
+        "bn_syns": [
+            "এর",
+            "উহার",
+            "ইহার",
+            "তাহার"
+        ],
+        "en_syns": [
+            "information technology"
+        ],
+        "sents": [
+            "The ideal is for a lamb to have milk from <b>its</b> mother as soon as possible after birth.",
+            "The label on the back suggests that to drink it at <b>its</b> best you should heat it up and add a slice of orange."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēra kāraṇa"
+        ],
+        "bn": "এর কারণ",
+        "en": "because of",
+        "bn_syns": [
+            "দরূন",
+            "কারণে",
+            "জন্যে",
+            "পিছন থেকে",
+            "আড়াল থেকে",
+            "অভাবে",
+            "বশত",
+            "জন্য",
+            "ফলে"
+        ],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈvēə,ˈvīə",
+            "Ēra mādhyamē"
+        ],
+        "bn": "এর মাধ্যমে",
+        "en": "via",
+        "bn_syns": [
+            "পথে",
+            "সাহায্যে",
+            "পথ দিয়া",
+            "হইয়া"
+        ],
+        "en_syns": [
+            "through",
+            "by way of",
+            "by means of",
+            "with the aid of",
+            "by virtue of"
+        ],
+        "sents": [
+            "Anti-racism announcements were also made <b>via</b> the club's public address system on match days.",
+            "Brown judges success by statistics showing how much cash has been taken from high earners to the poor <b>via</b> tax credits."
+        ]
+    },
+    {
+        "pron": [
+            "",
+            "Ēriẏā kōḍa"
+        ],
+        "bn": "এরিয়া কোড",
+        "en": "area code",
+        "bn_syns": [
+            "এরিয়া কোড"
+        ],
+        "en_syns": [],
+        "sents": [
+            "The <b>area code</b> of Shanghai is 21 and the country code of China is 86",
+            "But many people keep calling Mr Turner's number, which has a 912 <b>area code</b> ."
+        ]
+    },
+    {
+        "pron": [
+            "e(ə)ˈrō-,əˈrōbiks",
+            "Ērōbikasa"
+        ],
+        "bn": "এরোবিকস",
+        "en": "aerobics",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "When I return home I want to open up a gymnasium to teach <b>aerobics</b> for people who want to lose weight.",
+            "By joining a club or <b>aerobics</b> class etc you can meet so many people."
+        ]
+    },
+    {
+        "pron": [
+            "ˌintrəˈmyo͞orəl",
+            "Ērōbiksa"
+        ],
+        "bn": "এরোবিক্স",
+        "en": "intramural",
+        "bn_syns": [
+            "কোনো রাষ্ট্র, গোষ্ঠী, সংগঠন বা বিদ্যায়তনের মধ্যে অবস্থিত"
+        ],
+        "en_syns": [],
+        "sents": [
+            "It is unclear how many students would actually take advantage of increased athletic opportunities if such were offered, but <b>intramural</b> program participation may shed some light on the subject.",
+            "Students debated both in their classrooms and in <b>intramural</b> competitions."
+        ]
+    },
+    {
+        "pron": [
+            "-ˌsäl,ˈerəˌsôl",
+            "Ērōsala"
+        ],
+        "bn": "এরোসল",
+        "en": "aerosol",
+        "bn_syns": [],
+        "en_syns": [
+            "spray can",
+            "aerosol can"
+        ],
+        "sents": [
+            "Now take an <b>aerosol</b> can of hair spray lacquer and wave it a few times over the sheet.",
+            "It is also providing critical observations of atmospheric particles, called <b>aerosols</b> , over the ice sheets and the rest of the world."
+        ]
+    },
+    {
+        "pron": [
+            "-ˌhäl,ˈalkəˌhôl",
+            "Ēlakōhala"
+        ],
+        "bn": "এলকোহল",
+        "en": "alcohol",
+        "bn_syns": [
+            "এলকোহল",
+            "সুরাসার",
+            "মদ্য",
+            "সুরা",
+            "বিশুদ্ধ সুরাসার",
+            "কোহল",
+            "অরিষ্ট",
+            "চষক"
+        ],
+        "en_syns": [
+            "liquor",
+            "intoxicating drink/beverage(s)",
+            "strong drink",
+            "alcoholic drink/beverage(s)",
+            "drink",
+            "spirits",
+            "booze",
+            "hooch",
+            "the hard stuff",
+            "firewater",
+            "rotgut",
+            "moonshine",
+            "white lightning",
+            "grog",
+            "the demon rum",
+            "the bottle",
+            "the sauce",
+            "ethyl alcohol",
+            "ethanol"
+        ],
+        "sents": [
+            "They also plan to prosecute if bar staff continue to serve <b>alcohol</b> to people who are drunk.",
+            "The new bill would make it an offence to serve <b>alcohol</b> to people who are drunk."
+        ]
+    },
+    {
+        "pron": [
+            "ˈterəˌtôrē",
+            "Ēlākā"
+        ],
+        "bn": "এলাকা",
+        "en": "territory",
+        "bn_syns": [
+            "এলাকা",
+            "রাজ্য",
+            "রাজ্যাংশ",
+            "অঁচল",
+            "কর্মক্ষেত্র",
+            "অঞ্চল",
+            "রাজ্যক্ষেত্র",
+            "ক্ষেত্র",
+            "স্থান"
+        ],
+        "en_syns": [
+            "area",
+            "area of land",
+            "region",
+            "enclave",
+            "country",
+            "state",
+            "land",
+            "colony",
+            "dominion",
+            "protectorate",
+            "fief",
+            "dependency",
+            "possession",
+            "jurisdiction",
+            "holding",
+            "section",
+            "turf"
+        ],
+        "sents": [
+            "The male defends a <b>territory</b> that may house a small harem of females who nest on the ground in the dense cover of alfalfa, wheat, or hay.",
+            "Whenever his Wanderers team were awarded a free-kick in Leicester <b>territory</b> he placed two players in what can only be described as wildly offside positions inside the penalty area."
+        ]
+    },
+    {
+        "pron": [
+            "ˈrējən",
+            "Ēlākā"
+        ],
+        "bn": "এলাকা",
+        "en": "region",
+        "bn_syns": [
+            "নির্দিষ্ট বৈশিষ্ট্যযুক্ত অঞ্চল",
+            "প্রশাসনিক এলাকা",
+            "এলাকা",
+            "স্থান",
+            "দেশাংশ",
+            "প্রদেশ",
+            "অংশ",
+            "গের্দ",
+            "অঁচল",
+            "তট",
+            "মণ্ডল",
+            "খণ্ড",
+            "তলা"
+        ],
+        "en_syns": [
+            "district",
+            "province",
+            "territory",
+            "division",
+            "area",
+            "section",
+            "sector",
+            "zone",
+            "belt",
+            "part",
+            "quarter",
+            "parts"
+        ],
+        "sents": [
+            "The <b>region</b> nearly always suffers a period of water stress in the hot, dry spring.",
+            "his work takes needlework into the <b>region</b> of folk art"
+        ]
+    },
+    {
+        "pron": [
+            "ˈalərjē",
+            "Ēlārji"
+        ],
+        "bn": "এলার্জি",
+        "en": "allergy",
+        "bn_syns": [
+            "বিরূপতা",
+            "বিতৃষ্ণা",
+            "বিশেষ বিশেষ খাদ্য, পতঙ্গদংশন, ফুলের পরাগ ইত্যাদির প্রতি অত্যধিক অনুভূতিপ্রবণতা বা স্পর্শকাতরতা",
+            "অতিপ্রতিক্রিয়া",
+            "প্রতিক্রিয়াপ্রবণতা",
+            "বিবাগ",
+            "এলার্জি",
+            "বিরাগ"
+        ],
+        "en_syns": [
+            "hypersensitivity",
+            "sensitivity",
+            "allergic reaction",
+            "anaphylaxis"
+        ],
+        "sents": [
+            "Contact with even small amounts of some substances can cause skin <b>allergies</b> .",
+            "Kids who get eczema often have family members with hay fever, asthma, or other <b>allergies</b> ."
+        ]
+    },
+    {
+        "pron": [
+            "",
+            "Ēlārma ghaṛi"
+        ],
+        "bn": "এলার্ম ঘড়ি",
+        "en": "alarm clock",
+        "bn_syns": [
+            "ঘুম ভাঙ্গাইবার জন্য শব্দকর ঘড়ি",
+            "অ্যালার্মঘড়ি"
+        ],
+        "en_syns": [
+            "alarm"
+        ],
+        "sents": [
+            "As the <b>alarm clock</b> had also woken her, I decided that I should share the details of my dream with her.",
+            "Go to bed every night at the same time and wake up without an <b>alarm clock</b> at the same time every morning?"
+        ]
+    },
+    {
+        "pron": [
+            "",
+            "Ēlōmēlō"
+        ],
+        "bn": "এলোমেলো",
+        "en": "heavy-handed",
+        "bn_syns": [
+            "এলোমেলো",
+            "জবড়জং",
+            "অত্যাচারপূর্ণ",
+            "জবড়জঙ্গ"
+        ],
+        "en_syns": [
+            "clumsy",
+            "awkward",
+            "maladroit",
+            "unhandy",
+            "inept",
+            "unskillful",
+            "ham-handed",
+            "ham-fisted",
+            "all thumbs"
+        ],
+        "sents": [
+            "It is narrative driven, without being <b>heavy-handed</b> or overly literal.",
+            "Pub landlord Paul Morris criticised police for being <b>heavy-handed</b> and has disputed that any drugs were found."
+        ]
+    },
+    {
+        "pron": [
+            "ˌhapˈhazərd",
+            "Ēlōmēlō"
+        ],
+        "bn": "এলোমেলো",
+        "en": "haphazard",
+        "bn_syns": [
+            "দৈবক্রমে ঘটিত",
+            "আকস্মিক",
+            "এলোমেলো",
+            "দৈবাৎ",
+            "এলোমেলোভাবে",
+            "দৈব",
+            "এলোমেলো অবস্থা"
+        ],
+        "en_syns": [
+            "random",
+            "unplanned",
+            "unsystematic",
+            "unmethodical",
+            "disorganized",
+            "disorderly",
+            "irregular",
+            "indiscriminate",
+            "chaotic",
+            "hit-and-miss",
+            "arbitrary",
+            "aimless",
+            "careless",
+            "casual",
+            "slapdash",
+            "slipshod",
+            "chance",
+            "accidental",
+            "higgledy-piggledy",
+            "haphazardly"
+        ],
+        "sents": [
+            "First, Aristotle and his followers practise a <b>haphazard</b> , uncritical collection of data.",
+            "Either the Carlow side had not shook off the celebrations of the Millennium or they approached the game in a <b>haphazard</b> fashion."
+        ]
+    },
+    {
+        "pron": [
+            "ˈrandəm",
+            "Ēlōmēlō"
+        ],
+        "bn": "এলোমেলো",
+        "en": "random",
+        "bn_syns": [
+            "এলোমেলো",
+            "এলোথেলো",
+            "এলোপাতাড়ি",
+            "এলোধাবাড়ি",
+            "এলোমেলো অবস্থা",
+            "এলোমেলো ধরন",
+            "এলোমেলোভাবে",
+            "যদৃচ্ছভাবে",
+            "যথেচ্ছভাবে",
+            "কোনো উদ্দেশ্য ছাড়া",
+            "লক্ষ্যহীন"
+        ],
+        "en_syns": [
+            "unsystematic",
+            "unmethodical",
+            "arbitrary",
+            "unplanned",
+            "undirected",
+            "casual",
+            "indiscriminate",
+            "nonspecific",
+            "haphazard",
+            "stray",
+            "erratic",
+            "chance",
+            "accidental"
+        ],
+        "sents": [
+            "York stone flags, laid in <b>random</b> sizes, were chosen for the paving to give a sense of quality and scale.",
+            "Disappointingly, the survey reveals that <b>random</b> violence is increasing."
+        ]
+    },
+    {
+        "pron": [
+            "prəˈmiskyo͞oəs",
+            "Ēlōmēlō"
+        ],
+        "bn": "এলোমেলো",
+        "en": "promiscuous",
+        "bn_syns": [
+            "বিশৃঙ্খল",
+            "পাঁচমিশালী",
+            "এলোমেলো",
+            "বাছবিচারহীন"
+        ],
+        "en_syns": [
+            "licentious",
+            "sexually indiscriminate",
+            "wanton",
+            "immoral",
+            "fast",
+            "easy",
+            "swinging",
+            "sluttish",
+            "whorish",
+            "bed-hopping",
+            "loose",
+            "fallen"
+        ],
+        "sents": [
+            "Instead, he chose to focus his question on the client's change to not being <b>promiscuous</b> .",
+            "As the American houses have seduced corporate Britain, so companies have become more <b>promiscuous</b> in their search for intelligence."
+        ]
+    },
+    {
+        "pron": [
+            "ˈrambəl",
+            "Ēlōmēlō ālōcanā"
+        ],
+        "bn": "এলোমেলো আলোচনা",
+        "en": "ramble",
+        "bn_syns": [
+            "অনির্দিষ্ট",
+            "উদ্দেশ্যহীন",
+            "কোনো নির্দিষ্ট গন্তব্যস্থল ছাড়াই ভ্রমণ করা",
+            "ইতস্তত ঘুরে বেড়ানো",
+            "ভ্রমণ",
+            "বিচরণ",
+            "উদ্ভ্রান্ত চিন্তা",
+            "অসংলগ্নতা",
+            "এলোমেলো আলোচনা",
+            "ঘুরাঘুরি করা",
+            "ঘুরিয়া বেড়ান",
+            "ভ্রমণ করা",
+            "উদ্ভ্রান্তভাবে চলা",
+            "অসংলগ্ন হত্তয়া",
+            "লতাইয়া যাত্তয়া",
+            "ঘুরিয়া বেড়া",
+            "ঘুরা",
+            "এলোমেলো আলোচনা করা",
+            "ঘোরাঘুরি করা"
+        ],
+        "en_syns": [
+            "walk",
+            "hike",
+            "trek",
+            "wander",
+            "stroll",
+            "saunter",
+            "amble",
+            "roam",
+            "traipse",
+            "jaunt",
+            "promenade",
+            "mosey",
+            "tootle",
+            "perambulation",
+            "tramp",
+            "backpack",
+            "range",
+            "rove",
+            "perambulate"
+        ],
+        "sents": [
+            "A <b>ramble</b> through Waterford's scenic countryside, mountains and coastline will never be the same again once you have read a new book about 15 of the county's great walks.",
+            "As we walked, the gunman <b>rambled</b> about his hatred of doctors."
+        ]
+    },
+    {
+        "pron": [
+            "ˈfəmbəl",
+            "Ēlōmēlō kathā balā"
+        ],
+        "bn": "এলোমেলো কথা বলা",
+        "en": "fumble",
+        "bn_syns": [
+            "লটরপটর করা",
+            "অস্বচ্ছন্দ বোধ করা",
+            "অপটুভাবে",
+            "হাতড়ানো",
+            "অসহায়ভাবে",
+            "খাবি খাত্তয়া",
+            "তালগোল পাকান",
+            "এলোমেলো কথা বলা"
+        ],
+        "en_syns": [
+            "slip",
+            "mistake",
+            "error",
+            "gaffe",
+            "slip-up",
+            "boo-boo",
+            "grope",
+            "fish",
+            "search blindly",
+            "scrabble around"
+        ],
+        "sents": [
+            "In two preseason games, he returned a <b>fumble</b> for a touchdown (before a penalty nullified the play), and he blocked a punt for a safety.",
+            "They tell Suggs that he better pitch the ball back if he recovers a <b>fumble</b> or intercepts a pass, but he doesn't seem to listen."
+        ]
+    },
+    {
+        "pron": [
+            "ˈtouzəl",
+            "Ēlōmēlō karā"
+        ],
+        "bn": "এলোমেলো করা",
+        "en": "tousle",
+        "bn_syns": [
+            "বিশৃঙ্খল করা",
+            "এলোমেলো করা",
+            "উষ্কখুষ্ক",
+            "বিশৃঙ্খলায় ফেলা"
+        ],
+        "en_syns": [
+            "tangle",
+            "dishevel"
+        ],
+        "sents": [
+            "Her hair was <b>tousled</b> from what looked like a rough night of sleep.",
+            "Slightly jumpy, Michael peered into a mirror and <b>tousled</b> his hair, constantly shifting his weight."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēlōmēlōbhābē"
+        ],
+        "bn": "এলোমেলোভাবে",
+        "en": "randomly",
+        "bn_syns": [
+            "যথেচ্ছভাবে",
+            "যদৃচ্ছভাবে"
+        ],
+        "en_syns": [
+            "at random",
+            "indiscriminately",
+            "willy-nilly",
+            "arbitrarily",
+            "every which way",
+            "haphazardly"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈāZHə",
+            "Ēśiẏā"
+        ],
+        "bn": "এশিয়া",
+        "en": "Asia",
+        "bn_syns": [
+            "এশিয়া",
+            "জম্বু"
+        ],
+        "en_syns": [],
+        "sents": [
+            "they're going to <b>Asia</b>",
+            "she lives in <b>Asia</b>"
+        ]
+    },
+    {
+        "pron": [
+            "ˈāZHən",
+            "Ēśiẏāna"
+        ],
+        "bn": "এশিয়ান",
+        "en": "Asian",
+        "bn_syns": [
+            "এশিয়া-মহাদেশীয়",
+            "এশিয়াবাসী"
+        ],
+        "en_syns": [],
+        "sents": [
+            "she's an <b>Asian</b>",
+            "One, which greatly appealed to him, was the opportunity to cast <b>Asians</b> in the Asian roles."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēśiẏāna - āmērikāna"
+        ],
+        "bn": "এশিয়ান - আমেরিকান",
+        "en": "Asian-American",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "he's <b>Asian-American</b>"
+        ]
+    },
+    {
+        "pron": [
+            "sik",
+            "Ēsa'ā'isi"
+        ],
+        "bn": "এসআইসি",
+        "en": "sic",
+        "bn_syns": [
+            "যদ্দৃষ্টং"
+        ],
+        "en_syns": [
+            "set"
+        ],
+        "sents": [
+            "But,’ he added, ‘if you keep calling me all these fruity nicknames, I'm going to <b>sic</b> Luci on you.’",
+            "As usual, I had to <b>sic</b> Timothy on her to get her to tell us anything, much less support her position."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēsa'ō'ēsa"
+        ],
+        "bn": "এসওএস",
+        "en": "SOS",
+        "bn_syns": [
+            "আন্তর্জাতিক বিপদসংকেত"
+        ],
+        "en_syns": [],
+        "sents": [
+            "here is an <b>SOS</b> message for Mr. Arthur Brown about his brother, who is dangerously ill",
+            "I'd thought of phoning a desperate <b>SOS</b> to James"
+        ]
+    },
+    {
+        "pron": [
+            "ˈasp(ə)rin",
+            "Ēsapirina"
+        ],
+        "bn": "এসপিরিন",
+        "en": "aspirin",
+        "bn_syns": [],
+        "en_syns": [
+            "acetylsalicylic acid"
+        ],
+        "sents": [
+            "If you're bowling and feel a headache coming on, take two <b>aspirins</b> and stay away from splits.",
+            "Some patients' choices between using <b>aspirin</b> or a statin may depend on cost as well as their perceived risks of adverse effects."
+        ]
+    },
+    {
+        "pron": [
+            "eˈspresō",
+            "Ēsaprēsō"
+        ],
+        "bn": "এসপ্রেসো",
+        "en": "espresso",
+        "bn_syns": [
+            "এসপ্রেসো"
+        ],
+        "en_syns": [],
+        "sents": [
+            "So, obviously, I will not be buying any coffee from that particular <b>espresso</b> bar in future.",
+            "Embarrassed now, I ordered two <b>espressos</b> from the girl at the counter."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Ēsi"
+        ],
+        "bn": "এসি",
+        "en": "AC",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "əˈsemblēmən",
+            "Ēsēmbalira"
+        ],
+        "bn": "এসেম্বলির",
+        "en": "assemblyman",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "There was a New York State <b>assemblyman</b> , a North Dakota rancher, an eminent historian, a biographer, a big-game hunter, a conservationist, a civil service reformer, a professional politician, and a police commissioner.",
+            "By age 35, he was a state <b>assemblyman</b> , occasionally evading security alarms to eat peanut-butter-and-jelly sandwiches with his daughter on the roof of the state Capitol."
+        ]
+    },
+    {
+        "pron": [
+            "ˈeskəˌmō",
+            "Ēskimō"
+        ],
+        "bn": "এস্কিমো",
+        "en": "Eskimo",
+        "bn_syns": [
+            "এস্কিমো",
+            "উত্তর আমেরিকার এবং গ্রীনল্যান্ডের জাতিবিশেষের লোক বা তাহাদের ভাষা"
+        ],
+        "en_syns": [],
+        "sents": [
+            "In fact, there aren't all that many <b>Eskimo</b> words for snow.",
+            "The whole <b>Eskimo</b> (Yup'ik-Inuit) family is only about two thousand years old."
+        ]
+    },
+    {
+        "pron": [
+            "ˈiglo͞o",
+            "Ēskimōsadēra gumbajākāra kuṭira"
+        ],
+        "bn": "এস্কিমোসদের গুম্বজাকার কুটির",
+        "en": "igloo",
+        "bn_syns": [
+            "এস্কিমোসদের গুম্বজাকার কুটির",
+            "ইগলু",
+            "এস্কিমোদের ঘর"
+        ],
+        "en_syns": [
+            "iglu"
+        ],
+        "sents": [
+            "In addition, unexpected storms have left hunting parties stranded, and harder packed snow due to recent wind changes makes it more difficult to build <b>igloos</b> for shelter.",
+            "Inuit <b>igloos</b> in the Arctic and felt-covered yurts on the Mongolian steppes, for example, have been used for centuries."
+        ]
+    }
+]

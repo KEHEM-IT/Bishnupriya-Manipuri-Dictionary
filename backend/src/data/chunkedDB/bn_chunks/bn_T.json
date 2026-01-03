@@ -1,0 +1,841 @@
+[
+    {
+        "pron": [
+            null,
+            "Tablespoonful"
+        ],
+        "bn": "tablespoonful",
+        "en": "tablespoonful",
+        "bn_syns": [],
+        "en_syns": [
+            "tablespoon"
+        ],
+        "sents": [
+            "a <b>tablespoonful</b> of sugar"
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Tacitly"
+        ],
+        "bn": "tacitly",
+        "en": "tacitly",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Tactically"
+        ],
+        "bn": "tactically",
+        "en": "tactically",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈtālˌgāt",
+            "Tailgate"
+        ],
+        "bn": "tailgate",
+        "en": "tailgate",
+        "bn_syns": [],
+        "en_syns": [
+            "tailboard"
+        ],
+        "sents": [
+            "drivers who will <b>tailgate</b> at 90 mph",
+            "Victor stood and opened the <b>tailgate</b> of his truck."
+        ]
+    },
+    {
+        "pron": [
+            "ˈtālˌpīp",
+            "Tailpipe"
+        ],
+        "bn": "tailpipe",
+        "en": "tailpipe",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "Normally CO flows from the engine through the <b>tailpipe</b> to the rear of the car where it is dispersed into the atmosphere.",
+            "Similarly, by lowering the air pollution from smokestacks and <b>tailpipes</b> , carbon taxes also reduce respiratory illnesses such as asthma and emphysema, and health care costs - a triple dividend."
+        ]
+    },
+    {
+        "pron": [
+            "ˈtālˌspin",
+            "Tailspin"
+        ],
+        "bn": "tailspin",
+        "en": "tailspin",
+        "bn_syns": [
+            "টেইলস্পিন"
+        ],
+        "en_syns": [
+            "nosedive",
+            "dive",
+            "plummet",
+            "plunge",
+            "fall",
+            "rapid descent",
+            "sharp decline"
+        ],
+        "sents": [
+            "They don't pull the joystick until the <b>tailspin</b> is imminent.",
+            "An apparently minor problem, such as a flurry of downgrades, could quickly engulf the financial system by sending markets into a <b>tailspin</b> , wiping out hedge funds, and dragging down banks that lent them money."
+        ]
+    },
+    {
+        "pron": [
+            "ˈtaNGē",
+            "Tangy"
+        ],
+        "bn": "tangy",
+        "en": "tangy",
+        "bn_syns": [],
+        "en_syns": [
+            "zesty",
+            "sharp",
+            "acid",
+            "acidic",
+            "tart",
+            "sour",
+            "bitter",
+            "piquant",
+            "spicy",
+            "tasty",
+            "pungent"
+        ],
+        "sents": [
+            "My salad was a taste explosion, with the <b>tangy</b> blue cheese, rich ham and tasty peppers fighting for attention.",
+            "Master chefs have their hands full preparing a variety of delectable dishes with zany flavours and <b>tangy</b> tastes."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Tantalizing"
+        ],
+        "bn": "tantalizing",
+        "en": "tantalizing",
+        "bn_syns": [
+            "বিশ্বাস জাগাইয়া প্রতারণা করা"
+        ],
+        "en_syns": [
+            "tempting",
+            "tease",
+            "torment",
+            "torture",
+            "bait",
+            "tempt",
+            "entice",
+            "lure",
+            "allure",
+            "beguile",
+            "excite",
+            "fascinate",
+            "titillate",
+            "intrigue"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Tantalizingly"
+        ],
+        "bn": "tantalizingly",
+        "en": "tantalizingly",
+        "bn_syns": [],
+        "en_syns": [
+            "invitingly"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Tapered"
+        ],
+        "bn": "tapered",
+        "en": "tapered",
+        "bn_syns": [],
+        "en_syns": [
+            "narrow",
+            "thin (out)",
+            "come to a point",
+            "attenuate",
+            "narrowing",
+            "tapering"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Taps"
+        ],
+        "bn": "taps",
+        "en": "taps",
+        "bn_syns": [],
+        "en_syns": [
+            "lights-out"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Tastefully"
+        ],
+        "bn": "tastefully",
+        "en": "tastefully",
+        "bn_syns": [],
+        "en_syns": [
+            "tastily"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Tautly"
+        ],
+        "bn": "tautly",
+        "en": "tautly",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Tbsp."
+        ],
+        "bn": "tbsp .",
+        "en": "tbsp.",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Telecommuter"
+        ],
+        "bn": "telecommuter",
+        "en": "telecommuter",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Telecommuting"
+        ],
+        "bn": "telecommuting",
+        "en": "telecommuting",
+        "bn_syns": [],
+        "en_syns": [
+            "teleworking"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈteləˌTHän",
+            "Telethon"
+        ],
+        "bn": "telethon",
+        "en": "telethon",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "This is more like an incredibly long concert as opposed to the traditional <b>telethons</b> of my youth.",
+            "Earlier this month, Johnny was among a galaxy of stars who manned the phones at a televised tsunami <b>telethon</b> to raise money for victims of the Asian disaster.."
+        ]
+    },
+    {
+        "pron": [
+            "ˈtendəˌrīz",
+            "Tenderize"
+        ],
+        "bn": "tenderize",
+        "en": "tenderize",
+        "bn_syns": [],
+        "en_syns": [
+            "tender",
+            "tenderise"
+        ],
+        "sents": [
+            "I like my birds hung overnight (hanging <b>tenderises</b> the meat).",
+            "If you've selected pork, beef, chicken or turkey, it's important to <b>tenderize</b> it."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Tersely"
+        ],
+        "bn": "tersely",
+        "en": "tersely",
+        "bn_syns": [],
+        "en_syns": [
+            "telegraphically"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Thickly"
+        ],
+        "bn": "thickly",
+        "en": "thickly",
+        "bn_syns": [],
+        "en_syns": [
+            "thick"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈTHiNGəməˌjig",
+            "Thingamajig"
+        ],
+        "bn": "thingamajig",
+        "en": "thingamajig",
+        "bn_syns": [],
+        "en_syns": [
+            "gizmo",
+            "doohickey",
+            "whatsis",
+            "gubbins",
+            "gismo",
+            "widget",
+            "thingamabob",
+            "whatchamacallit",
+            "gimmick",
+            "thingummy",
+            "thingumabob",
+            "doodad",
+            "doojigger",
+            "thingumajig"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Thirstily"
+        ],
+        "bn": "thirstily",
+        "en": "thirstily",
+        "bn_syns": [],
+        "en_syns": [
+            "eagerly"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Thoughtfully"
+        ],
+        "bn": "thoughtfully",
+        "en": "thoughtfully",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Thoughtlessly"
+        ],
+        "bn": "thoughtlessly",
+        "en": "thoughtlessly",
+        "bn_syns": [],
+        "en_syns": [
+            "unthinking",
+            "unthinkingly"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Throve"
+        ],
+        "bn": "throve",
+        "en": "throve",
+        "bn_syns": [
+            "উন্নতিলাভ করা",
+            "প্রতিষ্ঠা লাভ করা",
+            "সাফল্যলাভ করা",
+            "সমৃদ্ধ হত্তয়া",
+            "শ্রীবৃদ্ধিলাভ করা",
+            "সতেজ হইয়া উঠা",
+            "মাথা চাড়া দেত্তয়া"
+        ],
+        "en_syns": [
+            "flourish",
+            "prosper",
+            "burgeon",
+            "bloom",
+            "blossom",
+            "mushroom",
+            "do well",
+            "advance",
+            "succeed",
+            "boom"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈtīˌbrākər",
+            "Tiebreaker"
+        ],
+        "bn": "tiebreaker",
+        "en": "tiebreaker",
+        "bn_syns": [],
+        "en_syns": [
+            "rubber match",
+            "deciding game",
+            "deciding round",
+            "playoff",
+            "game-decider",
+            "overtime",
+            "OT",
+            "sudden death",
+            "sudden-death overtime"
+        ],
+        "sents": [
+            "Their victory over the Patriots gives them the <b>tiebreaker</b> .",
+            "Larsson threatened to bring off a king-size upset when he took the match into a fifth and deciding set after taking a fourth-set <b>tiebreaker</b> ."
+        ]
+    },
+    {
+        "pron": [
+            "ˈtītˈfistid",
+            "Tightfisted"
+        ],
+        "bn": "tightfisted",
+        "en": "tightfisted",
+        "bn_syns": [],
+        "en_syns": [
+            "cheap",
+            "miserly",
+            "parsimonious",
+            "niggardly",
+            "penny-pinching",
+            "cheeseparing",
+            "Scroogelike",
+            "close",
+            "stingy",
+            "mingy",
+            "tight",
+            "mean",
+            "penurious"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Timidly"
+        ],
+        "bn": "timidly",
+        "en": "timidly",
+        "bn_syns": [],
+        "en_syns": [
+            "bashfully",
+            "shyly"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Tinged"
+        ],
+        "bn": "tinged",
+        "en": "tinged",
+        "bn_syns": [],
+        "en_syns": [
+            "tint",
+            "color",
+            "stain",
+            "shade",
+            "wash"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈtōstē",
+            "Toasty"
+        ],
+        "bn": "toasty",
+        "en": "toasty",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "Although she was <b>toasty</b> and warm under blankets and cotton sheets, she was still shivering fairly violently.",
+            "A winter chill prevailed outside, but with a comfy seat and a <b>toasty</b> heater in the carriage, I was all but sawing logs in the next few minutes."
+        ]
+    },
+    {
+        "pron": [
+            "ˈtōfo͞o",
+            "Tofu"
+        ],
+        "bn": "tofu",
+        "en": "tofu",
+        "bn_syns": [],
+        "en_syns": [
+            "bean curd"
+        ],
+        "sents": [
+            "Hakka people are good at making tofu dishes, since <b>tofu</b> for quite a long time was the main source of their protein.",
+            "Well, we met on Thursday and ate a feast of sashimi, <b>tofu</b> , salad and they ate meaty stuff."
+        ]
+    },
+    {
+        "pron": [
+            "təˈgeT͟Hərnəs",
+            "Togetherness"
+        ],
+        "bn": "togetherness",
+        "en": "togetherness",
+        "bn_syns": [],
+        "en_syns": [
+            "cohesion",
+            "cohesiveness",
+            "harmony",
+            "fellowship",
+            "camaraderie",
+            "close bond(s)"
+        ],
+        "sents": [
+            "The real point of these rituals, I think, is <b>togetherness</b> - a unity of common hopes and dreams ushering in a new year.",
+            "Sure, it was short notice, but I have a special place in my heart for family <b>togetherness</b> on the holidays."
+        ]
+    },
+    {
+        "pron": [
+            "tôrˈtē(y)ə",
+            "Tortilla"
+        ],
+        "bn": "tortilla",
+        "en": "tortilla",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "Practically every country in the world has its own version: the Mexicans have the <b>tortilla</b> , the Scottish, the oatcakes, the Indian, the chapatti and the Ethiopian the injera.",
+            "Corn <b>tortillas</b> , particularly in Mexican supermarkets, come in a variety of sizes."
+        ]
+    },
+    {
+        "pron": [
+            "ˈtəCHˌdoun",
+            "Touchdown"
+        ],
+        "bn": "touchdown",
+        "en": "touchdown",
+        "bn_syns": [
+            "ভূমিতে অবতরণ করা"
+        ],
+        "en_syns": [],
+        "sents": [
+            "The pilot gets into a small bit of leftover wake turbulence, the rental aircraft wobbles just before <b>touchdown</b> and a wingtip catches the runway.",
+            "He chipped on to force a <b>touchdown</b> behind the line and from the five metre scrum Ilkley were rewarded with another penalty."
+        ]
+    },
+    {
+        "pron": [
+            "ˈtrampəˌlēn",
+            "Trampoline"
+        ],
+        "bn": "trampoline",
+        "en": "trampoline",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "They headed down through his back yard, pausing momentarily for Matt to show off yet again, by doing a back flip off the <b>trampoline</b> .",
+            "At the moment a number of schemes are running in various schools in the area and include sports as diverse as tae kwon do, judo, soccer, hockey, basketball, <b>trampolining</b> , keep fit and athletics."
+        ]
+    },
+    {
+        "pron": [
+            "tran(s)ˈsekSHo͞oəl",
+            "Transsexual"
+        ],
+        "bn": "transsexual",
+        "en": "transsexual",
+        "bn_syns": [],
+        "en_syns": [
+            "hermaphrodite",
+            "androgyne",
+            "epicene",
+            "intersex",
+            "transgendered person",
+            "gender-bender",
+            "trannie"
+        ],
+        "sents": [
+            "A <b>transsexual</b> , born in Ramanathapuram, she had a troubled childhood.",
+            "In some cases, this means transvestism, in other cases <b>transsexualism</b> , and sometimes, pushing the boundaries ever further, hitherto uncharted areas in between."
+        ]
+    },
+    {
+        "pron": [
+            "transˈvesˌtīt,tranz-",
+            "Transvestite"
+        ],
+        "bn": "transvestite",
+        "en": "transvestite",
+        "bn_syns": [],
+        "en_syns": [
+            "drag queen",
+            "cross-dresser",
+            "female impersonator",
+            "gender-bender",
+            "trannie"
+        ],
+        "sents": [
+            "Secondly, how do you think a female/wife would behave if she knows that her husband is <b>transvestist</b> ?",
+            "‘I got the idea from seeing really bad <b>transvestites</b> in parks,’ he explains."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Treatable"
+        ],
+        "bn": "treatable",
+        "en": "treatable",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Trimmings"
+        ],
+        "bn": "trimmings",
+        "en": "trimmings",
+        "bn_syns": [
+            "ছাঁটাই",
+            "তা"
+        ],
+        "en_syns": [
+            "accompaniments",
+            "extras",
+            "frills",
+            "fixings",
+            "accessories",
+            "accoutrements",
+            "trappings",
+            "paraphernalia",
+            "garnishing",
+            "garnish"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Triumphantly"
+        ],
+        "bn": "triumphantly",
+        "en": "triumphantly",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈtrivēəˌlīz",
+            "Trivialize"
+        ],
+        "bn": "trivialize",
+        "en": "trivialize",
+        "bn_syns": [],
+        "en_syns": [
+            "treat as unimportant",
+            "minimize",
+            "play down",
+            "underestimate",
+            "make light of",
+            "treat lightly",
+            "dismiss",
+            "underplay",
+            "downplay",
+            "diminish",
+            "belittle",
+            "pooh-pooh"
+        ],
+        "sents": [
+            "It is a sadly inverted and <b>trivialized</b> world in which all that is unimportant becomes important and all that is important becomes unimportant.",
+            "Both the book and the album punch home how easily we shrug off tragedy when it doesn't happen in our backyard, or worse yet, how we make it a form of entertainment, a fit subject for humour or <b>trivialisation</b> ."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Trod"
+        ],
+        "bn": "trod",
+        "en": "trod",
+        "bn_syns": [
+            "নাচা",
+            "পদস্থাপন করা",
+            "পদদলিত করা",
+            "ধ্বংস করা"
+        ],
+        "en_syns": [
+            "walk",
+            "step",
+            "stride",
+            "pace",
+            "go",
+            "march",
+            "tramp",
+            "plod",
+            "thump",
+            "stomp",
+            "trudge"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "trämp,trômp",
+            "Tromp"
+        ],
+        "bn": "tromp",
+        "en": "tromp",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "You <b>tromp</b> through the deep snow in the darkness, until you're on the edge of the woods.",
+            "Adam had always shown much more proclivity for curling up in his father's lap near a warm fire and listening to a good story than for <b>tromping</b> through snowdrifts."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Trumped āpa"
+        ],
+        "bn": "trumped আপ",
+        "en": "trumped-up",
+        "bn_syns": [],
+        "en_syns": [
+            "bogus",
+            "spurious",
+            "specious",
+            "false",
+            "fabricated",
+            "invented",
+            "manufactured",
+            "contrived",
+            "made-up",
+            "falsified",
+            "fake",
+            "factitious",
+            "phony",
+            "cooked-up"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "",
+            "Tugboat"
+        ],
+        "bn": "tugboat",
+        "en": "tugboat",
+        "bn_syns": [],
+        "en_syns": [
+            "towboat",
+            "tower",
+            "tug"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "tərd",
+            "Turd"
+        ],
+        "bn": "turd",
+        "en": "turd",
+        "bn_syns": [],
+        "en_syns": [
+            "stool",
+            "dung",
+            "scat",
+            "dropping",
+            "excrement",
+            "feces",
+            "fecal matter",
+            "poop",
+            "poo",
+            "doo-doo"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈtərnəˌround",
+            "Turnaround"
+        ],
+        "bn": "turnaround",
+        "en": "turnaround",
+        "bn_syns": [],
+        "en_syns": [
+            "reversal",
+            "swing about",
+            "change",
+            "sea change",
+            "turnabout",
+            "volte-face",
+            "about-face",
+            "one-eighty"
+        ],
+        "sents": [
+            "a seven-day <b>turnaround</b>",
+            "In a dramatic <b>turnaround</b> , Joseph is transformed from jailed prisoner to prime minister of Egypt in a matter of hours."
+        ]
+    },
+    {
+        "pron": [
+            "ˈtīpˌkast",
+            "Typecast"
+        ],
+        "bn": "typecast",
+        "en": "typecast",
+        "bn_syns": [],
+        "en_syns": [
+            "label",
+            "tag",
+            "characterize",
+            "style",
+            "stereotype",
+            "pigeonhole"
+        ],
+        "sents": [
+            "Yet Ferdinand's art extends beyond the ‘gangstas' that to a degree have <b>typecast</b> him as an artist.",
+            "That proved to be a wise decision - Get Smart only lasted four seasons in the United States, despite a slew of Emmys, and <b>typecast</b> all of the actors, including Adams."
+        ]
+    }
+]

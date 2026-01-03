@@ -1,0 +1,139 @@
+[
+    {
+        "pron": [
+            null,
+            "Cacti"
+        ],
+        "bn": "cacti",
+        "en": "cacti",
+        "bn_syns": [
+            "ফণীমনসা",
+            "নাগফণী"
+        ],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "kāj",
+            "Caged"
+        ],
+        "bn": "caged",
+        "en": "caged",
+        "bn_syns": [
+            "রূদ্ধ করা",
+            "পিঁজরাবদ্ধ করা",
+            "কয়েদ করা"
+        ],
+        "en_syns": [
+            "confine",
+            "shut in/up",
+            "pen",
+            "coop up",
+            "fence in",
+            "immure",
+            "impound",
+            "corral"
+        ],
+        "sents": [
+            "She has the air of a bird which doesn't want to be <b>caged</b> or tamed.",
+            "David's family were at Manchester Crown Court when the man was <b>caged</b> for life after admitting murder."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Callously"
+        ],
+        "bn": "callously",
+        "en": "callously",
+        "bn_syns": [],
+        "en_syns": [
+            "unfeelingly"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈkamˌkôrdər",
+            "Camcorder"
+        ],
+        "bn": "camcorder",
+        "en": "camcorder",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "Digital cameras and <b>camcorders</b> are well catered for, with installation wizards and simple editing software.",
+            "They hope a battery of digital cameras and <b>camcorders</b> will capture evidence of the paranormal."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Canopied"
+        ],
+        "bn": "canopied",
+        "en": "canopied",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Carjacker"
+        ],
+        "bn": "carjacker",
+        "en": "carjacker",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈkärˌjakiNG",
+            "Carjacking"
+        ],
+        "bn": "carjacking",
+        "en": "carjacking",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "The only people that should have the luxury to enjoy simulating murders, <b>carjackings</b> , and the killings of police officers are kids.",
+            "The threat of <b>carjackings</b> and kidnappings keeps people locked inside their houses."
+        ]
+    },
+    {
+        "pron": [
+            "ˈkarəˌsel,ˌkarəˈsel",
+            "Carousel"
+        ],
+        "bn": "carousel",
+        "en": "carousel",
+        "bn_syns": [],
+        "en_syns": [
+            "carrousel"
+        ],
+        "sents": [
+            "The <b>carousel</b> was just a few feet from the wide front door of the store, which people traveling through the mall passed by all day long.",
+            "Nick soon becomes a multi-millionaire, purchasing everything from his own golf course to a <b>carousel</b> ."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Carpeted"
+        ],
+        "bn": "carpeted",
+        "en": "carpeted",
+        "bn_syns": [],
+        "en_syns": [
+            "cover",
+            "coat",
+            "overlay",
+            "overspread",
+            "blanket"
+        ],
+        "sents": []
+    }
+]

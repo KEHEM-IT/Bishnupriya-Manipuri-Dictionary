@@ -1,0 +1,386 @@
+[
+    {
+        "pron": [
+            null,
+            "Naively"
+        ],
+        "bn": "naively",
+        "en": "naively",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Nasally"
+        ],
+        "bn": "nasally",
+        "en": "nasally",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈnastēnis",
+            "Nastiness"
+        ],
+        "bn": "nastiness",
+        "en": "nastiness",
+        "bn_syns": [],
+        "en_syns": [
+            "unpleasantness",
+            "disagreeableness",
+            "offensiveness",
+            "vileness",
+            "foulness"
+        ],
+        "sents": [
+            "the <b>nastiness</b> of the campaign",
+            "the <b>nastiness</b> of the campaign"
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Naughtily"
+        ],
+        "bn": "naughtily",
+        "en": "naughtily",
+        "bn_syns": [],
+        "en_syns": [
+            "mischievously",
+            "badly"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Nauseated"
+        ],
+        "bn": "nauseated",
+        "en": "nauseated",
+        "bn_syns": [
+            "ঘৃণা করা",
+            "বিরক্তি বোধ করা",
+            "বমনেচ্ছা বোধ করা"
+        ],
+        "en_syns": [
+            "sickish",
+            "nauseous",
+            "sick",
+            "queasy",
+            "churn up",
+            "sicken",
+            "revolt",
+            "disgust"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Neg."
+        ],
+        "bn": "neg .",
+        "en": "neg.",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Negligently"
+        ],
+        "bn": "negligently",
+        "en": "negligently",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Nerdy"
+        ],
+        "bn": "nerdy",
+        "en": "nerdy",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Nervously"
+        ],
+        "bn": "nervously",
+        "en": "nervously",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈn(y)o͞olēˌwed",
+            "Newlywed"
+        ],
+        "bn": "newlywed",
+        "en": "newlywed",
+        "bn_syns": [
+            "সদ্যবিবাহিত",
+            "নতুনভাবে",
+            "নতুন করে"
+        ],
+        "en_syns": [
+            "honeymooner"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈnītˌgoun",
+            "Nightgown"
+        ],
+        "bn": "nightgown",
+        "en": "nightgown",
+        "bn_syns": [
+            "রাতে পরিধেয় আলখিল্লা",
+            "মেয়েদের পোষাক"
+        ],
+        "en_syns": [
+            "nightie",
+            "night-robe",
+            "nightdress",
+            "gown"
+        ],
+        "sents": [
+            "Jessica nodded and Jennie went into her own room, coming back with a loose <b>nightgown</b> and clothes for tomorrow.",
+            "She was wearing a white floor-length sleeveless <b>nightgown</b> ."
+        ]
+    },
+    {
+        "pron": [
+            "ˈnimblē",
+            "Nimbly"
+        ],
+        "bn": "nimbly",
+        "en": "nimbly",
+        "bn_syns": [],
+        "en_syns": [
+            "agilely"
+        ],
+        "sents": [
+            "the monkey leapt <b>nimbly</b> from rock to rock",
+            "the monkey leapt <b>nimbly</b> from rock to rock"
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Nonchalantly"
+        ],
+        "bn": "nonchalantly",
+        "en": "nonchalantly",
+        "bn_syns": [],
+        "en_syns": [
+            "casually"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˌnänkəˈmitl",
+            "Noncommittal"
+        ],
+        "bn": "noncommittal",
+        "en": "noncommittal",
+        "bn_syns": [],
+        "en_syns": [
+            "evasive",
+            "equivocal",
+            "guarded",
+            "circumspect",
+            "reserved",
+            "discreet",
+            "uncommunicative",
+            "tactful",
+            "diplomatic",
+            "vague",
+            "cagey"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Noncommittally"
+        ],
+        "bn": "noncommittally",
+        "en": "noncommittally",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "nänˈde(ə)rē",
+            "Nondairy"
+        ],
+        "bn": "nondairy",
+        "en": "nondairy",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˌnändəˌnäməˈnāSHənəl",
+            "Nondenominational"
+        ],
+        "bn": "nondenominational",
+        "en": "nondenominational",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˌnänēˈvent",
+            "Nonevent"
+        ],
+        "bn": "nonevent",
+        "en": "nonevent",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˈnänˈfat",
+            "Nonfat"
+        ],
+        "bn": "nonfat",
+        "en": "nonfat",
+        "bn_syns": [],
+        "en_syns": [
+            "fatless",
+            "fat-free"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˌnänintərˈvenCHən",
+            "Nonintervention"
+        ],
+        "bn": "nonintervention",
+        "en": "nonintervention",
+        "bn_syns": [],
+        "en_syns": [
+            "laissez-faire",
+            "nonparticipation",
+            "noninterference",
+            "inaction",
+            "passivity",
+            "neutrality",
+            "live and let live"
+        ],
+        "sents": [
+            "One answer appeals to the traditional American foreign policy of <b>nonintervention</b> , best encapsulated in Washington's Farewell Address.",
+            "Because President Eisenhower followed a policy of <b>nonintervention</b> on desegregation, the judges were less likely to act."
+        ]
+    },
+    {
+        "pron": [
+            "ˌnänprəˌlifəˈrāSHən",
+            "Nonproliferation"
+        ],
+        "bn": "nonproliferation",
+        "en": "nonproliferation",
+        "bn_syns": [],
+        "en_syns": [
+            "non-proliferation"
+        ],
+        "sents": [
+            "the members will continue to pursue <b>nonproliferation</b> and threat reduction projects globally",
+            "a nuclear <b>nonproliferation</b> agreement"
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "Nonrefundable"
+        ],
+        "bn": "nonrefundable",
+        "en": "nonrefundable",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "ˌnänriˈn(y)o͞oəbəl",
+            "Nonrenewable"
+        ],
+        "bn": "nonrenewable",
+        "en": "nonrenewable",
+        "bn_syns": [],
+        "en_syns": [
+            "unrenewable"
+        ],
+        "sents": [
+            "These hidden gardens, protected by a strong street-facing facade, are oases for the office workers, producing a tempered microclimate while minimizing use of <b>nonrenewable</b> energy in very hot climates.",
+            "However, our primary source of energy - oil - is <b>nonrenewable</b> and exhaustible."
+        ]
+    },
+    {
+        "pron": [
+            "ˌnänˈsmōkər",
+            "Nonsmoker"
+        ],
+        "bn": "nonsmoker",
+        "en": "nonsmoker",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Nonsmoking"
+        ],
+        "bn": "nonsmoking",
+        "en": "nonsmoking",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    },
+    {
+        "pron": [
+            "nänˈvərbəl",
+            "Nonverbal"
+        ],
+        "bn": "nonverbal",
+        "en": "nonverbal",
+        "bn_syns": [],
+        "en_syns": [
+            "gestural"
+        ],
+        "sents": []
+    },
+    {
+        "pron": [
+            null,
+            "Nostalgically"
+        ],
+        "bn": "nostalgically",
+        "en": "nostalgically",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": []
+    }
+]

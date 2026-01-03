@@ -1,0 +1,98 @@
+[
+    {
+        "pron": [
+            null,
+            "- Āchē haẏēchē"
+        ],
+        "bn": "- আছে হয়েছে",
+        "en": "has-been",
+        "bn_syns": [],
+        "en_syns": [
+            "back-number"
+        ],
+        "sents": [
+            "a political <b>has-been</b>",
+            "a <b>has-been</b> film star"
+        ]
+    },
+    {
+        "pron": [
+            "",
+            "- Khōlā śēṣa"
+        ],
+        "bn": "- খোলা শেষ",
+        "en": "open-ended",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "These helped further to encourage <b>open-ended</b> arms competition and limited the search for areas of mutual co-operation.",
+            "The use of <b>open-ended</b> questions gave specific information on what the students were getting from the text."
+        ]
+    },
+    {
+        "pron": [
+            "",
+            "- Gabhīra upabiṣṭa"
+        ],
+        "bn": "- গভীর উপবিষ্ট",
+        "en": "deep-seated",
+        "bn_syns": [
+            "গভীরে অবস্থিত"
+        ],
+        "en_syns": [
+            "planted",
+            "implanted",
+            "deep-rooted",
+            "ingrained"
+        ],
+        "sents": [
+            "It is clearly a job which involves people, often with <b>deep-seated</b> problems, emotional issues and where the stakes can be high.",
+            "Directors, like authors, are often driven by <b>deep-seated</b> motives."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "- Cimṭi āghāta"
+        ],
+        "bn": "- চিম্টি আঘাত",
+        "en": "pinch-hit",
+        "bn_syns": [],
+        "en_syns": [],
+        "sents": [
+            "In a game against Baltimore last week, Manuel <b>pinch-hit</b> for Anderson after the Orioles brought in a lefthander.",
+            "The streak ended on Aug. 14, when a Phoenix <b>pinch-hitter</b> walked on four pitches."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "- Narama sēd'dha"
+        ],
+        "bn": "- নরম সেদ্ধ",
+        "en": "soft-boiled",
+        "bn_syns": [
+            "নরম সিদ্ধ"
+        ],
+        "en_syns": [
+            "softhearted"
+        ],
+        "sents": [
+            "I'd like an order for two, please, one <b>soft-boiled</b> egg for two, a half order of buttered toast.",
+            "The next day, Maxence <b>soft-boiled</b> the eggs (eight minutes, as per the lady's instructions), while I slivered one of the truffles thinly."
+        ]
+    },
+    {
+        "pron": [
+            null,
+            "- Nithara śukanō"
+        ],
+        "bn": "- নিথর শুকনো",
+        "en": "freeze-dried",
+        "bn_syns": [],
+        "en_syns": [
+            "lyophilized"
+        ],
+        "sents": []
+    }
+]
