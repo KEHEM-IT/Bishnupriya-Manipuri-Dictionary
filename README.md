@@ -1,147 +1,304 @@
-# Installation Steps for Updated Dictionary
+# 📚 Dictionary Application
 
-## 🔄 Update Frontend
+A modern, feature-rich dictionary web application built with Vue 3, TypeScript, and Tailwind CSS. Search words, listen to pronunciations, and explore definitions in a beautiful dark/light theme interface.
 
-### Step 1: Install Vue Router
+## ✨ Features
 
-Open terminal in **frontend** folder:
+- 🔍 **Smart Search** - Search words with instant results
+- 🎤 **Voice Search** - Speak your search query using Web Speech API
+- 🌓 **Dark/Light Theme** - Toggle between themes with auto-save preference
+- 🔊 **Audio Pronunciation** - Listen to word pronunciations
+- 📱 **Responsive Design** - Works seamlessly on mobile and desktop
+- 🌐 **Multi-language Support** - Filter by language (English/Bangla)
+- 🎯 **Individual Word Pages** - Dedicated pages with full word details
+- ⚡ **Fast & Modern** - Built with Vite and Vue 3 Composition API
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **Vue 3** - Progressive JavaScript framework
+- **TypeScript** - Type-safe development
+- **Vue Router 4** - Client-side routing
+- **Tailwind CSS** - Utility-first CSS framework
+- **Vite** - Next-generation build tool
+- **Web Speech API** - Voice recognition
+
+### Backend
+- API integration ready
+- RESTful architecture
+
+## 📋 Prerequisites
+
+Before installation, ensure you have:
+- **Node.js** (v16 or higher)
+- **npm** or **yarn** package manager
+- Modern web browser (Chrome/Edge recommended for voice features)
+
+## 🚀 Installation
+
+### Step 1: Install Dependencies
+
+Navigate to the **frontend** folder and install required packages:
+
+```bash
+cd frontend
+npm install
+```
+
+### Step 2: Install Vue Router
 
 ```bash
 npm install vue-router@4
 ```
 
-### Step 2: Create New Folders and Files
+### Step 3: Create Project Structure
 
-Create these new folders and files in **frontend/src/**:
+Create the necessary folders:
 
 ```bash
 # Create folders
-mkdir src/router
-mkdir src/views
-
-# Create new files (you'll copy content into these):
-# src/router/index.ts
-# src/composables/useTheme.ts  
-# src/composables/useVoiceSearch.ts
-# src/components/ThemeToggle.vue
-# src/components/SearchBox.vue
-# src/components/WordCardMini.vue
-# src/components/Footer.vue
-# src/views/Home.vue
-# src/views/SearchResults.vue
-# src/views/WordDetail.vue
+mkdir -p src/router
+mkdir -p src/views
+mkdir -p src/composables
 ```
 
-### Step 3: Replace/Update Files
+### Step 4: Project Files Setup
 
-Replace or update these existing files:
-- `src/App.vue` - Replace with new version
-- `src/main.ts` - Replace with new version
-- `src/types/index.ts` - Replace with new version
-- `package.json` - Replace with new version (includes vue-router)
-- `tailwind.config.js` - Replace with new version (includes dark mode)
+#### New Files to Create
 
-### Step 4: Delete Old Components (No Longer Needed)
+Create these files in **frontend/src/**:
 
-Delete these old files:
-- `src/components/SearchBar.vue` (replaced by SearchBox.vue)
-- `src/components/WordCard.vue` (replaced by WordCardMini.vue)
-- `src/components/WordDetail.vue` (now a view)
-- `src/components/LanguageToggle.vue` (integrated into SearchBox)
+**Router:**
+- `src/router/index.ts`
 
-### Step 5: Restart Frontend
+**Views:**
+- `src/views/Home.vue`
+- `src/views/SearchResults.vue`
+- `src/views/WordDetail.vue`
+
+**Components:**
+- `src/components/ThemeToggle.vue`
+- `src/components/SearchBox.vue`
+- `src/components/WordCardMini.vue`
+- `src/components/Footer.vue`
+
+**Composables:**
+- `src/composables/useTheme.ts`
+- `src/composables/useVoiceSearch.ts`
+- `src/composables/useDictionary.ts` (keep existing)
+
+#### Files to Update
+
+Replace/update these existing files:
+- `src/App.vue`
+- `src/main.ts`
+- `src/types/index.ts`
+- `package.json`
+- `tailwind.config.js`
+
+#### Files to Delete
+
+Remove these old components (no longer needed):
+- `src/components/SearchBar.vue` → replaced by `SearchBox.vue`
+- `src/components/WordCard.vue` → replaced by `WordCardMini.vue`
+- `src/components/WordDetail.vue` → now a view
+- `src/components/LanguageToggle.vue` → integrated into `SearchBox.vue`
+
+### Step 5: Run Development Server
 
 ```bash
-# Stop the server (Ctrl+C)
-# Then restart
 npm run dev
 ```
 
-## ✅ Final File Structure
+The application will be available at: **http://localhost:5173/**
+
+## 📁 Project Structure
 
 ```
 frontend/
 ├── src/
 │   ├── router/
-│   │   └── index.ts              [NEW]
+│   │   └── index.ts              # Vue Router configuration
 │   ├── views/
-│   │   ├── Home.vue              [NEW]
-│   │   ├── SearchResults.vue     [NEW]
-│   │   └── WordDetail.vue        [NEW]
+│   │   ├── Home.vue              # Homepage with featured words
+│   │   ├── SearchResults.vue     # Search results page
+│   │   └── WordDetail.vue        # Individual word detail page
 │   ├── components/
-│   │   ├── ThemeToggle.vue       [NEW]
-│   │   ├── SearchBox.vue         [NEW]
-│   │   ├── WordCardMini.vue      [NEW]
-│   │   └── Footer.vue            [NEW]
+│   │   ├── ThemeToggle.vue       # Dark/light theme switcher
+│   │   ├── SearchBox.vue         # Search input with voice
+│   │   ├── WordCardMini.vue      # Word card component
+│   │   └── Footer.vue            # Application footer
 │   ├── composables/
-│   │   ├── useDictionary.ts      [KEEP]
-│   │   ├── useTheme.ts           [NEW]
-│   │   └── useVoiceSearch.ts     [NEW]
+│   │   ├── useDictionary.ts      # Dictionary API logic
+│   │   ├── useTheme.ts           # Theme management
+│   │   └── useVoiceSearch.ts     # Voice recognition logic
 │   ├── types/
-│   │   └── index.ts              [UPDATED]
-│   ├── App.vue                   [UPDATED]
-│   ├── main.ts                   [UPDATED]
-│   └── style.css                 [KEEP]
-├── package.json                  [UPDATED]
-├── tailwind.config.js            [UPDATED]
-└── ... (other config files)
+│   │   └── index.ts              # TypeScript type definitions
+│   ├── App.vue                   # Root component
+│   ├── main.ts                   # Application entry point
+│   └── style.css                 # Global styles
+├── public/                       # Static assets
+├── package.json                  # Project dependencies
+├── tailwind.config.js            # Tailwind CSS configuration
+├── tsconfig.json                 # TypeScript configuration
+├── vite.config.ts                # Vite configuration
+└── README.md                     # This file
 ```
 
-## 🎨 New Features
+## 🎯 Usage Guide
 
-### Dark/Light Theme
-- Click sun/moon icon in header
-- Auto-saves preference
+### Homepage
+Visit **http://localhost:5173/** to see:
+- Featured/random words
+- Search box with language filter
+- Theme toggle button
 
-### Voice Search
-- Click microphone icon
-- Speak your search query
-- Works with Web Speech API
+### Searching Words
 
-### Individual Word Pages
-- Click any word card
-- Opens dedicated page with full details
-- Direct URL: `/word/{id}`
+**Text Search:**
+1. Type a word in the search box
+2. Select language (English/Bangla)
+3. Press Enter or click search button
+4. Navigate to `/search?q=word&lang=english`
 
-### Search Results Page
-- Dedicated search results view
-- Shows number of results
-- Filter by language
+**Voice Search:**
+1. Click the microphone icon 🎤
+2. Wait for "Listening..." indicator
+3. Speak your search query clearly
+4. Results appear automatically
 
-### Footer
-- "Developed by KEHEM IT" badge
-- Links and copyright
+### Viewing Word Details
 
-## 🚀 Testing
+1. Click any word card from search results or homepage
+2. Opens dedicated page at `/word/{id}`
+3. View complete information:
+   - Word and translation
+   - Part of speech
+   - Definitions and examples
+   - Synonyms and antonyms
+   - Audio pronunciation
 
-After installation, test these features:
+### Theme Switching
 
-1. **Homepage** - http://localhost:5173/
-   - See featured words
-   - Search box with language toggle
-   - Dark/light theme toggle
+1. Click the sun ☀️ / moon 🌙 icon in the header
+2. Theme switches between light and dark
+3. Preference saved automatically in browser
+4. Persists across page reloads
 
-2. **Search** - Type and press Enter
-   - Should navigate to `/search?q=...&lang=...`
-   - Shows filtered results
+## 🔧 Configuration
 
-3. **Voice Search** - Click microphone
-   - Should show "Listening..."
-   - Speak a word and it searches
+### Tailwind Dark Mode
 
-4. **Word Details** - Click any word card
-   - Opens `/word/{id}` page
-   - Shows all information
-   - Audio pronunciation buttons
+The `tailwind.config.js` includes dark mode support:
 
-5. **Theme Toggle** - Click sun/moon
-   - Switches between dark/light
-   - Persists across page reloads
+```javascript
+module.exports = {
+  darkMode: 'class',
+  // ... other config
+}
+```
 
-## 📝 Notes
+### API Configuration
 
-- Backend remains unchanged
-- All data comes from existing API
-- Mobile responsive design
-- Uses browser localStorage for theme
-- Uses Web Speech API for voice (Chrome/Edge only)
+Update API endpoints in `src/composables/useDictionary.ts`:
+
+```typescript
+const API_BASE_URL = 'http://localhost:3000/api'
+```
+
+## 🧪 Testing Checklist
+
+After installation, verify these features work:
+
+- [ ] **Homepage loads** with featured words
+- [ ] **Search functionality** returns correct results
+- [ ] **Voice search** recognizes speech (Chrome/Edge)
+- [ ] **Word cards** navigate to detail pages
+- [ ] **Theme toggle** switches and persists
+- [ ] **Audio buttons** play pronunciations
+- [ ] **Language filter** filters results correctly
+- [ ] **Responsive design** works on mobile
+- [ ] **Footer** displays correctly
+
+## 🌐 Browser Support
+
+| Feature | Chrome | Edge | Firefox | Safari |
+|---------|--------|------|---------|--------|
+| Core App | ✅ | ✅ | ✅ | ✅ |
+| Voice Search | ✅ | ✅ | ❌ | ❌ |
+| Dark Mode | ✅ | ✅ | ✅ | ✅ |
+| Audio | ✅ | ✅ | ✅ | ✅ |
+
+*Note: Voice search requires Web Speech API support (Chrome/Edge only)*
+
+## 🐛 Troubleshooting
+
+### Voice Search Not Working
+- Ensure you're using Chrome or Edge browser
+- Check microphone permissions in browser settings
+- Test microphone in browser settings
+
+### Theme Not Persisting
+- Check if localStorage is enabled
+- Clear browser cache and try again
+
+### Router Navigation Issues
+- Verify Vue Router is installed: `npm list vue-router`
+- Check console for routing errors
+
+### Build Errors
+```bash
+# Clear node modules and reinstall
+rm -rf node_modules package-lock.json
+npm install
+```
+
+## 📦 Build for Production
+
+```bash
+# Build optimized production bundle
+npm run build
+
+# Preview production build locally
+npm run preview
+```
+
+Output will be in the `dist/` folder, ready for deployment.
+
+## 🚀 Deployment
+
+The built application can be deployed to:
+- **Vercel** - `vercel deploy`
+- **Netlify** - Drag & drop `dist/` folder
+- **GitHub Pages** - Configure in repository settings
+- **Any static hosting** - Upload `dist/` folder
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature-name`
+3. Commit changes: `git commit -m 'Add feature'`
+4. Push to branch: `git push origin feature-name`
+5. Open a Pull Request
+
+## 📄 License
+
+This project is developed and maintained by **KEHEM IT**.
+
+## 📧 Support
+
+For issues, questions, or suggestions:
+- Open an issue on GitHub
+- Contact KEHEM IT support
+
+## 🎉 Acknowledgments
+
+- Vue.js team for the amazing framework
+- Tailwind CSS for the utility-first approach
+- Web Speech API for voice recognition capabilities
+
+---
+
+**Developed with ❤️ by KEHEM IT**
