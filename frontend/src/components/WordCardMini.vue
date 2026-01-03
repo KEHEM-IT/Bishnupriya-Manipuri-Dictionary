@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-    <router-link :to="`/word/${word.id}`"
+    <router-link :to="`/word/${encodeURIComponent(word.bengali)}`"
         class="block bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 border border-gray-200 dark:border-gray-700">
         <div class="flex justify-between items-start mb-3">
             <div class="flex gap-2 flex-wrap">

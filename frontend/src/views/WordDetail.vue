@@ -23,10 +23,17 @@ const speak = (text: string, lang: string) => {
 
 onMounted(async () => {
     try {
-        const response = await axios.get(`/api/dictionary/word/${route.params.id}`);
-        word.value = response.data;
+        const term = route.params.word as string;
+        const response = await axios.get(`/api/dictionary/search?term=${encodeURIComponent(term)}&language=bengali`);
+        const results = response.data;
+        if (Array.isArray(results) && results.length > 0) {
+            word.value = results[0];
+        } else {
+            word.value = null;
+        }
     } catch (error) {
         console.error('Failed to load word:', error);
+        word.value = null;
     } finally {
         loading.value = false;
     }

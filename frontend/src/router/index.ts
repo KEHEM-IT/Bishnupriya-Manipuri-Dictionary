@@ -15,7 +15,7 @@ const routes: RouteRecordRaw[] = [
         component: SearchResults
     },
     {
-        path: '/word/:id',
+        path: '/word/:word',
         name: 'WordDetail',
         component: WordDetail
     }
