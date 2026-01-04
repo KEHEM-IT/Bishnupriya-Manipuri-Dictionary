@@ -23,13 +23,38 @@ const speak = (text: string, lang: string) => {
 
 onMounted(async () => {
     try {
-        const wordId = route.params.id as string;
-        const response = await axios.get(`/api/dictionary/word/${wordId}`);
+        // Support two formats:
+        // 1) /word/<id>  -> fetch by id
+        // 2) /word/<url-encoded-bpy>?lang=bpy -> search by Bishnupriya word and take first result
 
-        if (response.data.success && response.data.data) {
-            word.value = response.data.data;
-        } else {
+        const paramId = (route.params.id || route.params.identifier) as string | undefined;
+        const queryLang = (route.query.lang as string) || '';
+
+        if (!paramId) {
             word.value = null;
+            return;
+        }
+
+        // If client passed lang=bpy, treat the path param as the Bishnupriya word
+        if (queryLang === 'bpy') {
+            const decoded = decodeURIComponent(paramId);
+            const resp = await axios.get('/api/dictionary/search', {
+                params: { term: decoded, language: 'bpy' }
+            });
+
+            if (resp.data && resp.data.success && resp.data.count > 0) {
+                word.value = resp.data.data[0];
+            } else {
+                word.value = null;
+            }
+        } else {
+            // otherwise treat param as id
+            const resp = await axios.get(`/api/dictionary/word/${paramId}`);
+            if (resp.data && resp.data.success && resp.data.data) {
+                word.value = resp.data.data;
+            } else {
+                word.value = null;
+            }
         }
     } catch (error) {
         console.error('Failed to load word:', error);

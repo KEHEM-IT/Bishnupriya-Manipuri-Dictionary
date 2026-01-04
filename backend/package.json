@@ -4,7 +4,8 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn src/index.ts",
-    "build": "tsc",
+    "build": "tsc && npm run copy-data",
+    "copy-data": "node -e \"const fs=require('fs'); const path=require('path'); const src='src/data'; const dst='dist/data'; if(!fs.existsSync(dst))fs.mkdirSync(dst, {recursive:true}); function copy(s,d){const stat=fs.statSync(s);if(stat.isDirectory()){if(!fs.existsSync(d))fs.mkdirSync(d);fs.readdirSync(s).forEach(f=>copy(path.join(s,f),path.join(d,f)));}else fs.copyFileSync(s,d);}copy(src,dst);\"",
     "start": "node dist/index.js"
   },
   "dependencies": {

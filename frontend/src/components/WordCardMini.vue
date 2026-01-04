@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-    <router-link :to="`/word/${word.id}`"
+    <router-link :to="`/word/${encodeURIComponent(word.bpy)}?lang=bpy`"
         class="group bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-transparent hover:border-blue-500 dark:hover:border-blue-400 block">
 
         <!-- Word Header -->

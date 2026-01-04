@@ -10,7 +10,7 @@ const props = defineProps<{
 const router = useRouter();
 
 const viewDetails = () => {
-    router.push(`/word/${props.word.id}`);
+    router.push(`/word/${encodeURIComponent(props.word.bpy)}?lang=bpy`);
 };
 </script>
 

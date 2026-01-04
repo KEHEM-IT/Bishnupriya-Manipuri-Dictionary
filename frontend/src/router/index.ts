@@ -16,7 +16,8 @@ const routes: RouteRecordRaw[] = [
         component: SearchResults
     },
     {
-        path: '/word/:id',
+        // allow any text (including URL-encoded unicode) after /word/
+        path: '/word/:identifier(.*)',
         name: 'WordDetail',
         component: WordDetail
     }

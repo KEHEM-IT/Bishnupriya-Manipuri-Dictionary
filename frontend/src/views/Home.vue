@@ -48,7 +48,6 @@ onMounted(async () => {
                             <p class="text-xs text-gray-600 dark:text-gray-400">Dictionary</p>
                         </div>
                     </router-link>
-
                     <ThemeToggle />
                 </div>
             </div>
