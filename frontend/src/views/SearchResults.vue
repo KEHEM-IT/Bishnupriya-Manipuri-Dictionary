@@ -1,3 +1,4 @@
+<!-- frontend/src/views/SearchResults.vue -->
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue';
 import { useRoute } from 'vue-router';
@@ -12,25 +13,35 @@ const route = useRoute();
 const words = ref<Word[]>([]);
 const loading = ref(false);
 const searchQuery = ref('');
-const searchLanguage = ref<Language>('english');
+const searchLanguage = ref<Language>('en');
 
 const searchWords = async () => {
     const query = route.query.q as string;
-    const lang = route.query.lang as Language;
+    const lang = route.query.lang as string;
 
     if (!query) return;
 
     searchQuery.value = query;
-    searchLanguage.value = lang || 'english';
+    searchLanguage.value = (lang || 'en') as Language;
     loading.value = true;
 
     try {
         const response = await axios.get('/api/dictionary/search', {
-            params: { term: query, language: lang }
+            params: {
+                term: query,
+                language: searchLanguage.value
+            }
         });
-        words.value = response.data;
+
+        // Handle new API response format
+        if (response.data.success) {
+            words.value = response.data.data || [];
+        } else {
+            words.value = response.data || [];
+        }
     } catch (error) {
         console.error('Search failed:', error);
+        words.value = [];
     } finally {
         loading.value = false;
     }
@@ -80,7 +91,8 @@ onMounted(searchWords);
                     </span>
                 </h2>
                 <p class="text-gray-600 dark:text-gray-400 mt-1">
-                    Searching for "<span class="font-semibold">{{ searchQuery }}</span>" in {{ searchLanguage }}
+                    Searching for "<span class="font-semibold">{{ searchQuery }}</span>"
+                    in {{ searchLanguage === 'bpy' ? 'Bishnupriya' : searchLanguage === 'bn' ? 'Bengali' : 'English' }}
                 </p>
             </div>
 

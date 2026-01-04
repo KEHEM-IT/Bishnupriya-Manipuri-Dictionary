@@ -1,3 +1,4 @@
+// frontend/src/router/index.ts
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import Home from '../views/Home.vue';
 import WordDetail from '../views/WordDetail.vue';
@@ -15,7 +16,7 @@ const routes: RouteRecordRaw[] = [
         component: SearchResults
     },
     {
-        path: '/word/:word',
+        path: '/word/:id',
         name: 'WordDetail',
         component: WordDetail
     }

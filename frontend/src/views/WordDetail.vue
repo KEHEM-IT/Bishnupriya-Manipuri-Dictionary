@@ -1,13 +1,13 @@
+<!-- frontend/src/views/WordDetails.vue -->
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 import ThemeToggle from '../components/ThemeToggle.vue';
 import Footer from '../components/Footer.vue';
-import { Word } from '../types';
 import axios from 'axios';
 
 const route = useRoute();
-const word = ref<Word | null>(null);
+const word = ref<any | null>(null);
 const loading = ref(true);
 
 const speak = (text: string, lang: string) => {
@@ -23,11 +23,11 @@ const speak = (text: string, lang: string) => {
 
 onMounted(async () => {
     try {
-        const term = route.params.word as string;
-        const response = await axios.get(`/api/dictionary/search?term=${encodeURIComponent(term)}&language=bishnupriya`);
-        const results = response.data;
-        if (Array.isArray(results) && results.length > 0) {
-            word.value = results[0];
+        const wordId = route.params.id as string;
+        const response = await axios.get(`/api/dictionary/word/${wordId}`);
+
+        if (response.data.success && response.data.data) {
+            word.value = response.data.data;
         } else {
             word.value = null;
         }
@@ -87,30 +87,73 @@ onMounted(async () => {
             <div
                 class="bg-gradient-to-br from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 rounded-2xl p-8 shadow-2xl text-white mb-8">
                 <div class="flex flex-wrap gap-2 mb-4">
-                    <span v-if="word.partOfSpeech" class="px-3 py-1 bg-white/20 rounded-full text-sm">
-                        {{ word.partOfSpeech }}
+                    <span v-if="word.grammar?.partOfSpeech?.length" v-for="pos in word.grammar.partOfSpeech" :key="pos"
+                        class="px-3 py-1 bg-white/20 rounded-full text-sm">
+                        {{ pos }}
                     </span>
-                    <span v-if="word.category" class="px-3 py-1 bg-white/20 rounded-full text-sm">
-                        {{ word.category }}
+                    <span v-if="word.cat?.length" v-for="category in word.cat" :key="category"
+                        class="px-3 py-1 bg-white/20 rounded-full text-sm">
+                        {{ category }}
+                    </span>
+                    <span v-if="word.madoi" class="px-3 py-1 bg-green-500/30 rounded-full text-sm">
+                        মাদৈ
+                    </span>
+                    <span v-if="word.rajar" class="px-3 py-1 bg-purple-500/30 rounded-full text-sm">
+                        রাজার
                     </span>
                 </div>
 
-                <h1 class="text-5xl md:text-6xl font-bold mb-6">{{ word.bishnupriya }}</h1>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">{{ word.bpy }}</h1>
 
                 <div class="grid md:grid-cols-2 gap-6">
                     <div>
                         <p class="text-blue-100 text-sm mb-2">Bengali</p>
-                        <p class="text-2xl font-semibold">{{ word.bengali }}</p>
+                        <p class="text-2xl font-semibold">{{ word.bn }}</p>
                     </div>
                     <div>
                         <p class="text-purple-100 text-sm mb-2">English</p>
-                        <p class="text-2xl font-semibold">{{ word.english }}</p>
+                        <p class="text-2xl font-semibold">{{ word.en }}</p>
+                    </div>
+                </div>
+
+                <!-- Romanization -->
+                <div v-if="word.romanization?.length" class="mt-6 pt-6 border-t border-white/20">
+                    <p class="text-blue-100 text-sm mb-2">Romanization</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span v-for="rom in word.romanization" :key="rom"
+                            class="px-3 py-1 bg-white/20 rounded-lg text-lg">
+                            {{ rom }}
+                        </span>
                     </div>
                 </div>
             </div>
 
+            <!-- Description -->
+            <div v-if="word.description" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Description
+                </h2>
+                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">{{ word.description }}</p>
+            </div>
+
+            <!-- Meaning -->
+            <div v-if="word.meaning?.length" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Meaning</h2>
+                <ul class="space-y-2">
+                    <li v-for="(meaning, idx) in word.meaning" :key="idx"
+                        class="text-lg text-gray-700 dark:text-gray-300 flex items-start gap-2">
+                        <span class="text-blue-600 dark:text-blue-400 font-bold">•</span>
+                        <span>{{ meaning }}</span>
+                    </li>
+                </ul>
+            </div>
+
             <!-- Pronunciation Section -->
-            <div v-if="word.pronunciation" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
+            <div v-if="word.phonetic || word.IPA" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -118,13 +161,20 @@ onMounted(async () => {
                     </svg>
                     Pronunciation
                 </h2>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div v-if="word.pronunciation.bishnupriya" class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl">
+
+                <!-- IPA -->
+                <div v-if="word.IPA" class="bg-indigo-50 dark:bg-indigo-900/20 p-6 rounded-xl mb-6">
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">IPA</p>
+                    <p class="font-mono text-2xl text-gray-900 dark:text-white">{{ word.IPA }}</p>
+                </div>
+
+                <!-- Phonetic -->
+                <div v-if="word.phonetic" class="grid md:grid-cols-3 gap-6">
+                    <div v-if="word.phonetic.bpy" class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl">
                         <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Bishnupriya</p>
                         <div class="flex items-center justify-between">
-                            <p class="font-mono text-xl text-gray-900 dark:text-white">{{ word.pronunciation.bishnupriya
-                                }}</p>
-                            <button @click="speak(word.bishnupriya, 'bishnupriya')"
+                            <p class="font-mono text-xl text-gray-900 dark:text-white">{{ word.phonetic.bpy }}</p>
+                            <button @click="speak(word.bpy, 'bishnupriya')"
                                 class="p-3 bg-blue-600 dark:bg-blue-500 text-white rounded-full hover:bg-blue-700 dark:hover:bg-blue-600 transition">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -133,12 +183,11 @@ onMounted(async () => {
                             </button>
                         </div>
                     </div>
-                    <div v-if="word.pronunciation.bengali" class="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl">
+                    <div v-if="word.phonetic.bn" class="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl">
                         <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Bengali</p>
                         <div class="flex items-center justify-between">
-                            <p class="font-mono text-xl text-gray-900 dark:text-white">{{ word.pronunciation.bengali }}
-                            </p>
-                            <button @click="speak(word.bengali, 'bengali')"
+                            <p class="font-mono text-xl text-gray-900 dark:text-white">{{ word.phonetic.bn }}</p>
+                            <button @click="speak(word.bn, 'bengali')"
                                 class="p-3 bg-green-600 dark:bg-green-500 text-white rounded-full hover:bg-green-700 dark:hover:bg-green-600 transition">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -147,12 +196,11 @@ onMounted(async () => {
                             </button>
                         </div>
                     </div>
-                    <div v-if="word.pronunciation.english" class="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-xl">
+                    <div v-if="word.phonetic.en" class="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-xl">
                         <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">English</p>
                         <div class="flex items-center justify-between">
-                            <p class="font-mono text-xl text-gray-900 dark:text-white">{{ word.pronunciation.english }}
-                            </p>
-                            <button @click="speak(word.english, 'english')"
+                            <p class="font-mono text-xl text-gray-900 dark:text-white">{{ word.phonetic.en }}</p>
+                            <button @click="speak(word.en, 'english')"
                                 class="p-3 bg-purple-600 dark:bg-purple-500 text-white rounded-full hover:bg-purple-700 dark:hover:bg-purple-600 transition">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -162,11 +210,22 @@ onMounted(async () => {
                         </div>
                     </div>
                 </div>
+
+                <!-- Similar Pronunciations -->
+                <div v-if="word['similar-prons']?.length"
+                    class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">Similar Pronunciations</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span v-for="pron in word['similar-prons']" :key="pron"
+                            class="px-3 py-2 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-lg">
+                            {{ pron }}
+                        </span>
+                    </div>
+                </div>
             </div>
 
             <!-- Example Sentences -->
-            <div v-if="word.exampleSentences && word.exampleSentences.length > 0"
-                class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
+            <div v-if="word.exampleSentences?.length" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -174,13 +233,10 @@ onMounted(async () => {
                     </svg>
                     Example Sentences
                 </h2>
-                <div class="space-y-6">
+                <div class="space-y-4">
                     <div v-for="(example, idx) in word.exampleSentences" :key="idx"
                         class="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-xl border-l-4 border-amber-500">
-                        <p class="text-xl font-semibold text-gray-900 dark:text-white mb-3">{{ example.bishnupriya }}
-                        </p>
-                        <p class="text-gray-700 dark:text-gray-300 mb-2">{{ example.bengali }}</p>
-                        <p class="text-gray-600 dark:text-gray-400 italic">{{ example.english }}</p>
+                        <p class="text-xl font-semibold text-gray-900 dark:text-white">{{ example }}</p>
                     </div>
                 </div>
             </div>
@@ -195,44 +251,76 @@ onMounted(async () => {
                     Grammar
                 </h2>
 
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="grid md:grid-cols-3 gap-6 mb-6">
                     <div v-if="word.grammar.gender" class="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl">
                         <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Gender</p>
                         <p class="text-xl font-semibold text-gray-900 dark:text-white capitalize">{{ word.grammar.gender
                             }}</p>
                     </div>
-                    <div v-if="word.grammar.plural" class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl">
+                    <div v-if="word.grammar.number?.plural" class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl">
                         <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Plural Form</p>
-                        <p class="text-xl font-semibold text-gray-900 dark:text-white">{{ word.grammar.plural }}</p>
+                        <p class="text-xl font-semibold text-gray-900 dark:text-white">{{ word.grammar.number.plural }}
+                        </p>
+                    </div>
+                    <div v-if="word.grammar.sandhi" class="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-xl">
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Sandhi</p>
+                        <p class="text-xl font-semibold text-gray-900 dark:text-white">{{ word.grammar.sandhi }}</p>
                     </div>
                 </div>
+            </div>
 
-                <div v-if="word.grammar.conjugations && word.grammar.conjugations.length > 0" class="mb-6">
-                    <p class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Conjugations</p>
-                    <div class="grid md:grid-cols-3 gap-4">
-                        <div v-for="conj in word.grammar.conjugations" :key="conj.tense"
-                            class="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-xl">
-                            <p class="text-xs text-gray-600 dark:text-gray-400 uppercase mb-1">{{ conj.tense }}</p>
-                            <p class="text-lg font-semibold text-gray-900 dark:text-white">{{ conj.form }}</p>
+            <!-- Origin -->
+            <div v-if="word.origin || word.sankrit" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Origin
+                </h2>
+                <div v-if="word.sankrit" class="bg-orange-50 dark:bg-orange-900/20 p-6 rounded-xl mb-4">
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Sanskrit</p>
+                    <p class="text-2xl font-semibold text-gray-900 dark:text-white">{{ word.sankrit }}</p>
+                </div>
+                <div v-if="word.origin">
+                    <div v-for="(value, key) in word.origin" :key="key" class="mb-4">
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">{{ key }}</p>
+                        <p class="text-lg text-gray-900 dark:text-white">
+                            {{ Array.isArray(value) ? value.join(', ') : value }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Usage -->
+            <div v-if="word.usage" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Usage Information</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div v-if="word.usage.commonness" class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl">
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Commonness</p>
+                        <p class="text-xl font-semibold text-gray-900 dark:text-white capitalize">{{
+                            word.usage.commonness }}</p>
+                    </div>
+                    <div v-if="word.usage.usageMean" class="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl">
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Usage Mean</p>
+                        <p class="text-xl font-semibold text-gray-900 dark:text-white capitalize">{{
+                            word.usage.usageMean }}</p>
+                    </div>
+                    <div v-if="word.usage.region?.length" class="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-xl">
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Regions</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span v-for="region in word.usage.region" :key="region"
+                                class="px-2 py-1 bg-purple-200 dark:bg-purple-700 text-purple-900 dark:text-purple-100 rounded text-sm">
+                                {{ region }}
+                            </span>
                         </div>
                     </div>
-                </div>
-
-                <div v-if="word.grammar.usage" class="bg-gray-50 dark:bg-gray-700/50 p-6 rounded-xl mb-4">
-                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Usage</p>
-                    <p class="text-gray-900 dark:text-white">{{ word.grammar.usage }}</p>
-                </div>
-
-                <div v-if="word.grammar.notes" class="bg-gray-50 dark:bg-gray-700/50 p-6 rounded-xl">
-                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Notes</p>
-                    <p class="text-gray-900 dark:text-white">{{ word.grammar.notes }}</p>
                 </div>
             </div>
 
             <!-- Related Words -->
-            <div class="grid md:grid-cols-3 gap-6">
-                <div v-if="word.synonyms && word.synonyms.length > 0"
-                    class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div v-if="word.synonyms?.length" class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
                     <h3 class="text-lg font-bold text-blue-600 dark:text-blue-400 mb-4">Synonyms</h3>
                     <div class="flex flex-wrap gap-2">
                         <span v-for="syn in word.synonyms" :key="syn"
@@ -242,8 +330,7 @@ onMounted(async () => {
                     </div>
                 </div>
 
-                <div v-if="word.antonyms && word.antonyms.length > 0"
-                    class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
+                <div v-if="word.antonyms?.length" class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
                     <h3 class="text-lg font-bold text-red-600 dark:text-red-400 mb-4">Antonyms</h3>
                     <div class="flex flex-wrap gap-2">
                         <span v-for="ant in word.antonyms" :key="ant"
@@ -253,16 +340,67 @@ onMounted(async () => {
                     </div>
                 </div>
 
-                <div v-if="word.similarWords && word.similarWords.length > 0"
-                    class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
-                    <h3 class="text-lg font-bold text-purple-600 dark:text-purple-400 mb-4">Similar Words</h3>
+                <div v-if="word.similarBn?.length" class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
+                    <h3 class="text-lg font-bold text-green-600 dark:text-green-400 mb-4">Similar (Bengali)</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span v-for="similar in word.similarWords" :key="similar"
+                        <span v-for="similar in word.similarBn" :key="similar"
+                            class="px-3 py-2 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-lg text-sm">
+                            {{ similar }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div v-if="word.similarEn?.length" class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
+                    <h3 class="text-lg font-bold text-purple-600 dark:text-purple-400 mb-4">Similar (English)</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span v-for="similar in word.similarEn" :key="similar"
                             class="px-3 py-2 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 rounded-lg text-sm">
                             {{ similar }}
                         </span>
                     </div>
                 </div>
+
+                <div v-if="word.similarSangkrit?.length" class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
+                    <h3 class="text-lg font-bold text-orange-600 dark:text-orange-400 mb-4">Similar (Sanskrit)</h3>
+                    <div class="space-y-2">
+                        <div v-for="(similar, idx) in word.similarSangkrit" :key="idx"
+                            class="px-3 py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300 rounded-lg text-sm">
+                            {{ similar[0] }} <span class="text-xs opacity-70">({{ similar[1] }})</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bishnupriya Differences -->
+            <div v-if="word.bpyDifferences" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
+                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Regional Differences</h2>
+                <div class="space-y-4">
+                    <div v-for="(value, key) in word.bpyDifferences" :key="key"
+                        class="bg-indigo-50 dark:bg-indigo-900/20 p-6 rounded-xl">
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">Variant {{ key }}</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span v-for="variant in value" :key="variant"
+                                class="px-3 py-2 bg-indigo-200 dark:bg-indigo-700 text-indigo-900 dark:text-indigo-100 rounded-lg">
+                                {{ variant }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- References -->
+            <div v-if="word.references?.length" class="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg">
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4">References</h3>
+                <ul class="space-y-2">
+                    <li v-for="ref in word.references" :key="ref">
+                        <a :href="ref" target="_blank" rel="noopener noreferrer"
+                            class="text-blue-600 dark:text-blue-400 hover:underline break-all">
+                            {{ ref }}
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
 

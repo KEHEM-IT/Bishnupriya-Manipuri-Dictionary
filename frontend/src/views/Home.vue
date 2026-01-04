@@ -1,3 +1,4 @@
+<!-- frontend/src/views/Home.vue -->
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import SearchBox from '../components/SearchBox.vue';
@@ -13,7 +14,12 @@ const loading = ref(true);
 onMounted(async () => {
     try {
         const response = await axios.get('/api/dictionary/words');
-        featuredWords.value = response.data.slice(0, 6);
+        // Handle new API response format
+        if (response.data.success) {
+            featuredWords.value = response.data.data.slice(0, 6);
+        } else {
+            featuredWords.value = response.data.slice(0, 6);
+        }
     } catch (error) {
         console.error('Failed to load words:', error);
     } finally {

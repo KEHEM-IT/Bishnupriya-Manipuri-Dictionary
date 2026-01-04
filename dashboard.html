@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-card: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #cbd5e1;
+            --accent: #3b82f6;
+            --accent-hover: #2563eb;
+            --border: #475569;
+        }
+
+        .light-mode {
+            --bg-primary: #f8fafc;
+            --bg-secondary: #ffffff;
+            --bg-card: #ffffff;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --accent: #3b82f6;
+            --accent-hover: #2563eb;
+            --border: #e2e8f0;
+        }
+
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .sidebar {
+            background: var(--bg-secondary);
+            transition: transform 0.3s ease, background 0.3s;
+            border-right: 1px solid var(--border);
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            transition: background 0.3s, border 0.3s, transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.5);
+            transition: opacity 0.3s;
+        }
+
+        .recording {
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.7;
+                transform: scale(1.05);
+            }
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .nav-item {
+            transition: background 0.2s, padding-left 0.2s;
+        }
+
+        .nav-item:hover {
+            background: rgba(59, 130, 246, 0.1);
+            padding-left: 1.25rem;
+        }
+
+        .nav-item.active {
+            background: rgba(59, 130, 246, 0.2);
+            border-left: 3px solid var(--accent);
+        }
+
+        input,
+        textarea,
+        select {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+            transition: border 0.2s, background 0.3s;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .image-preview {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-preview img {
+            max-width: 200px;
+            border-radius: 8px;
+            border: 2px solid var(--border);
+        }
+
+        .remove-image {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: #ef4444;
+            color: white;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .remove-image:hover {
+            transform: scale(1.1);
+        }
+
+        .progress-bar {
+            height: 4px;
+            background: var(--bg-secondary);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--accent);
+            transition: width 0.3s;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, var(--accent) 0%, #6366f1 100%);
+        }
+
+        .loader {
+            border: 3px solid var(--border);
+            border-top: 3px solid var(--accent);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Top Bar -->
+    <div class="md:hidden fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-4 py-3"
+        style="background: var(--bg-secondary); border-bottom: 1px solid var(--border);">
+        <button id="menuBtn" class="text-2xl">
+            <i class="fas fa-bars"></i>
+        </button>
+        <h1 class="text-lg font-bold">Activity Dashboard</h1>
+        <button id="mobileThemeToggle" class="text-xl">
+            <i class="fas fa-moon" id="mobileThemeIcon"></i>
+        </button>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay fixed inset-0 z-30 hidden md:hidden"></div>
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar fixed left-0 top-0 h-full w-64 z-40 md:translate-x-0">
+        <div class="flex flex-col h-full">
+            <!-- Sidebar Header -->
+            <div class="flex items-center justify-between p-6 border-b" style="border-color: var(--border);">
+                <h2 class="text-xl font-bold">Dashboard</h2>
+                <button id="closeBtn" class="md:hidden text-xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="flex-1 p-4 overflow-y-auto">
+                <a href="#" class="nav-item active flex items-center gap-3 px-4 py-3 rounded-lg mb-2"
+                    data-page="dashboard">
+                    <i class="fas fa-chart-line text-lg"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item flex items-center gap-3 px-4 py-3 rounded-lg mb-2" data-page="create">
+                    <i class="fas fa-plus-circle text-lg"></i>
+                    <span>Create Activity</span>
+                </a>
+                <a href="#" class="nav-item flex items-center gap-3 px-4 py-3 rounded-lg mb-2" data-page="manage">
+                    <i class="fas fa-list text-lg"></i>
+                    <span>Manage Activities</span>
+                </a>
+            </nav>
+
+            <!-- Bottom Actions -->
+            <div class="p-4 border-t" style="border-color: var(--border);">
+                <button id="logoutBtn"
+                    class="flex items-center gap-3 px-4 py-3 rounded-lg w-full hover:bg-red-500 hover:bg-opacity-20 transition-colors">
+                    <i class="fas fa-sign-out-alt text-lg"></i>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="md:ml-64 min-h-screen pt-16 md:pt-0">
+        <!-- Desktop Theme Toggle -->
+        <div class="hidden md:flex justify-end p-4">
+            <button id="desktopThemeToggle" class="px-4 py-2 rounded-lg" style="background: var(--bg-card);">
+                <i class="fas fa-moon" id="desktopThemeIcon"></i>
+            </button>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="hidden fixed inset-0 z-50 flex items-center justify-center"
+            style="background: rgba(0,0,0,0.5);">
+            <div class="loader"></div>
+        </div>
+
+        <!-- Dashboard Page -->
+        <div id="dashboardPage" class="page p-4 md:p-6">
+            <div class="flex items-center justify-between mb-6">
+                <h1 class="text-2xl md:text-3xl font-bold">
+                    Dashboard Overview
+                </h1>
+            
+                <a href="#" data-page="create" class="nav-item flex items-center justify-center w-12 h-12 rounded-full 
+                           bg-blue-600 text-white shadow-lg
+                           hover:bg-blue-700 hover:scale-105
+                           transition-all duration-200" aria-label="Create">
+                    <i class="fas fa-plus text-lg"></i>
+                </a>
+            </div>
+
+
+            <!-- Stats Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <div class="stat-card p-6 rounded-xl shadow-lg text-white">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm opacity-90">Total Activities</p>
+                            <h3 class="text-3xl font-bold mt-2" id="totalActivities">0</h3>
+                        </div>
+                        <i class="fas fa-clipboard-list text-4xl opacity-80"></i>
+                    </div>
+                </div>
+                <div class="stat-card p-6 rounded-xl shadow-lg text-white">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm opacity-90">This Month</p>
+                            <h3 class="text-3xl font-bold mt-2" id="monthActivities">0</h3>
+                        </div>
+                        <i class="fas fa-calendar-alt text-4xl opacity-80"></i>
+                    </div>
+                </div>
+                <div class="stat-card p-6 rounded-xl shadow-lg text-white">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm opacity-90">This Week</p>
+                            <h3 class="text-3xl font-bold mt-2" id="weekActivities">0</h3>
+                        </div>
+                        <i class="fas fa-calendar-week text-4xl opacity-80"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+                <div class="card p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Weekly Activity</h3>
+                    <canvas id="weeklyChart"></canvas>
+                </div>
+                <div class="card p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4">Monthly Trend</h3>
+                    <canvas id="monthlyChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Create Activity Page -->
+        <div id="createPage" class="page hidden p-4 md:p-6">
+            <h1 class="text-2xl md:text-3xl font-bold mb-6">Create New Activity</h1>
+
+            <div class="card p-6 rounded-xl shadow-lg max-w-3xl">
+                <form id="createForm">
+                    <!-- Title -->
+                    <div class="mb-6">
+                        <label class="block mb-2 font-semibold">Title <span class="text-red-500">*</span></label>
+                        <div class="relative">
+                            <input type="text" id="titleInput" class="w-full px-4 py-3 rounded-lg"
+                                placeholder="Enter activity title" required>
+                            <button type="button" id="titleVoiceBtn"
+                                class="absolute right-3 top-1/2 transform -translate-y-1/2 text-xl">
+                                <i class="fas fa-microphone"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="mb-6">
+                        <label class="block mb-2 font-semibold">Content <span class="text-red-500">*</span></label>
+                        <div class="relative">
+                            <textarea id="contentInput" rows="6" class="w-full px-4 py-3 rounded-lg"
+                                placeholder="Describe your activity..." required></textarea>
+                            <button type="button" id="contentVoiceBtn" class="absolute right-3 top-3 text-xl">
+                                <i class="fas fa-microphone"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Image Upload -->
+                    <div class="mb-6">
+                        <label class="block mb-2 font-semibold">Image (Optional)</label>
+                        <input type="file" id="imageInput" accept="image/*" class="hidden">
+                        <button type="button" onclick="document.getElementById('imageInput').click()"
+                            class="btn-primary px-6 py-3 rounded-lg">
+                            <i class="fas fa-image mr-2"></i>Choose Image
+                        </button>
+                        <div id="uploadProgress" class="hidden mt-4">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                            </div>
+                            <p class="text-sm mt-2" style="color: var(--text-secondary);" id="progressText">Uploading...
+                            </p>
+                        </div>
+                        <div id="imagePreviewContainer" class="hidden mt-4"></div>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit" id="submitBtn"
+                        class="btn-primary w-full md:w-auto px-8 py-3 rounded-lg text-lg font-semibold">
+                        <i class="fas fa-plus-circle mr-2"></i>Create Activity
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Manage Activities Page -->
+        <div id="managePage" class="page hidden p-4 md:p-6">
+            <h1 class="text-2xl md:text-3xl font-bold mb-6">Manage Activities</h1>
+
+            <!-- Filters -->
+            <div class="card p-6 rounded-xl shadow-lg mb-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block mb-2 font-semibold text-sm">Date Range</label>
+                        <input type="text" id="dateRangePicker" class="w-full px-4 py-2 rounded-lg"
+                            placeholder="Select date range...">
+                    </div>
+                    <div>
+                        <label class="block mb-2 font-semibold text-sm">Sort By</label>
+                        <select id="sortFilter" class="w-full px-4 py-2 rounded-lg">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activities List -->
+            <div id="activitiesList" class="space-y-4"></div>
+
+            <!-- Pagination -->
+            <div id="paginationContainer" class="card p-4 rounded-xl shadow-lg mt-6 flex items-center justify-between">
+                <button id="prevPage"
+                    class="btn-primary px-4 py-2 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed">
+                    <i class="fas fa-chevron-left mr-2"></i>Previous
+                </button>
+                <div id="pageInfo" class="text-sm" style="color: var(--text-secondary);">
+                    Page <span id="currentPageNum">1</span> of <span id="totalPages">1</span>
+                </div>
+                <button id="nextPage"
+                    class="btn-primary px-4 py-2 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed">
+                    Next<i class="fas fa-chevron-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Edit Modal -->
+    <div id="editModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4"
+        style="background: rgba(0,0,0,0.7);">
+        <div class="card rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-2xl font-bold">Edit Activity</h2>
+                <button id="closeEditModal" class="text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="editForm">
+                <input type="hidden" id="editActivityId">
+                <div class="mb-4">
+                    <label class="block mb-2 font-semibold">Title</label>
+                    <input type="text" id="editTitle" class="w-full px-4 py-3 rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2 font-semibold">Content</label>
+                    <textarea id="editContent" rows="6" class="w-full px-4 py-3 rounded-lg" required></textarea>
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2 font-semibold">Image URL</label>
+                    <input type="text" id="editImageUrl" class="w-full px-4 py-3 rounded-lg" placeholder="Optional">
+                </div>
+                <button type="submit" id="editSubmitBtn" class="btn-primary w-full py-3 rounded-lg font-semibold">
+                    <i class="fas fa-save mr-2"></i>Save Changes
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // ==================== API Configuration ====================
+        const API_BASE_URL = '/api/activities'; // Change this to your Django API endpoint
+        const IMGBB_API_KEY = 'YOUR_IMGBB_API_KEY'; // Replace with your ImgBB API key
+        const PAGE_SIZE = 10; // Number of items per page
+
+        // Get CSRF token from Django
+        function getCSRFToken() {
+            return document.querySelector('[name=csrfmiddlewaretoken]')?.value ||
+                document.cookie.split('; ').find(row => row.startsWith('csrftoken='))?.split('=')[1] || '';
+        }
+
+        // ==================== State Management ====================
+        let activities = [];
+        let currentPage = 'dashboard';
+        let isRecording = false;
+        let recognition = null;
+        let uploadedImageUrl = '';
+        let isDarkMode = true;
+
+        // Pagination state
+        let currentPageNum = 1;
+        let totalPages = 1;
+        let totalCount = 0;
+
+        // Filter state
+        let dateRange = { start: null, end: null };
+        let sortOrder = 'newest';
+        let flatpickrInstance = null;
+
+        // ==================== API Functions ====================
+
+        // Fetch activities with pagination and filters
+        async function fetchActivities(page = 1, startDate = null, endDate = null, sort = 'newest') {
+            try {
+                showLoading(true);
+
+                // Build query parameters
+                const params = new URLSearchParams({
+                    page: page,
+                    page_size: PAGE_SIZE,
+                    ordering: sort === 'newest' ? '-date' : 'date'
+                });
+
+                if (startDate) params.append('start_date', startDate);
+                if (endDate) params.append('end_date', endDate);
+
+                const response = await fetch(`${API_BASE_URL}/?${params.toString()}`, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    credentials: 'include'
+                });
+
+                if (!response.ok) throw new Error('Failed to fetch activities');
+
+                const data = await response.json();
+
+                // Handle paginated response
+                if (data.results) {
+                    activities = data.results;
+                    totalCount = data.count;
+                    totalPages = Math.ceil(totalCount / PAGE_SIZE);
+                    currentPageNum = page;
+                } else {
+                    // Handle non-paginated response
+                    activities = data;
+                    totalCount = data.length;
+                    totalPages = 1;
+                    currentPageNum = 1;
+                }
+
+                return activities;
+            } catch (error) {
+                console.error('Error fetching activities:', error);
+                showToast('Failed to load activities', 'error');
+                return [];
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        // Create new activity
+        async function createActivityAPI(activityData) {
+            try {
+                showLoading(true);
+                const response = await fetch(`${API_BASE_URL}/`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': getCSRFToken()
+                    },
+                    credentials: 'include',
+                    body: JSON.stringify(activityData)
+                });
+
+                if (!response.ok) throw new Error('Failed to create activity');
+
+                const data = await response.json();
+                showToast('Activity created successfully!', 'success');
+                return data;
+            } catch (error) {
+                console.error('Error creating activity:', error);
+                showToast('Failed to create activity', 'error');
+                throw error;
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        // Update activity
+        async function updateActivityAPI(id, activityData) {
+            try {
+                showLoading(true);
+                const response = await fetch(`${API_BASE_URL}/${id}/`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': getCSRFToken()
+                    },
+                    credentials: 'include',
+                    body: JSON.stringify(activityData)
+                });
+
+                if (!response.ok) throw new Error('Failed to update activity');
+
+                const data = await response.json();
+                showToast('Activity updated successfully', 'success');
+                return data;
+            } catch (error) {
+                console.error('Error updating activity:', error);
+                showToast('Failed to update activity', 'error');
+                throw error;
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        // Delete activity
+        async function deleteActivityAPI(id) {
+            try {
+                showLoading(true);
+                const response = await fetch(`${API_BASE_URL}/${id}/`, {
+                    method: 'DELETE',
+                    headers: {
+                        'X-CSRFToken': getCSRFToken()
+                    },
+                    credentials: 'include'
+                });
+
+                if (!response.ok) throw new Error('Failed to delete activity');
+
+                showToast('Activity deleted', 'success');
+                return true;
+            } catch (error) {
+                console.error('Error deleting activity:', error);
+                showToast('Failed to delete activity', 'error');
+                return false;
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        // Fetch dashboard statistics
+        async function fetchDashboardStats() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/stats/`, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    credentials: 'include'
+                });
+
+                if (!response.ok) {
+                    // If stats endpoint doesn't exist, calculate from activities
+                    return calculateStatsFromActivities();
+                }
+
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error('Error fetching stats:', error);
+                return calculateStatsFromActivities();
+            }
+        }
+
+        // Calculate stats from activities if no stats endpoint
+        function calculateStatsFromActivities() {
+            const now = new Date();
+            const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+
+            const total = activities.length;
+            const thisMonth = activities.filter(a => {
+                const date = new Date(a.date);
+                return date.getMonth() === now.getMonth() &&
+                    date.getFullYear() === now.getFullYear();
+            }).length;
+            const thisWeek = activities.filter(a => new Date(a.date) >= weekAgo).length;
+
+            return { total, thisMonth, thisWeek };
+        }
+
+        // ==================== Initialize ====================
+        document.addEventListener('DOMContentLoaded', async () => {
+            initializeSpeechRecognition();
+            initializeDatePicker();
+            await loadActivities();
+            initializeCharts();
+            setupEventListeners();
+            applyTheme();
+        });
+
+        async function loadActivities() {
+            await fetchActivities();
+            updateDashboard();
+        }
+
+        // Initialize Flatpickr date range picker
+        function initializeDatePicker() {
+            flatpickrInstance = flatpickr("#dateRangePicker", {
+                mode: "range",
+                dateFormat: "Y-m-d",
+                onChange: function (selectedDates, dateStr, instance) {
+                    if (selectedDates.length === 2) {
+                        dateRange.start = selectedDates[0].toISOString().split('T')[0];
+                        dateRange.end = selectedDates[1].toISOString().split('T')[0];
+                        currentPageNum = 1; // Reset to first page
+                        loadManageActivities();
+                    }
+                },
+                onClose: function (selectedDates, dateStr, instance) {
+                    if (selectedDates.length === 0) {
+                        dateRange.start = null;
+                        dateRange.end = null;
+                        currentPageNum = 1;
+                        loadManageActivities();
+                    }
+                }
+            });
+        }
+
+        // ==================== UI Helper Functions ====================
+
+        function showLoading(show) {
+            document.getElementById('loadingSpinner').classList.toggle('hidden', !show);
+        }
+
+        // Theme Management
+        function applyTheme() {
+            if (isDarkMode) {
+                document.body.classList.remove('light-mode');
+                document.getElementById('mobileThemeIcon').className = 'fas fa-moon';
+                document.getElementById('desktopThemeIcon').className = 'fas fa-moon';
+            } else {
+                document.body.classList.add('light-mode');
+                document.getElementById('mobileThemeIcon').className = 'fas fa-sun';
+                document.getElementById('desktopThemeIcon').className = 'fas fa-sun';
+            }
+        }
+
+        function toggleTheme() {
+            isDarkMode = !isDarkMode;
+            applyTheme();
+        }
+
+        // ==================== Event Listeners ====================
+        function setupEventListeners() {
+            document.getElementById('menuBtn').addEventListener('click', openSidebar);
+            document.getElementById('closeBtn').addEventListener('click', closeSidebar);
+            document.getElementById('overlay').addEventListener('click', closeSidebar);
+            document.getElementById('mobileThemeToggle').addEventListener('click', toggleTheme);
+            document.getElementById('desktopThemeToggle').addEventListener('click', toggleTheme);
+
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const page = item.dataset.page;
+                    switchPage(page);
+                    if (window.innerWidth < 768) closeSidebar();
+                });
+            });
+
+            document.getElementById('titleVoiceBtn').addEventListener('click', () => startVoiceInput('titleInput'));
+            document.getElementById('contentVoiceBtn').addEventListener('click', () => startVoiceInput('contentInput'));
+            document.getElementById('imageInput').addEventListener('change', handleImageUpload);
+            document.getElementById('createForm').addEventListener('submit', handleCreateActivity);
+            document.getElementById('sortFilter').addEventListener('change', handleSortChange);
+            document.getElementById('logoutBtn').addEventListener('click', handleLogout);
+            document.getElementById('closeEditModal').addEventListener('click', closeEditModal);
+            document.getElementById('editForm').addEventListener('submit', handleEditActivity);
+
+            // Pagination buttons
+            document.getElementById('prevPage').addEventListener('click', () => goToPage(currentPageNum - 1));
+            document.getElementById('nextPage').addEventListener('click', () => goToPage(currentPageNum + 1));
+        }
+
+        function handleSortChange() {
+            sortOrder = document.getElementById('sortFilter').value;
+            currentPageNum = 1; // Reset to first page
+            loadManageActivities();
+        }
+
+        // ==================== Sidebar ====================
+        function openSidebar() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.remove('hidden');
+        }
+
+        function closeSidebar() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.add('hidden');
+        }
+
+        // ==================== Page Navigation ====================
+        function switchPage(page) {
+            document.querySelectorAll('.page').forEach(p => p.classList.add('hidden'));
+            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+
+            document.getElementById(`${page}Page`).classList.remove('hidden');
+            document.querySelector(`[data-page="${page}"]`).classList.add('active');
+            currentPage = page;
+
+            if (page === 'dashboard') updateDashboard();
+            if (page === 'manage') loadManageActivities();
+        }
+
+        // Load activities for manage page with current filters
+        async function loadManageActivities() {
+            await fetchActivities(currentPageNum, dateRange.start, dateRange.end, sortOrder);
+            renderActivities();
+            updatePaginationUI();
+        }
+
+        // Pagination functions
+        function goToPage(page) {
+            if (page < 1 || page > totalPages) return;
+            currentPageNum = page;
+            loadManageActivities();
+        }
+
+        function updatePaginationUI() {
+            document.getElementById('currentPageNum').textContent = currentPageNum;
+            document.getElementById('totalPages').textContent = totalPages;
+
+            const prevBtn = document.getElementById('prevPage');
+            const nextBtn = document.getElementById('nextPage');
+
+            prevBtn.disabled = currentPageNum === 1;
+            nextBtn.disabled = currentPageNum === totalPages;
+
+            // Show/hide pagination if only one page
+            const paginationContainer = document.getElementById('paginationContainer');
+            if (totalPages <= 1) {
+                paginationContainer.classList.add('hidden');
+            } else {
+                paginationContainer.classList.remove('hidden');
+            }
+        }
+
+        // ==================== Speech Recognition ====================
+        function initializeSpeechRecognition() {
+            if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+                const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                recognition = new SpeechRecognition();
+                recognition.continuous = false;
+                recognition.lang = 'en-US';
+                recognition.interimResults = false;
+            }
+        }
+
+        function startVoiceInput(inputId) {
+            if (!recognition) {
+                showToast('Speech recognition not supported', 'error');
+                return;
+            }
+
+            const btn = inputId === 'titleInput' ? document.getElementById('titleVoiceBtn') : document.getElementById('contentVoiceBtn');
+
+            if (isRecording) {
+                recognition.stop();
+                btn.classList.remove('recording');
+                btn.style.color = '';
+                isRecording = false;
+                return;
+            }
+
+            isRecording = true;
+            btn.classList.add('recording');
+            btn.style.color = '#ef4444';
+
+            recognition.onresult = (event) => {
+                const transcript = event.results[0][0].transcript;
+                const input = document.getElementById(inputId);
+                input.value = input.value ? input.value + ' ' + transcript : transcript;
+            };
+
+            recognition.onend = () => {
+                btn.classList.remove('recording');
+                btn.style.color = '';
+                isRecording = false;
+            };
+
+            recognition.onerror = (event) => {
+                console.error('Speech recognition error:', event.error);
+                btn.classList.remove('recording');
+                btn.style.color = '';
+                isRecording = false;
+                showToast('Voice input failed', 'error');
+            };
+
+            recognition.start();
+        }
+
+        // ==================== Image Upload ====================
+        async function handleImageUpload(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const formData = new FormData();
+            formData.append('image', file);
+
+            document.getElementById('uploadProgress').classList.remove('hidden');
+            document.getElementById('progressFill').style.width = '0%';
+
+            try {
+                let progress = 0;
+                const progressInterval = setInterval(() => {
+                    progress += 10;
+                    document.getElementById('progressFill').style.width = progress + '%';
+                    document.getElementById('progressText').textContent = `Uploading... ${progress}%`;
+                    if (progress >= 90) clearInterval(progressInterval);
+                }, 200);
+
+                const response = await fetch(`https://api.imgbb.com/1/upload?key=${IMGBB_API_KEY}`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                clearInterval(progressInterval);
+
+                if (!response.ok) throw new Error('Upload failed');
+
+                const data = await response.json();
+                uploadedImageUrl = data.data.url;
+
+                document.getElementById('progressFill').style.width = '100%';
+                document.getElementById('progressText').textContent = 'Upload complete!';
+
+                setTimeout(() => {
+                    document.getElementById('uploadProgress').classList.add('hidden');
+                    showImagePreview(uploadedImageUrl);
+                    showToast('Image uploaded successfully', 'success');
+                }, 500);
+
+            } catch (error) {
+                console.error('Upload error:', error);
+                document.getElementById('uploadProgress').classList.add('hidden');
+                showToast('Image upload failed. Please try again.', 'error');
+            }
+        }
+
+        function showImagePreview(url) {
+            const container = document.getElementById('imagePreviewContainer');
+            container.innerHTML = `
+                <div class="image-preview">
+                    <img src="${url}" alt="Preview">
+                    <div class="remove-image" onclick="removeImage()">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            `;
+            container.classList.remove('hidden');
+        }
+
+        function removeImage() {
+            uploadedImageUrl = '';
+            document.getElementById('imagePreviewContainer').classList.add('hidden');
+            document.getElementById('imageInput').value = '';
+        }
+
+        // ==================== CRUD Operations ====================
+
+        async function handleCreateActivity(e) {
+            e.preventDefault();
+
+            const title = document.getElementById('titleInput').value.trim();
+            const content = document.getElementById('contentInput').value.trim();
+
+            if (!title || !content) {
+                showToast('Please fill all required fields', 'error');
+                return;
+            }
+
+            const activityData = {
+                title,
+                content,
+                imageUrl: uploadedImageUrl || ''
+            };
+
+            document.getElementById('submitBtn').disabled = true;
+
+            try {
+                await createActivityAPI(activityData);
+
+                // Reset form
+                document.getElementById('createForm').reset();
+                removeImage();
+
+                // Reload activities and switch to manage page
+                await loadActivities();
+                setTimeout(() => switchPage('manage'), 1000);
+            } catch (error) {
+                console.error('Create activity error:', error);
+            } finally {
+                document.getElementById('submitBtn').disabled = false;
+            }
+        }
+
+        async function deleteActivity(id) {
+            if (!confirm('Are you sure you want to delete this activity?')) return;
+
+            const success = await deleteActivityAPI(id);
+            if (success) {
+                await loadManageActivities(); // Reload current page
+                await loadActivities(); // Update dashboard data
+                if (currentPage === 'dashboard') updateDashboard();
+            }
+        }
+
+        function openEditModal(id) {
+            const activity = activities.find(a => a.id === id);
+            if (!activity) return;
+
+            document.getElementById('editActivityId').value = activity.id;
+            document.getElementById('editTitle').value = activity.title;
+            document.getElementById('editContent').value = activity.content;
+            document.getElementById('editImageUrl').value = activity.imageUrl || '';
+            document.getElementById('editModal').classList.remove('hidden');
+        }
+
+        function closeEditModal() {
+            document.getElementById('editModal').classList.add('hidden');
+        }
+
+        async function handleEditActivity(e) {
+            e.preventDefault();
+
+            const id = parseInt(document.getElementById('editActivityId').value);
+            const activityData = {
+                title: document.getElementById('editTitle').value,
+                content: document.getElementById('editContent').value,
+                imageUrl: document.getElementById('editImageUrl').value
+            };
+
+            document.getElementById('editSubmitBtn').disabled = true;
+
+            try {
+                await updateActivityAPI(id, activityData);
+                closeEditModal();
+                await loadManageActivities(); // Reload current page
+                await loadActivities(); // Update dashboard data
+                if (currentPage === 'dashboard') updateDashboard();
+            } catch (error) {
+                console.error('Update activity error:', error);
+            } finally {
+                document.getElementById('editSubmitBtn').disabled = false;
+            }
+        }
+
+        // ==================== Rendering ====================
+
+        function renderActivities() {
+            const container = document.getElementById('activitiesList');
+
+            if (activities.length === 0) {
+                container.innerHTML = `
+                    <div class="card p-8 rounded-xl text-center">
+                        <i class="fas fa-inbox text-5xl mb-4" style="color: var(--text-secondary);"></i>
+                        <p style="color: var(--text-secondary);">No activities found</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = activities.map(a => `
+                <div class="card p-6 rounded-xl shadow-lg">
+                    <div class="flex flex-col md:flex-row items-start justify-between gap-4">
+                        <div class="flex-1 w-full">
+                            <h3 class="text-xl font-bold mb-2">${escapeHtml(a.title)}</h3>
+                            <p class="mb-3" style="color: var(--text-secondary);">${escapeHtml(a.content)}</p>
+                            <div class="flex items-center gap-4 text-sm" style="color: var(--text-secondary);">
+                                <span><i class="far fa-calendar mr-1"></i>${new Date(a.date).toLocaleDateString()}</span>
+                                ${a.imageUrl ? '<span><i class="far fa-image mr-1"></i>Has Image</span>' : ''}
+                            </div>
+                        </div>
+                        <div class="flex gap-2">
+                            <button onclick="openEditModal(${a.id})" class="px-3 py-2 rounded-lg hover:bg-blue-500 hover:bg-opacity-20 transition-colors">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button onclick="deleteActivity(${a.id})" class="px-3 py-2 rounded-lg hover:bg-red-500 hover:bg-opacity-20 transition-colors">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // ==================== Dashboard Analytics ====================
+
+        async function updateDashboard() {
+            const stats = await fetchDashboardStats();
+
+            document.getElementById('totalActivities').textContent = stats.total || 0;
+            document.getElementById('monthActivities').textContent = stats.thisMonth || 0;
+            document.getElementById('weekActivities').textContent = stats.thisWeek || 0;
+
+            updateCharts();
+        }
+
+        // ==================== Charts ====================
+
+        let weeklyChart, monthlyChart;
+
+        function initializeCharts() {
+            const chartColor = isDarkMode ? '#f1f5f9' : '#0f172a';
+            const gridColor = isDarkMode ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)';
+
+            Chart.defaults.color = chartColor;
+            Chart.defaults.borderColor = gridColor;
+
+            const weeklyCtx = document.getElementById('weeklyChart').getContext('2d');
+            weeklyChart = new Chart(weeklyCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                    datasets: [{
+                        label: 'Activities',
+                        data: [0, 0, 0, 0, 0, 0, 0],
+                        backgroundColor: 'rgba(59, 130, 246, 0.8)',
+                        borderRadius: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: { stepSize: 1 }
+                        }
+                    }
+                }
+            });
+
+            const monthlyCtx = document.getElementById('monthlyChart').getContext('2d');
+            monthlyChart = new Chart(monthlyCtx, {
+                type: 'line',
+                data: {
+                    labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                    datasets: [{
+                        label: 'Activities',
+                        data: [0, 0, 0, 0],
+                        borderColor: 'rgba(59, 130, 246, 1)',
+                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: { stepSize: 1 }
+                        }
+                    }
+                }
+            });
+
+            updateCharts();
+        }
+
+        function updateCharts() {
+            const now = new Date();
+
+            // Weekly data
+            const weekData = [0, 0, 0, 0, 0, 0, 0];
+            activities.forEach(a => {
+                const date = new Date(a.date);
+                const diffDays = Math.floor((now - date) / (1000 * 60 * 60 * 24));
+                if (diffDays < 7) {
+                    const dayIndex = (date.getDay() + 6) % 7; // Convert Sunday=0 to Monday=0
+                    weekData[dayIndex]++;
+                }
+            });
+            weeklyChart.data.datasets[0].data = weekData;
+            weeklyChart.update();
+
+            // Monthly data (by weeks)
+            const monthData = [0, 0, 0, 0];
+            activities.forEach(a => {
+                const date = new Date(a.date);
+                if (date.getMonth() === now.getMonth() && date.getFullYear() === now.getFullYear()) {
+                    const weekIndex = Math.floor((date.getDate() - 1) / 7);
+                    if (weekIndex < 4) monthData[weekIndex]++;
+                }
+            });
+            monthlyChart.data.datasets[0].data = monthData;
+            monthlyChart.update();
+        }
+
+        // ==================== Toast Notifications ====================
+
+        function showToast(message, type = 'success') {
+            Toastify({
+                text: message,
+                duration: 3000,
+                gravity: "top",
+                position: "right",
+                style: {
+                    background: type === 'success' ? '#10b981' : '#ef4444',
+                    borderRadius: '8px',
+                    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+                }
+            }).showToast();
+        }
+
+        // ==================== Logout ====================
+
+        function handleLogout() {
+            if (confirm('Are you sure you want to logout?')) {
+                showToast('Logging out...', 'success');
+                setTimeout(() => {
+                    window.location.href = '/logout/'; // Change to your Django logout URL
+                }, 1000);
+            }
+        }
+    </script>
+</body>
+
+</html>

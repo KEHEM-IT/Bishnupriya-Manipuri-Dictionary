@@ -1,23 +1,41 @@
+<!-- frontend/src/components/SearchBox.vue -->
 <script setup lang="ts">
 import { ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
-import { useVoiceSearch } from '../composables/useVoiceSearch';
 import { Language } from '../types';
 
 const router = useRouter();
 const searchTerm = ref('');
-const selectedLanguage = ref<Language>('english');
+const selectedLanguage = ref<Language>('bpy');
+const isListening = ref(false);
 
-const { isListening, transcript, isSupported, initVoiceRecognition, startListening, stopListening } = useVoiceSearch();
+// Voice search setup
+let recognition: any = null;
+
+const initVoiceRecognition = () => {
+    if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+        const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+        recognition = new SpeechRecognition();
+        recognition.continuous = false;
+        recognition.interimResults = false;
+
+        recognition.onresult = (event: any) => {
+            const transcript = event.results[0][0].transcript;
+            searchTerm.value = transcript;
+            handleSearch();
+        };
+
+        recognition.onend = () => {
+            isListening.value = false;
+        };
+
+        recognition.onerror = () => {
+            isListening.value = false;
+        };
+    }
+};
 
 initVoiceRecognition();
-
-watch(transcript, (newValue) => {
-    if (newValue) {
-        searchTerm.value = newValue;
-        handleSearch();
-    }
-});
 
 const handleSearch = () => {
     if (searchTerm.value.trim()) {
@@ -32,11 +50,19 @@ const handleSearch = () => {
 };
 
 const handleVoiceSearch = () => {
+    if (!recognition) return;
+
     if (isListening.value) {
-        stopListening();
+        recognition.stop();
+        isListening.value = false;
     } else {
-        startListening();
+        recognition.start();
+        isListening.value = true;
     }
+};
+
+const isVoiceSupported = () => {
+    return 'webkitSpeechRecognition' in window || 'SpeechRecognition' in window;
 };
 </script>
 
@@ -44,26 +70,26 @@ const handleVoiceSearch = () => {
     <div class="w-full max-w-3xl mx-auto">
         <div class="mb-4 flex gap-2 justify-center flex-wrap">
             <button v-for="lang in [
-                { value: 'bishnupriya', label: 'বিষ্ণুপ্রিয়া' },
-                { value: 'bengali', label: 'বাংলা' },
-                { value: 'english', label: 'English' }
+                { value: 'bpy', label: 'বিষ্ণুপ্রিয়া' },
+                { value: 'bn', label: 'বাংলা' },
+                { value: 'en', label: 'English' }
             ]" :key="lang.value" @click="selectedLanguage = lang.value as Language" :class="[
-            'px-4 py-2 rounded-lg font-medium transition-all text-sm',
-            selectedLanguage === lang.value
-                ? 'bg-blue-600 text-white dark:bg-blue-500'
-                : 'bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
-        ]">
+                    'px-4 py-2 rounded-lg font-medium transition-all text-sm',
+                    selectedLanguage === lang.value
+                        ? 'bg-blue-600 text-white dark:bg-blue-500'
+                        : 'bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+                ]">
                 {{ lang.label }}
             </button>
         </div>
 
         <div class="relative">
             <input v-model="searchTerm" @keyup.enter="handleSearch" type="text"
-                :placeholder="`Search in ${selectedLanguage}...`"
+                :placeholder="`Search in ${selectedLanguage === 'bpy' ? 'Bishnupriya' : selectedLanguage === 'bn' ? 'Bengali' : 'English'}...`"
                 class="w-full px-6 py-4 pr-24 text-lg rounded-2xl border-2 border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 transition-colors" />
 
             <div class="absolute right-3 top-1/2 -translate-y-1/2 flex gap-2">
-                <button v-if="isSupported" @click="handleVoiceSearch" :class="[
+                <button v-if="isVoiceSupported()" @click="handleVoiceSearch" :class="[
                     'p-2 rounded-lg transition-all',
                     isListening
                         ? 'bg-red-500 text-white animate-pulse'
