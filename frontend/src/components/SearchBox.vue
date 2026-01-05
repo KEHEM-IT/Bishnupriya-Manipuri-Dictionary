@@ -89,6 +89,7 @@ const startTypingAnimation = () => {
     const typeChar = () => {
         if (searchTerm.value.length > 0) {
             clearInterval(typingInterval);
+            clearTimeout(erasingTimeout);
             typedText.value = '';
             return;
         }
@@ -102,8 +103,9 @@ const startTypingAnimation = () => {
                 isTyping = false;
                 clearInterval(typingInterval);
                 erasingTimeout = setTimeout(() => {
+                    clearInterval(typingInterval);
                     typingInterval = setInterval(typeChar, 50);
-                }, 2000);
+                }, 1000);
             }
         } else {
             if (typedText.value.length > 0) {
@@ -114,8 +116,9 @@ const startTypingAnimation = () => {
                 currentHintIndex.value = (currentHintIndex.value + 1) % hintWords[selectedLanguage.value].length;
                 clearInterval(typingInterval);
                 setTimeout(() => {
+                    clearInterval(typingInterval);
                     typingInterval = setInterval(typeChar, 100);
-                }, 500);
+                }, 200);
             }
         }
     };
