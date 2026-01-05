@@ -61,7 +61,14 @@ const initBanglaInput = () => {
     const $input = (window as any).$(inputRef.value);
     $input.bangla({ enable: isAvroEnabled.value, maxSuggestions: 10, disableSuggestion: false });
     $input.on('input', function (this: HTMLInputElement) {
-        searchTerm.value = (window as any).$(this).val() as string;
+        const newValue = (window as any).$(this).val() as string;
+        searchTerm.value = newValue;
+        // Immediately stop animation when Avro updates the input
+        if (newValue.length > 0) {
+            typedText.value = '';
+            clearInterval(typingInterval);
+            clearTimeout(erasingTimeout);
+        }
     });
 };
 
@@ -78,7 +85,6 @@ const startTypingAnimation = () => {
 
     let charIndex = 0;
     let isTyping = true;
-    const currentWord = hintWords[selectedLanguage.value][currentHintIndex.value];
 
     const typeChar = () => {
         if (searchTerm.value.length > 0) {
@@ -87,13 +93,17 @@ const startTypingAnimation = () => {
             return;
         }
 
+        const currentWord = hintWords[selectedLanguage.value][currentHintIndex.value];
+
         if (isTyping) {
             if (charIndex < currentWord.length) {
                 typedText.value += currentWord[charIndex++];
             } else {
                 isTyping = false;
                 clearInterval(typingInterval);
-                erasingTimeout = setTimeout(() => typingInterval = setInterval(typeChar, 50), 2000);
+                erasingTimeout = setTimeout(() => {
+                    typingInterval = setInterval(typeChar, 50);
+                }, 2000);
             }
         } else {
             if (typedText.value.length > 0) {
@@ -103,7 +113,9 @@ const startTypingAnimation = () => {
                 charIndex = 0;
                 currentHintIndex.value = (currentHintIndex.value + 1) % hintWords[selectedLanguage.value].length;
                 clearInterval(typingInterval);
-                setTimeout(() => typingInterval = setInterval(typeChar, 100), 500);
+                setTimeout(() => {
+                    typingInterval = setInterval(typeChar, 100);
+                }, 500);
             }
         }
     };
@@ -212,11 +224,10 @@ onUnmounted(() => {
                     <i class="fas fa-keyboard text-sm"></i>
                 </button>
 
-                <button v-if="isSpeechRecognitionSupported"
-                    @click="handleVoiceSearch" :class="[
-                        'p-2 rounded-lg transition-all',
-                        isListening ? 'bg-red-500 text-white animate-pulse' : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
-                    ]" :title="isListening ? 'Stop listening' : 'Voice search'">
+                <button v-if="isSpeechRecognitionSupported" @click="handleVoiceSearch" :class="[
+                    'p-2 rounded-lg transition-all',
+                    isListening ? 'bg-red-500 text-white animate-pulse' : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+                ]" :title="isListening ? 'Stop listening' : 'Voice search'">
                     <i class="fas fa-microphone"></i>
                 </button>
 
@@ -237,11 +248,15 @@ onUnmounted(() => {
                 <i class="fas fa-microphone-lines"></i>
                 Listening...
             </p>
-            <p v-else-if="isAvroEnabled && selectedLanguage !== 'en'"
-                class="text-green-600 dark:text-green-400 flex items-center gap-2">
-                <i class="fas fa-keyboard"></i>
-                Avro Phonetic: Type in English
-            </p>
+            <span class="" v-else-if="isAvroEnabled && selectedLanguage !== 'en'">
+                <p class="text-green-600 dark:text-green-400 text-center">
+                    <i class="fas fa-keyboard"></i>
+                    Avro Phonetic: ইংরেজিৎ লিখিক
+                </p>
+                <p class="text-green-600 dark:text-green-400 text-center">
+                    (কীবোর্ডহার স্পেস বা ট্যাব বাটনে চিপিলে ওয়াইগো হমিতই)
+                </p>
+            </span>
         </div>
     </div>
 </template>
