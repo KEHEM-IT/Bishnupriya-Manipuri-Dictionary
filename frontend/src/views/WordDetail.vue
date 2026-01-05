@@ -75,10 +75,7 @@ onMounted(async () => {
                     <router-link to="/" class="flex items-center gap-3">
                         <div
                             class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 rounded-lg flex items-center justify-center">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                            </svg>
+                            <i class="fas fa-book-open text-white text-lg"></i>
                         </div>
                         <div>
                             <h1 class="text-xl font-bold text-gray-900 dark:text-white">বিষ্ণুপ্রিয়া</h1>
@@ -88,8 +85,9 @@ onMounted(async () => {
 
                     <div class="flex items-center gap-3">
                         <router-link to="/"
-                            class="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                            ← Back
+                            class="px-4 py-2 text-m font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                            <i class="fas fa-arrow-left"></i>
+                            Back
                         </router-link>
                         <ThemeToggle />
                     </div>
@@ -109,6 +107,17 @@ onMounted(async () => {
 
         <div v-else class="container mx-auto px-4 py-8 max-w-5xl">
             <!-- Main Word Card -->
+            <section
+                class="relative bg-secondary rounded-xl p-8 shadow-2xl text-white mb-8 dark:bg-[#131f2e] dark:text-gray-200 dark:shadow-xl border-2 border-[#f0f0f0] dark:border-[#19222e]">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 inline-block relative text-[#2e2e2e] dark:text-white">
+                    {{ word.bpy }}
+                    <i title="Pronunciation" class="fas fa-volume-up cursor-pointer absolute top-0 -right-8 text-xl text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]"></i>
+                </h1>
+                
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nesciunt accusantium nihil fugiat
+                    iusto nam. Accusamus ab ipsam asperiores debitis sunt possimus? Ea itaque error minima iure cumque,
+                    aut at.</h1>
+            </section>
             <div
                 class="bg-gradient-to-br from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 rounded-2xl p-8 shadow-2xl text-white mb-8">
                 <div class="flex flex-wrap gap-2 mb-4">
