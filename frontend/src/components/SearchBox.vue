@@ -253,8 +253,15 @@ onUnmounted(() => {
                     <i class="fas fa-keyboard"></i>
                     Avro Phonetic: ইংরেজিৎ লিখিক
                 </p>
-                <p class="text-green-600 dark:text-green-400 text-center">
-                    (কীবোর্ডহার স্পেস বা ট্যাব বাটনে চিপিলে ওয়াইগো হমিতই)
+                <p
+                    class="text-green-600 dark:text-green-400 text-center flex items-center justify-center gap-1 flex-wrap">
+                    (কীবোর্ডহার
+                    <kbd
+                        class="px-3 py-1 bg-gray-200 dark:bg-gray-700 border border-gray-400 dark:border-gray-500 rounded shadow-sm text-gray-800 dark:text-gray-200 font-mono text-xs">Space</kbd>
+                    স্পেস বা
+                    <kbd
+                        class="px-2 py-1 bg-gray-200 dark:bg-gray-700 border border-gray-400 dark:border-gray-500 rounded shadow-sm text-gray-800 dark:text-gray-200 font-mono text-xs">Tab</kbd>
+                    ট্যাব বাটনে চিপিলে ওয়াইগো হমিতই)
                 </p>
             </span>
         </div>
