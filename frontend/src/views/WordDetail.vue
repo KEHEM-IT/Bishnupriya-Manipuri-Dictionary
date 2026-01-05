@@ -15,6 +15,7 @@ const speak = (text: string, lang: string) => {
         const utterance = new SpeechSynthesisUtterance(text);
         if (lang === 'english') utterance.lang = 'en-US';
         else if (lang === 'bengali') utterance.lang = 'bn-IN';
+        else if (lang === 'bishnupriya') utterance.lang = 'bn-IN';
         else utterance.lang = 'bn-IN';
         utterance.rate = 0.8;
         window.speechSynthesis.speak(utterance);
@@ -108,16 +109,37 @@ onMounted(async () => {
         <div v-else class="container mx-auto px-4 py-8 max-w-5xl">
             <!-- Main Word Card -->
             <section
-                class="relative bg-secondary rounded-xl p-8 shadow-2xl text-white mb-8 dark:bg-[#131f2e] dark:text-gray-200 dark:shadow-xl border-2 border-[#f0f0f0] dark:border-[#19222e]">
-                <h1 class="text-5xl md:text-6xl font-bold mb-6 inline-block relative text-[#2e2e2e] dark:text-white">
+                class="relative flex flex-col bg-secondary rounded-xl p-8 shadow-2xl text-white mb-8 dark:bg-[#131f2e] dark:text-gray-200 dark:shadow-xl border-2 border-[#f0f0f0] dark:border-[#19222e]">
+                <h1 class="text-5xl md:text-6xl font-bold w-min relative text-[#2e2e2e] dark:text-white">
                     {{ word.bpy }}
-                    <i title="Pronunciation" class="fas fa-volume-up cursor-pointer absolute top-0 -right-8 text-xl text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]"></i>
+                    <i title="Pronunciation" @click="speak(word.phonetic?.bpy || word.bpy, 'bishnupriya')"
+                        class="fas fa-volume-up cursor-pointer absolute top-0 -right-8 text-xl text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]">
+                    </i>
                 </h1>
-                
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nesciunt accusantium nihil fugiat
-                    iusto nam. Accusamus ab ipsam asperiores debitis sunt possimus? Ea itaque error minima iure cumque,
-                    aut at.</h1>
+                <div class="flex gap-6 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
+                    <!-- Bengali Section -->
+                    <div class="border-r-2 pr-6 border-[#f0f0f0] dark:border-[#233142]">
+                        <p class="text-blue-500 dark:text-blue-400 text-sm mb-2">Bengali</p>
+                        <router-link :to="`/word/${word.bn}?lang=bn`"
+                            class="text-2xl font-semibold hover:underline hover:text-blue-500 dark:hover:text-blue-400">
+                            {{ word.bn }}
+                        </router-link>
+                    </div>
+
+                    <!-- English Section -->
+                    <div>
+                        <p class="text-blue-500 dark:text-blue-400 text-sm mb-2">English</p>
+                        <router-link :to="`/word/${word.en}?lang=en`"
+                            class="text-2xl font-semibold hover:underline hover:text-blue-500 dark:hover:text-blue-400">
+                            {{ word.en }}
+                        </router-link>
+                    </div>
+                </div>
+
+
             </section>
+
+
             <div
                 class="bg-gradient-to-br from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 rounded-2xl p-8 shadow-2xl text-white mb-8">
                 <div class="flex flex-wrap gap-2 mb-4">
@@ -289,7 +311,7 @@ onMounted(async () => {
                     <div v-if="word.grammar.gender" class="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl">
                         <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Gender</p>
                         <p class="text-xl font-semibold text-gray-900 dark:text-white capitalize">{{ word.grammar.gender
-                            }}</p>
+                        }}</p>
                     </div>
                     <div v-if="word.grammar.number?.plural" class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl">
                         <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Plural Form</p>
