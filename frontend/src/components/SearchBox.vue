@@ -1,120 +1,265 @@
 <!-- frontend/src/components/SearchBox.vue -->
 <script setup lang="ts">
-import { ref, watch } from 'vue';
+import { ref, watch, onMounted, onUnmounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { Language } from '../types';
 
+// STATE
 const router = useRouter();
 const searchTerm = ref('');
 const selectedLanguage = ref<Language>('bpy');
 const isListening = ref(false);
+const isAvroEnabled = ref(true);
+const typedText = ref('');
+const currentHintIndex = ref(0);
+const inputRef = ref<HTMLInputElement | null>(null);
+const hasError = ref(false);
+const isSpeechRecognitionSupported = ref(typeof window !== 'undefined' && ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window));
 
-// Voice search setup
-let recognition: any = null;
-
-const initVoiceRecognition = () => {
-    if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
-        const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-        recognition = new SpeechRecognition();
-        recognition.continuous = false;
-        recognition.interimResults = false;
-
-        recognition.onresult = (event: any) => {
-            const transcript = event.results[0][0].transcript;
-            searchTerm.value = transcript;
-            handleSearch();
-        };
-
-        recognition.onend = () => {
-            isListening.value = false;
-        };
-
-        recognition.onerror = () => {
-            isListening.value = false;
-        };
-    }
+// CONSTANTS
+const hintWords: Record<Language, string[]> = {
+    bpy: ['বিষ্ণুপ্রিয়া মণিপুরী', 'ইতিহাস', 'সংস্কৃতি', 'ভাষা', 'লেখক'],
+    bn: ['বাংলা সাহিত্য', 'রবীন্দ্রনাথ ঠাকুর', 'বাংলাদেশ', 'ইতিহাস', 'সংস্কৃতি'],
+    en: ['History', 'Culture', 'Literature', 'Language', 'Writers']
 };
 
-initVoiceRecognition();
+let recognition: any = null;
+let typingInterval: any = null;
+let erasingTimeout: any = null;
 
-const handleSearch = () => {
-    if (searchTerm.value.trim()) {
-        router.push({
-            name: 'SearchResults',
-            query: {
-                q: searchTerm.value,
-                lang: selectedLanguage.value
-            }
-        });
-    }
+// VOICE RECOGNITION
+const initVoiceRecognition = () => {
+    if (!('webkitSpeechRecognition' in window || 'SpeechRecognition' in window)) return;
+
+    const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    recognition = new SpeechRecognition();
+    recognition.continuous = false;
+    recognition.interimResults = false;
+    recognition.onresult = (event: any) => {
+        searchTerm.value = event.results[0][0].transcript;
+        handleSearch();
+    };
+    recognition.onend = recognition.onerror = () => isListening.value = false;
 };
 
 const handleVoiceSearch = () => {
     if (!recognition) return;
+    isListening.value ? recognition.stop() : recognition.start();
+    isListening.value = !isListening.value;
+};
 
-    if (isListening.value) {
-        recognition.stop();
-        isListening.value = false;
-    } else {
-        recognition.start();
-        isListening.value = true;
+// BANGLA INPUT
+const toggleBanglaInput = (enable: boolean) => {
+    if (inputRef.value && (window as any).$?.fn?.bangla) {
+        ((window as any).$(inputRef.value)).bangla('enable', enable);
     }
 };
 
-const isVoiceSupported = () => {
-    return 'webkitSpeechRecognition' in window || 'SpeechRecognition' in window;
+const initBanglaInput = () => {
+    if (!inputRef.value || !(window as any).$?.fn?.bangla) return;
+
+    const $input = (window as any).$(inputRef.value);
+    $input.bangla({ enable: isAvroEnabled.value, maxSuggestions: 10, disableSuggestion: false });
+    $input.on('input', function (this: HTMLInputElement) {
+        searchTerm.value = (window as any).$(this).val() as string;
+    });
 };
+
+const toggleAvro = () => {
+    isAvroEnabled.value = !isAvroEnabled.value;
+    toggleBanglaInput(isAvroEnabled.value);
+};
+
+// TYPING ANIMATION
+const startTypingAnimation = () => {
+    clearInterval(typingInterval);
+    clearTimeout(erasingTimeout);
+    if (searchTerm.value.length > 0) return;
+
+    let charIndex = 0;
+    let isTyping = true;
+    const currentWord = hintWords[selectedLanguage.value][currentHintIndex.value];
+
+    const typeChar = () => {
+        if (searchTerm.value.length > 0) {
+            clearInterval(typingInterval);
+            typedText.value = '';
+            return;
+        }
+
+        if (isTyping) {
+            if (charIndex < currentWord.length) {
+                typedText.value += currentWord[charIndex++];
+            } else {
+                isTyping = false;
+                clearInterval(typingInterval);
+                erasingTimeout = setTimeout(() => typingInterval = setInterval(typeChar, 50), 2000);
+            }
+        } else {
+            if (typedText.value.length > 0) {
+                typedText.value = typedText.value.slice(0, -1);
+            } else {
+                isTyping = true;
+                charIndex = 0;
+                currentHintIndex.value = (currentHintIndex.value + 1) % hintWords[selectedLanguage.value].length;
+                clearInterval(typingInterval);
+                setTimeout(() => typingInterval = setInterval(typeChar, 100), 500);
+            }
+        }
+    };
+
+    typingInterval = setInterval(typeChar, 100);
+};
+
+// SEARCH
+const handleSearch = () => {
+    if (!searchTerm.value.trim()) {
+        hasError.value = true;
+        setTimeout(() => hasError.value = false, 2000);
+        return;
+    }
+    hasError.value = false;
+    router.push({ name: 'SearchResults', query: { q: searchTerm.value, lang: selectedLanguage.value } });
+};
+
+const handleKeyDown = (event: KeyboardEvent) => {
+    const hasSuggestions = document.querySelector('.avro-suggest ul li');
+    if (hasSuggestions && (event.key === 'Tab' || event.key === ' ')) {
+        event.preventDefault();
+        return;
+    }
+    if (event.key === 'Enter') handleSearch();
+};
+
+// WATCHERS
+watch(selectedLanguage, () => {
+    currentHintIndex.value = 0;
+    typedText.value = '';
+    clearInterval(typingInterval);
+    clearTimeout(erasingTimeout);
+    startTypingAnimation();
+
+    const enableAvro = selectedLanguage.value !== 'en';
+    isAvroEnabled.value = enableAvro;
+    toggleBanglaInput(enableAvro);
+});
+
+watch(searchTerm, (newVal) => {
+    if (newVal.length > 0) {
+        hasError.value = false;
+        typedText.value = '';
+        clearInterval(typingInterval);
+        clearTimeout(erasingTimeout);
+    } else {
+        startTypingAnimation();
+    }
+});
+
+// LIFECYCLE
+onMounted(() => {
+    initVoiceRecognition();
+    startTypingAnimation();
+
+    const checkAndInit = () => {
+        if ((window as any).$?.fn?.bangla) {
+            initBanglaInput();
+        } else {
+            setTimeout(checkAndInit, 200);
+        }
+    };
+    setTimeout(checkAndInit, 100);
+});
+
+onUnmounted(() => {
+    clearInterval(typingInterval);
+    clearTimeout(erasingTimeout);
+    if (inputRef.value && (window as any).$) {
+        ((window as any).$(inputRef.value)).off('input');
+    }
+});
 </script>
 
 <template>
     <div class="w-full max-w-3xl mx-auto">
         <div class="mb-4 flex gap-2 justify-center flex-wrap">
             <button v-for="lang in [
-                { value: 'bpy', label: 'বিষ্ণুপ্রিয়া' },
-                { value: 'bn', label: 'বাংলা' },
-                { value: 'en', label: 'English' }
+                { value: 'bpy', label: 'বিষ্ণুপ্রিয়া', icon: 'fa-language' },
+                { value: 'bn', label: 'বাংলা', icon: 'fa-book' },
+                { value: 'en', label: 'English', icon: 'fa-globe' }
             ]" :key="lang.value" @click="selectedLanguage = lang.value as Language" :class="[
-                    'px-4 py-2 rounded-lg font-medium transition-all text-sm',
-                    selectedLanguage === lang.value
-                        ? 'bg-blue-600 text-white dark:bg-blue-500'
-                        : 'bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
-                ]">
+                'px-4 py-2 rounded-lg font-medium transition-all text-sm flex items-center gap-2',
+                selectedLanguage === lang.value
+                    ? 'bg-blue-600 text-white dark:bg-blue-500 shadow-lg'
+                    : 'bg-gray-200 text-gray-700 dark:bg-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+            ]">
+                <i :class="`fas ${lang.icon}`"></i>
                 {{ lang.label }}
             </button>
         </div>
 
         <div class="relative">
-            <input v-model="searchTerm" @keyup.enter="handleSearch" type="text"
-                :placeholder="`Search in ${selectedLanguage === 'bpy' ? 'Bishnupriya' : selectedLanguage === 'bn' ? 'Bengali' : 'English'}...`"
-                class="w-full px-6 py-4 pr-24 text-lg rounded-2xl border-2 border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 transition-colors" />
+            <input ref="inputRef" v-model="searchTerm" type="text"
+                :placeholder="searchTerm.length === 0 ? typedText : ''" @keydown="handleKeyDown" :class="[
+                    'w-full px-6 py-4 pr-32 text-lg rounded-2xl border-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none transition-colors placeholder-gray-400 dark:placeholder-gray-500',
+                    hasError ? 'border-red-500 focus:border-red-500' : 'border-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-400'
+                ]" />
 
             <div class="absolute right-3 top-1/2 -translate-y-1/2 flex gap-2">
-                <button v-if="isVoiceSupported()" @click="handleVoiceSearch" :class="[
+                <button v-if="selectedLanguage !== 'en'" @click="toggleAvro" :class="[
                     'p-2 rounded-lg transition-all',
-                    isListening
-                        ? 'bg-red-500 text-white animate-pulse'
-                        : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
-                ]" :title="isListening ? 'Stop listening' : 'Voice search'">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd"
-                            d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z"
-                            clip-rule="evenodd" />
-                    </svg>
+                    isAvroEnabled ? 'bg-green-500 text-white shadow-lg' : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+                ]" :title="isAvroEnabled ? 'Avro Phonetic: ON' : 'Avro Phonetic: OFF'">
+                    <i class="fas fa-keyboard text-sm"></i>
+                </button>
+
+                <button v-if="isSpeechRecognitionSupported"
+                    @click="handleVoiceSearch" :class="[
+                        'p-2 rounded-lg transition-all',
+                        isListening ? 'bg-red-500 text-white animate-pulse' : 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'
+                    ]" :title="isListening ? 'Stop listening' : 'Voice search'">
+                    <i class="fas fa-microphone"></i>
                 </button>
 
                 <button @click="handleSearch"
                     class="p-2 rounded-lg bg-blue-600 dark:bg-blue-500 text-white hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors"
                     title="Search">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
+                    <i class="fas fa-search"></i>
                 </button>
             </div>
         </div>
 
-        <p v-if="isListening" class="text-center mt-3 text-red-500 dark:text-red-400 animate-pulse">
-            🎤 Listening...
-        </p>
+        <div class="mt-3 flex items-center justify-center gap-4 text-sm">
+            <p v-if="hasError" class="text-red-500 dark:text-red-400 flex items-center gap-2">
+                <i class="fas fa-exclamation-circle"></i>
+                Please enter a search term
+            </p>
+            <p v-else-if="isListening" class="text-red-500 dark:text-red-400 animate-pulse flex items-center gap-2">
+                <i class="fas fa-microphone-lines"></i>
+                Listening...
+            </p>
+            <p v-else-if="isAvroEnabled && selectedLanguage !== 'en'"
+                class="text-green-600 dark:text-green-400 flex items-center gap-2">
+                <i class="fas fa-keyboard"></i>
+                Avro Phonetic: Type in English
+            </p>
+        </div>
     </div>
 </template>
+
+<style scoped>
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.2s ease-out;
+}
+</style>
