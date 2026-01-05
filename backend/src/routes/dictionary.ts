@@ -53,13 +53,23 @@ router.get('/search', (req: Request, res: Response) => {
         });
     }
 
+    // Trim the search term to remove leading/trailing whitespace
+    const trimmedTerm = (term as string).trim();
+
+    if (!trimmedTerm) {
+        return res.status(400).json({
+            success: false,
+            error: 'Search term cannot be empty'
+        });
+    }
+
     try {
-        const results = searchWordInAlphabets(term as string, lang);
+        const results = searchWordInAlphabets(trimmedTerm, lang);
 
         res.json({
             success: true,
             count: results.length,
-            searchTerm: term,
+            searchTerm: trimmedTerm,
             language: lang,
             data: results
         });
