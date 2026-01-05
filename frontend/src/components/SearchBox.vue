@@ -261,10 +261,7 @@ onUnmounted(() => {
                     (কীবোর্ডহার
                     <kbd
                         class="px-3 py-1 bg-gray-200 dark:bg-gray-700 border border-gray-400 dark:border-gray-500 rounded shadow-sm text-gray-800 dark:text-gray-200 font-mono text-xs">Space</kbd>
-                    স্পেস বা
-                    <kbd
-                        class="px-2 py-1 bg-gray-200 dark:bg-gray-700 border border-gray-400 dark:border-gray-500 rounded shadow-sm text-gray-800 dark:text-gray-200 font-mono text-xs">Tab</kbd>
-                    ট্যাব বাটনে চিপিলে ওয়াইগো হমিতই)
+                    স্পেস বাটনে চিপিলে ওয়াইগো হমিতই)
                 </p>
             </span>
         </div>
