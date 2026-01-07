@@ -124,57 +124,58 @@ onMounted(async () => {
             <!-- Main Word Card -->
             <section
                 class="relative flex flex-col bg-secondary rounded-xl p-8 shadow-2xl text-white mb-8 dark:bg-[#131f2e] dark:text-gray-200 dark:shadow-xl border-2 border-[#f0f0f0] dark:border-[#19222e]">
-                <div class="flex gap-4">
+                <!-- HEAD -->
+                <div class="flex flex-wrap gap-4">
                     <h1 class="text-5xl md:text-6xl font-bold w-min relative text-[#2e2e2e] dark:text-white">
                         {{ word.bpy }}
                         <i data-tooltip="Pronunciation" @click="speak(word.phonetic?.bpy || word.bpy, 'bishnupriya')"
                             class="fas fa-volume-up cursor-pointer absolute -top-4 -right-10 text-xl text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]">
                         </i>
                     </h1>
-                    <span class="flex p-6">
+                    <span class="flex text-left justify-start md:items-end md:pl-8">
                         <span data-tooltip="Romanization" data-position="top"
-                            class="flex items-center justify-center text-l hover:cursor-help md:text-xl italic pl-4 text-[#2e2e2e] dark:text-[#bdbdbd]">
-                            {{ word.romanization.join('/') }}
+                            class="w-min flex flex-col md:flex-row text-xl md:text-l hover:cursor-help md:text-xl text-[#2e2e2e] dark:text-[#bdbdbd]">
+                            <span>Romanization:</span> <i>{{ word.romanization.join('/') }}</i>
                         </span>
-                        <h2
-                            class="flex items-center justify-center text-l md:text-xl pl-4 text-[#2e2e2e] dark:text-[#bdbdbd]">
-                            |
-                        </h2>
+
+                        <h2 class="ml-4 border-r border-gray-400 dark:border-gray-600 h-full md:h-6"></h2>
+
                         <h2 data-tooltip="IPA" data-position="top"
-                            class="flex items-center justify-center text-l hover:cursor-help md:text-xl pl-4 text-[#2e2e2e] dark:text-[#bdbdbd]">
-                            {{ word.IPA }}
+                            class="flex flex-col md:flex-row text-l hover:cursor-help md:text-xl pl-4 text-[#2e2e2e] dark:text-[#bdbdbd]">
+                            <span>IPA:</span> <span>{{ word.IPA }}</span>
                         </h2>
                     </span>
                 </div>
-                <div class="flex flex-col gap-2 pb-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
+                <!-- GRAMMAR -->
+                <div class="flex flex-col gap-2 py-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
                     <span class="text-xl">ব্যাকরণ :</span>
-                    <div class="flex gap-2">
+                    <div class="flex gap-2 flex-wrap">
                         <div class="flex gap-2">
                             পদ:
                             <span v-for="index in word.grammar?.partOfSpeech"
                                 :data-tooltip="`${word.bpy}-ওৱাইর পদ প্রকরণ`"
-                                class="px-3 py-1 -mt-0.5 bg-black/10 dark:bg-white/20 rounded-full text-sm hover:cursor-help">
+                                class="w-full text-nowrap px-3 py-1 -mt-0.5 bg-black/10 dark:bg-white/20 rounded-full text-sm hover:cursor-help">
                                 {{ index }}
                             </span>
                         </div>
                         <div :data-tooltip="`${word.bpy}-ওৱাইর সন্ধি বিচ্ছেদ`" v-if="word.grammar?.sandhi"
-                            class="flex gap-2">
+                            class="flex gap-2 flex-wrap">
                             সন্ধি:
                             <span
                                 class="px-3 py-1 -mt-0.5 bg-black/10 dark:bg-white/20 rounded-full text-sm hover:cursor-help">
                                 {{ word.grammar?.sandhi }}
                             </span>
                         </div>
-                        <div class="flex gap-2">
+                        <div class="flex gap-2  flex-wrap">
                             বচন:
                             <div class="flex gap-2">
                                 <span
-                                    class="px-3 py-1 -mt-0.5 bg-black/10 dark:bg-white/20 rounded-full text-sm hover:cursor-help"
+                                    class="text-nowrap px-3 py-1 -mt-0.5 bg-black/10 dark:bg-white/20 rounded-full text-sm hover:cursor-help"
                                     data-tooltip="একবচন" data-position="top" v-if="word.grammar?.number.singular">
                                     {{ word.bpy }}
-                                </span>/
+                                </span><span v-if="word.grammar?.number.plural">/</span>
                                 <span
-                                    class="px-3 py-1 -mt-0.5 bg-black/10 dark:bg-white/20 rounded-full text-sm hover:cursor-help"
+                                    class="text-nowrap px-3 py-1 -mt-0.5 bg-black/10 dark:bg-white/20 rounded-full text-sm hover:cursor-help"
                                     data-tooltip="বহুবচন" data-position="top" v-if="word.grammar?.number.plural">
                                     {{ word.grammar?.number.plural }}
                                 </span>
@@ -185,7 +186,7 @@ onMounted(async () => {
                 <!-- Description -->
                 <div class="flex gap-6 pb-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
                     <span>{{ displayedDescription }}</span>
-                    <button v-if="shouldShowSeeMore" @click="isExpanded = !isExpanded" class="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 font-medium
+                    <button v-if="shouldShowSeeMore" @click="isExpanded = !isExpanded" class=" text-nowrap text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 font-medium
                         transition-colors whitespace-nowrap">
                         {{ isExpanded ? 'See less' : 'See more' }}
                     </button>
@@ -338,7 +339,7 @@ onMounted(async () => {
                     <div v-if="word.grammar.gender" class="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl">
                         <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Gender</p>
                         <p class="text-xl font-semibold text-gray-900 dark:text-white capitalize">{{ word.grammar.gender
-                            }}</p>
+                        }}</p>
                     </div>
                     <div v-if="word.grammar.number?.plural" class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl">
                         <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Plural Form</p>
