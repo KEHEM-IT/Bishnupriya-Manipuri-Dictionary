@@ -1,6 +1,6 @@
 <!-- frontend/src/views/WordDetails.vue -->
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 import { useRoute } from 'vue-router';
 import ThemeToggle from '../components/ThemeToggle.vue';
 import Footer from '../components/Footer.vue';
@@ -12,18 +12,30 @@ useTooltip()
 const route = useRoute();
 const word = ref<any | null>(null);
 const loading = ref(true);
+const isExpanded = ref(false);
 
 const speak = (text: string, lang: string) => {
     if ('speechSynthesis' in window) {
         const utterance = new SpeechSynthesisUtterance(text);
         if (lang === 'english') utterance.lang = 'en-US';
-        else if (lang === 'bengali') utterance.lang = 'bn-IN';
-        else if (lang === 'bishnupriya') utterance.lang = 'bn-IN';
-        else utterance.lang = 'bn-IN';
+        else if (lang === 'bengali') utterance.lang = 'hi-IN';
+        else if (lang === 'bishnupriya') utterance.lang = 'hi-IN';
+        else utterance.lang = 'hi-IN';
         utterance.rate = 0.8;
         window.speechSynthesis.speak(utterance);
     }
 };
+
+const shouldShowSeeMore = computed(() => {
+    return word.value?.description && word.value.description.length > 200;
+});
+
+const displayedDescription = computed(() => {
+    if (!word.value?.description) return '';
+    if (isExpanded.value) return word.value.description;
+    if (word.value.description.length <= 200) return word.value.description;
+    return word.value.description.slice(0, 100) + '...';
+});
 
 onMounted(async () => {
     try {
@@ -117,31 +129,80 @@ onMounted(async () => {
                     <h1 class="text-5xl md:text-6xl font-bold w-min relative text-[#2e2e2e] dark:text-white">
                         {{ word.bpy }}
                         <i data-tooltip="Pronunciation" @click="speak(word.phonetic?.bpy || word.bpy, 'bishnupriya')"
-                            class="fas fa-volume-up cursor-pointer absolute top-0 -right-8 text-xl text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]">
+                            class="fas fa-volume-up cursor-pointer absolute -top-4 -right-10 text-xl text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]">
                         </i>
                     </h1>
-                    <span class="flex">
-                        <h2 data-tooltip="Romanization" data-position="bottom"
-                            class="flex items-center justify-center text-l md:text-xl italic pl-4 text-[#2e2e2e] dark:text-[#bdbdbd]">
+                    <span class="flex p-6">
+                        <span data-tooltip="Romanization" data-position="top"
+                            class="flex items-center justify-center text-l hover:cursor-help md:text-xl italic pl-4 text-[#2e2e2e] dark:text-[#bdbdbd]">
                             {{ word.romanization.join('/') }}
-                        </h2>
+                        </span>
                         <h2
                             class="flex items-center justify-center text-l md:text-xl pl-4 text-[#2e2e2e] dark:text-[#bdbdbd]">
                             |
                         </h2>
-                        <h2 data-tooltip="IPA" data-position="bottom"
-                            class="flex items-center justify-center text-l md:text-xl pl-4 text-[#2e2e2e] dark:text-[#bdbdbd]">
+                        <h2 data-tooltip="IPA" data-position="top"
+                            class="flex items-center justify-center text-l hover:cursor-help md:text-xl pl-4 text-[#2e2e2e] dark:text-[#bdbdbd]">
                             {{ word.IPA }}
                         </h2>
                     </span>
                 </div>
+                <div class="flex flex-col gap-2 pb-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
+                    <span class="text-xl">ব্যাকরণ :</span>
+                    <div class="flex gap-2">
+                        <div class="flex gap-2">
+                            পদ:
+                            <span v-for="index in word.grammar?.partOfSpeech"
+                                :data-tooltip="`${word.bpy}-ওৱাইর পদ প্রকরণ`"
+                                class="px-3 py-1 -mt-0.5 bg-black/10 dark:bg-white/20 rounded-full text-sm hover:cursor-help">
+                                {{ index }}
+                            </span>
+                        </div>
+                        <div :data-tooltip="`${word.bpy}-ওৱাইর সন্ধি বিচ্ছেদ`" v-if="word.grammar?.sandhi"
+                            class="flex gap-2">
+                            সন্ধি:
+                            <span
+                                class="px-3 py-1 -mt-0.5 bg-black/10 dark:bg-white/20 rounded-full text-sm hover:cursor-help">
+                                {{ word.grammar?.sandhi }}
+                            </span>
+                        </div>
+                        <div class="flex gap-2">
+                            বচন:
+                            <div class="flex gap-2">
+                                <span
+                                    class="px-3 py-1 -mt-0.5 bg-black/10 dark:bg-white/20 rounded-full text-sm hover:cursor-help"
+                                    data-tooltip="একবচন" data-position="top" v-if="word.grammar?.number.singular">
+                                    {{ word.bpy }}
+                                </span>/
+                                <span
+                                    class="px-3 py-1 -mt-0.5 bg-black/10 dark:bg-white/20 rounded-full text-sm hover:cursor-help"
+                                    data-tooltip="বহুবচন" data-position="top" v-if="word.grammar?.number.plural">
+                                    {{ word.grammar?.number.plural }}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Description -->
+                <div class="flex gap-6 pb-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
+                    <span>{{ displayedDescription }}</span>
+                    <button v-if="shouldShowSeeMore" @click="isExpanded = !isExpanded" class="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 font-medium
+                        transition-colors whitespace-nowrap">
+                        {{ isExpanded ? 'See less' : 'See more' }}
+                    </button>
+                </div>
+                <!-- BENGALI & ENGLISH TRANSLATION -->
                 <div class="flex gap-6 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
                     <!-- Bengali Section -->
                     <div class="border-r-2 pr-6 border-[#f0f0f0] dark:border-[#233142]">
                         <p class="text-blue-500 dark:text-blue-400 text-sm mb-2">Bengali</p>
                         <router-link :to="`/word/${word.bn}?lang=bn`"
-                            class="text-2xl font-semibold hover:underline hover:text-blue-500 dark:hover:text-blue-400">
+                            class=" relative text-2xl font-semibold hover:underline hover:text-blue-500 dark:hover:text-blue-400">
                             {{ word.bn }}
+                            <i data-tooltip="Pronunciation"
+                                @click="speak(word.phonetic?.bpy || word.bn, 'bengali')"
+                                class="fas fa-volume-up cursor-pointer absolute -top-2 -right-4 text-sm text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]">
+                            </i>
                         </router-link>
                     </div>
 
@@ -149,71 +210,16 @@ onMounted(async () => {
                     <div>
                         <p class="text-blue-500 dark:text-blue-400 text-sm mb-2">English</p>
                         <router-link :to="`/word/${word.en}?lang=en`"
-                            class="text-2xl font-semibold hover:underline hover:text-blue-500 dark:hover:text-blue-400">
+                            class="relative text-2xl font-semibold hover:underline hover:text-blue-500 dark:hover:text-blue-400">
                             {{ word.en }}
+                            <i data-tooltip="Pronunciation" @click="speak(word.en, 'english')"
+                                class="fas fa-volume-up cursor-pointer absolute -top-2 -right-4 text-sm text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]">
+                            </i>
                         </router-link>
                     </div>
                 </div>
 
-
             </section>
-
-
-            <div
-                class="bg-gradient-to-br from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 rounded-2xl p-8 shadow-2xl text-white mb-8">
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span v-if="word.grammar?.partOfSpeech?.length" v-for="pos in word.grammar.partOfSpeech" :key="pos"
-                        class="px-3 py-1 bg-white/20 rounded-full text-sm">
-                        {{ pos }}
-                    </span>
-                    <span v-if="word.cat?.length" v-for="category in word.cat" :key="category"
-                        class="px-3 py-1 bg-white/20 rounded-full text-sm">
-                        {{ category }}
-                    </span>
-                    <span v-if="word.madoi" class="px-3 py-1 bg-green-500/30 rounded-full text-sm">
-                        মাদৈ
-                    </span>
-                    <span v-if="word.rajar" class="px-3 py-1 bg-purple-500/30 rounded-full text-sm">
-                        রাজার
-                    </span>
-                </div>
-
-                <h1 class="text-5xl md:text-6xl font-bold mb-6">{{ word.bpy }}</h1>
-
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <p class="text-blue-100 text-sm mb-2">Bengali</p>
-                        <p class="text-2xl font-semibold">{{ word.bn }}</p>
-                    </div>
-                    <div>
-                        <p class="text-purple-100 text-sm mb-2">English</p>
-                        <p class="text-2xl font-semibold">{{ word.en }}</p>
-                    </div>
-                </div>
-
-                <!-- Romanization -->
-                <div v-if="word.romanization?.length" class="mt-6 pt-6 border-t border-white/20">
-                    <p class="text-blue-100 text-sm mb-2">Romanization</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span v-for="rom in word.romanization" :key="rom"
-                            class="px-3 py-1 bg-white/20 rounded-lg text-lg">
-                            {{ rom }}
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Description -->
-            <div v-if="word.description" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    Description
-                </h2>
-                <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">{{ word.description }}</p>
-            </div>
 
             <!-- Meaning -->
             <div v-if="word.meaning?.length" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
