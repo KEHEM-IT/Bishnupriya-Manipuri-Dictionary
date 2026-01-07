@@ -213,7 +213,7 @@ onUnmounted(() => {
         </div>
 
         <div class="relative">
-            <input ref="inputRef" v-model="searchTerm" type="text"
+            <input ref="inputRef" v-model="searchTerm" type="text" autofocus
                 :placeholder="searchTerm.length === 0 ? typedText : ''" @keydown="handleKeyDown" :class="[
                     'w-full px-6 py-4 pr-32 text-lg rounded-2xl border-2 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none transition-colors placeholder-gray-400 dark:placeholder-gray-500',
                     hasError ? 'border-red-500 focus:border-red-500' : 'border-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-400'

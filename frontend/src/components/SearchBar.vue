@@ -31,7 +31,7 @@ const handleSearch = () => {
 
 <template>
     <div class="relative w-full">
-        <input type="text" :value="localValue" @input="handleInput" @keyup.enter="handleSearch"
+        <input type="text" :value="localValue" @input="handleInput" @keyup.enter="handleSearch" autofocus
             :placeholder="placeholder || 'Search words...'"
             class="w-full px-4 py-3 pr-12 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-primary transition-colors text-lg" />
         <button @click="handleSearch"
