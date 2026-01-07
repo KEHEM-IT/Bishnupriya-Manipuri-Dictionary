@@ -5,6 +5,9 @@ import { useRoute } from 'vue-router';
 import ThemeToggle from '../components/ThemeToggle.vue';
 import Footer from '../components/Footer.vue';
 import axios from 'axios';
+// TOOLTIPS
+import { useTooltip } from '../composables/useTooltip';
+useTooltip()
 
 const route = useRoute();
 const word = ref<any | null>(null);
@@ -110,12 +113,28 @@ onMounted(async () => {
             <!-- Main Word Card -->
             <section
                 class="relative flex flex-col bg-secondary rounded-xl p-8 shadow-2xl text-white mb-8 dark:bg-[#131f2e] dark:text-gray-200 dark:shadow-xl border-2 border-[#f0f0f0] dark:border-[#19222e]">
-                <h1 class="text-5xl md:text-6xl font-bold w-min relative text-[#2e2e2e] dark:text-white">
-                    {{ word.bpy }}
-                    <i title="Pronunciation" @click="speak(word.phonetic?.bpy || word.bpy, 'bishnupriya')"
-                        class="fas fa-volume-up cursor-pointer absolute top-0 -right-8 text-xl text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]">
-                    </i>
-                </h1>
+                <div class="flex gap-4">
+                    <h1 class="text-5xl md:text-6xl font-bold w-min relative text-[#2e2e2e] dark:text-white">
+                        {{ word.bpy }}
+                        <i data-tooltip="Pronunciation" @click="speak(word.phonetic?.bpy || word.bpy, 'bishnupriya')"
+                            class="fas fa-volume-up cursor-pointer absolute top-0 -right-8 text-xl text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]">
+                        </i>
+                    </h1>
+                    <span class="flex">
+                        <h2 data-tooltip="Romanization" data-position="bottom"
+                            class="flex items-center justify-center text-l md:text-xl italic pl-4 text-[#2e2e2e] dark:text-[#bdbdbd]">
+                            {{ word.romanization.join('/') }}
+                        </h2>
+                        <h2
+                            class="flex items-center justify-center text-l md:text-xl pl-4 text-[#2e2e2e] dark:text-[#bdbdbd]">
+                            |
+                        </h2>
+                        <h2 data-tooltip="IPA" data-position="bottom"
+                            class="flex items-center justify-center text-l md:text-xl pl-4 text-[#2e2e2e] dark:text-[#bdbdbd]">
+                            {{ word.IPA }}
+                        </h2>
+                    </span>
+                </div>
                 <div class="flex gap-6 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
                     <!-- Bengali Section -->
                     <div class="border-r-2 pr-6 border-[#f0f0f0] dark:border-[#233142]">
@@ -311,7 +330,7 @@ onMounted(async () => {
                     <div v-if="word.grammar.gender" class="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl">
                         <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Gender</p>
                         <p class="text-xl font-semibold text-gray-900 dark:text-white capitalize">{{ word.grammar.gender
-                        }}</p>
+                            }}</p>
                     </div>
                     <div v-if="word.grammar.number?.plural" class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl">
                         <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Plural Form</p>
