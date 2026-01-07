@@ -17,11 +17,11 @@ const isExpanded = ref(false);
 const speak = (text: string, lang: string) => {
     if ('speechSynthesis' in window) {
         const utterance = new SpeechSynthesisUtterance(text);
-        if (lang === 'english') utterance.lang = 'en-US';
+        if (lang === 'english') utterance.lang = 'hi-IN';
         else if (lang === 'bengali') utterance.lang = 'hi-IN';
         else if (lang === 'bishnupriya') utterance.lang = 'hi-IN';
         else utterance.lang = 'hi-IN';
-        utterance.rate = 0.8;
+        utterance.rate = 1;
         window.speechSynthesis.speak(utterance);
     }
 };
@@ -200,7 +200,7 @@ onMounted(async () => {
                             class=" relative text-2xl font-semibold hover:underline hover:text-blue-500 dark:hover:text-blue-400">
                             {{ word.bn }}
                             <i data-tooltip="Pronunciation"
-                                @click="speak(word.phonetic?.bpy || word.bn, 'bengali')"
+                                @click="speak(word.phonetic?.bn || word.bn, 'bengali')"
                                 class="fas fa-volume-up cursor-pointer absolute -top-2 -right-4 text-sm text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]">
                             </i>
                         </router-link>
