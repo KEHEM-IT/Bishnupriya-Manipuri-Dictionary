@@ -53,7 +53,7 @@ onMounted(async () => {
         <section class="h-screen flex items-center justify-center text-center">
             <div class="container mx-auto text-center -mt-[4.2rem]">
                 <div class="mb-8">
-                    <h2
+                    <h2 style="line-height: normal;"
                         class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
                         বিষ্ণুপ্রিয়া মণিপুরী অভিধান
                     </h2>
