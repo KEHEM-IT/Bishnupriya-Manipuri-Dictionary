@@ -21,7 +21,7 @@ const speak = (text: string, lang: string) => {
         else if (lang === 'bengali') utterance.lang = 'hi-IN';
         else if (lang === 'bishnupriya') utterance.lang = 'hi-IN';
         else utterance.lang = 'hi-IN';
-        utterance.rate = 1;
+        utterance.rate = 0.8;
         window.speechSynthesis.speak(utterance);
     }
 };
@@ -29,7 +29,6 @@ const speak = (text: string, lang: string) => {
 const shouldShowSeeMore = computed(() => {
     return word.value?.description && word.value.description.length > 200;
 });
-
 const displayedDescription = computed(() => {
     if (!word.value?.description) return '';
     if (isExpanded.value) return word.value.description;
@@ -194,28 +193,31 @@ onMounted(async () => {
                 <!-- BENGALI & ENGLISH TRANSLATION -->
                 <div class="flex gap-6 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
                     <!-- Bengali Section -->
-                    <div class="border-r-2 pr-6 border-[#f0f0f0] dark:border-[#233142]">
+                    <div class="border-r-2 pr-8 border-[#f0f0f0] dark:border-[#233142]">
                         <p class="text-blue-500 dark:text-blue-400 text-sm mb-2">Bengali</p>
-                        <router-link :to="`/word/${word.bn}?lang=bn`"
-                            class=" relative text-2xl font-semibold hover:underline hover:text-blue-500 dark:hover:text-blue-400">
-                            {{ word.bn }}
-                            <i data-tooltip="Pronunciation"
-                                @click="speak(word.phonetic?.bn || word.bn, 'bengali')"
-                                class="fas fa-volume-up cursor-pointer absolute -top-2 -right-4 text-sm text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]">
+                        <span class="relative">
+                            <router-link :to="`/word/${word.bn}?lang=bn`"
+                                class=" relative text-2xl font-semibold hover:underline hover:text-blue-500 dark:hover:text-blue-400">
+                                {{ word.bn }}
+                            </router-link>
+                            <i data-tooltip="Pronunciation" @click="speak(word.bn, 'bengali')"
+                                class="fas fa-volume-up cursor-pointer absolute -top-3 -right-6 text-sm text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]">
                             </i>
-                        </router-link>
+                        </span>
                     </div>
 
                     <!-- English Section -->
                     <div>
                         <p class="text-blue-500 dark:text-blue-400 text-sm mb-2">English</p>
-                        <router-link :to="`/word/${word.en}?lang=en`"
-                            class="relative text-2xl font-semibold hover:underline hover:text-blue-500 dark:hover:text-blue-400">
-                            {{ word.en }}
+                        <span class="relative">
+                            <router-link :to="`/word/${word.en}?lang=en`"
+                                class="relative text-2xl font-semibold hover:underline hover:text-blue-500 dark:hover:text-blue-400">
+                                {{ word.en }}
+                            </router-link>
                             <i data-tooltip="Pronunciation" @click="speak(word.en, 'english')"
-                                class="fas fa-volume-up cursor-pointer absolute -top-2 -right-4 text-sm text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]">
+                                class="fas fa-volume-up cursor-pointer absolute -top-3 -right-6 text-sm text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]">
                             </i>
-                        </router-link>
+                        </span>
                     </div>
                 </div>
 
