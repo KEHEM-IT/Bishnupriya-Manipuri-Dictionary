@@ -163,7 +163,6 @@ onMounted(async () => {
                 </div>
                 <!-- GRAMMAR -->
                 <div class="flex flex-col gap-2 pb-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
-                    <span class="text-xl">ব্যাকরণ :</span>
                     <div class="flex gap-2 flex-wrap">
                         <div class="flex gap-2">
                             পদ:
