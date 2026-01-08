@@ -234,6 +234,31 @@ onMounted(async () => {
                 </div>
 
             </section>
+            <!-- EXAMPLE SENTENCE -->
+            <section
+                class="relative flex flex-col bg-secondary dark:bg-[#0f172a] rounded-xl p-4 md:p-8 shadow-2xl text-[#2e2e2e] mb-8 dark:text-gray-200 dark:shadow-xl border-2 border-[#f0f0f0] dark:border-[#19222e]">
+
+                <div v-if="word.exampleSentences" class="bg-indigo-50 dark:bg-indigo-900/20 p-6 rounded-xl mb-6">
+
+                    <p class="text-lg text-[#2e2e2e] dark:text-white mb-2">
+                        <strong class="text-blue-500 dark:text-blue-400">
+                            `{{ word.bpy }}`
+                        </strong> - ওৱাইর ব্যবহার
+                    </p>
+
+                    <ul class="p-4 border-l-2 border-indigo-400 pl-6 space-y-3
+                   bg-white/60 dark:bg-[#111827] rounded-lg">
+
+                        <li v-for="item in word.exampleSentences" :key="item" class="flex gap-3">
+
+                            <i class="fas fa-quote-left text-indigo-400 mt-1"></i>
+                            <span class="italic ">{{ item }}</span>
+
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
 
 
             <!-- Pronunciation Section -->
@@ -339,7 +364,7 @@ onMounted(async () => {
                     <div v-if="word.grammar.gender" class="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl">
                         <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Gender</p>
                         <p class="text-xl font-semibold text-gray-900 dark:text-white capitalize">{{ word.grammar.gender
-                        }}</p>
+                            }}</p>
                     </div>
                     <div v-if="word.grammar.number?.plural" class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl">
                         <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Plural Form</p>
