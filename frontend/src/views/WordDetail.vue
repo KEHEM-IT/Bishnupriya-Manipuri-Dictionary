@@ -149,7 +149,8 @@ onMounted(async () => {
                 </div>
                 <!-- MEANINGS -->
                 <div class="flex items-center gap-2 pt-2 pb-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
-                    <span class="text-xl">অর্থ :</span>
+                    <!-- <span class="text-xl">অর্থ :</span> -->
+                     <i class="fas fa-arrows-turn-right text-[#868686]"></i>
                     <span>{{ word.meaning?.join(", ") }}</span>
                 </div>
                 <!-- Description -->
@@ -161,7 +162,7 @@ onMounted(async () => {
                     </button>
                 </div>
                 <!-- GRAMMAR -->
-                <div class="flex flex-col gap-2 py-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
+                <div class="flex flex-col gap-2 pb-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
                     <span class="text-xl">ব্যাকরণ :</span>
                     <div class="flex gap-2 flex-wrap">
                         <div class="flex gap-2">
