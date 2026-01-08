@@ -123,9 +123,9 @@ onMounted(async () => {
         <div v-else class="container mx-auto px-4 py-8 max-w-5xl">
             <!-- Main Word Card -->
             <section
-                class="relative flex flex-col bg-secondary rounded-xl p-8 shadow-2xl text-white mb-8 dark:bg-[#131f2e] dark:text-gray-200 dark:shadow-xl border-2 border-[#f0f0f0] dark:border-[#19222e]">
+                class="relative flex flex-col bg-secondary rounded-xl p-4 md:p-8 shadow-2xl text-white mb-8 dark:bg-[#131f2e] dark:text-gray-200 dark:shadow-xl border-2 border-[#f0f0f0] dark:border-[#19222e]">
                 <!-- HEAD -->
-                <div class="flex flex-wrap gap-4">
+                <div class="flex flex-wrap gap-4 pb-4">
                     <h1 class="text-5xl md:text-6xl font-bold w-min relative text-[#2e2e2e] dark:text-white">
                         {{ word.bpy }}
                         <i data-tooltip="Pronunciation" @click="speak(word.phonetic?.bpy || word.bpy, 'bishnupriya')"
@@ -147,6 +147,7 @@ onMounted(async () => {
                         </h2>
                     </span>
                 </div>
+                <hr class="border-t border-gray-200 dark:border-gray-700">
                 <!-- MEANINGS -->
                 <div class="flex items-center gap-2 text-xl pt-4 pb-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
                      <i class="fas fa-arrows-turn-right text-[#868686]"></i>
@@ -228,6 +229,8 @@ onMounted(async () => {
                 </div>
 
             </section>
+
+
             <!-- Pronunciation Section -->
             <div v-if="word.phonetic || word.IPA" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
