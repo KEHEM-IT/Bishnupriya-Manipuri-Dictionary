@@ -148,8 +148,7 @@ onMounted(async () => {
                     </span>
                 </div>
                 <!-- MEANINGS -->
-                <div class="flex items-center gap-2 pt-2 pb-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
-                    <!-- <span class="text-xl">অর্থ :</span> -->
+                <div class="flex items-center gap-2 text-xl pt-4 pb-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
                      <i class="fas fa-arrows-turn-right text-[#868686]"></i>
                     <span>{{ word.meaning?.join(", ") }}</span>
                 </div>
