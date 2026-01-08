@@ -132,6 +132,7 @@ onMounted(async () => {
                             class="fas fa-volume-up cursor-pointer absolute -top-4 -right-10 text-xl text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]">
                         </i>
                     </h1>
+
                     <span class="flex text-left justify-start md:items-end md:pl-8">
                         <span data-tooltip="Romanization" data-position="top"
                             class="w-min flex flex-col md:flex-row text-xl md:text-l hover:cursor-help md:text-xl text-[#2e2e2e] dark:text-[#bdbdbd]">
@@ -145,6 +146,21 @@ onMounted(async () => {
                             <span>IPA:</span> <span>{{ word.IPA }}</span>
                         </h2>
                     </span>
+                </div>
+                <!-- MEANINGS -->
+                <div class="flex flex-col gap-2 pt-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
+                    <span class="text-xl">অর্থ :</span>
+                    <span>
+                        {{ word.meaning?.join(", ") }}
+                    </span>
+                </div>
+                <!-- Description -->
+                <div class="flex gap-6 pb-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
+                    <span>{{ displayedDescription }}</span>
+                    <button v-if="shouldShowSeeMore" @click="isExpanded = !isExpanded" class=" text-nowrap text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 font-medium
+                        transition-colors whitespace-nowrap">
+                        {{ isExpanded ? 'See less' : 'See more' }}
+                    </button>
                 </div>
                 <!-- GRAMMAR -->
                 <div class="flex flex-col gap-2 py-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
@@ -183,14 +199,6 @@ onMounted(async () => {
                         </div>
                     </div>
                 </div>
-                <!-- Description -->
-                <div class="flex gap-6 pb-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
-                    <span>{{ displayedDescription }}</span>
-                    <button v-if="shouldShowSeeMore" @click="isExpanded = !isExpanded" class=" text-nowrap text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 font-medium
-                        transition-colors whitespace-nowrap">
-                        {{ isExpanded ? 'See less' : 'See more' }}
-                    </button>
-                </div>
                 <!-- BENGALI & ENGLISH TRANSLATION -->
                 <div class="flex gap-6 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
                     <!-- Bengali Section -->
@@ -223,19 +231,6 @@ onMounted(async () => {
                 </div>
 
             </section>
-
-            <!-- Meaning -->
-            <div v-if="word.meaning?.length" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
-                <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Meaning</h2>
-                <ul class="space-y-2">
-                    <li v-for="(meaning, idx) in word.meaning" :key="idx"
-                        class="text-lg text-gray-700 dark:text-gray-300 flex items-start gap-2">
-                        <span class="text-blue-600 dark:text-blue-400 font-bold">•</span>
-                        <span>{{ meaning }}</span>
-                    </li>
-                </ul>
-            </div>
-
             <!-- Pronunciation Section -->
             <div v-if="word.phonetic || word.IPA" class="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
