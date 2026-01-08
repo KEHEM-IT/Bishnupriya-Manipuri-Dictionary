@@ -154,7 +154,7 @@ onMounted(async () => {
                 </div>
                 <!-- Description -->
                 <div class="flex gap-6 mb-4 flex-wrap text-[#474747] dark:text-[#d8d8d8] bg-black/5 dark:bg-white/5 border-2 rounded-lg  dark:border-white/5">
-                    <span class="p-2">{{ displayedDescription }}</span>
+                    <span class="px-4 py-2" :data-tooltip="`${word.bpy} - ওৱাইর হুরকাঙ ব্যাখ্যা আহান`">{{ displayedDescription }}</span>
                     <button v-if="shouldShowSeeMore" @click="isExpanded = !isExpanded" class=" text-nowrap text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 font-medium
                         transition-colors whitespace-nowrap">
                         {{ isExpanded ? 'See less' : 'See more' }}
