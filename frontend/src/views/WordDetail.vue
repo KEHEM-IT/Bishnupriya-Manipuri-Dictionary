@@ -125,11 +125,11 @@ onMounted(async () => {
             <section
                 class="relative flex flex-col bg-secondary rounded-xl p-4 md:p-8 shadow-2xl text-white mb-8 dark:bg-[#131f2e] dark:text-gray-200 dark:shadow-xl border-2 border-[#f0f0f0] dark:border-[#19222e]">
                 <!-- HEAD -->
-                <div class="flex flex-wrap gap-4 pb-4">
-                    <h1 class="text-5xl md:text-6xl font-bold w-min relative text-[#2e2e2e] dark:text-white">
+                <div class="flex flex-wrap gap-4 pb-4 pt-4 text-center md:pt-4">
+                    <h1 class="text-4xl md:text-5xl font-bold w-min relative text-[#2e2e2e] dark:text-white">
                         {{ word.bpy }}
                         <i data-tooltip="Pronunciation" @click="speak(word.phonetic?.bpy || word.bpy, 'bishnupriya')"
-                            class="fas fa-volume-up cursor-pointer absolute -top-4 -right-10 text-xl text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]">
+                            class="fas fa-volume-up cursor-pointer absolute -top-4 -right-10 text-lg md:text-xl text-[#c0c0c0] dark:text-[#4f555c] hover:text-[#50b6b9] dark:hover:text-[#35865a]">
                         </i>
                     </h1>
 
