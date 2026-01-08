@@ -197,7 +197,8 @@ export function useTooltip(options: TooltipOptions = {}) {
 
     const handleMouseEnter = (e: Event) => {
         const target = e.target as HTMLElement;
-        if (target.hasAttribute(mergedOptions.attribute) || target.hasAttribute('title')) {
+        // Check if target is an HTMLElement before calling hasAttribute
+        if (target instanceof HTMLElement && (target.hasAttribute(mergedOptions.attribute) || target.hasAttribute('title'))) {
             showTooltip(target);
         }
     };
