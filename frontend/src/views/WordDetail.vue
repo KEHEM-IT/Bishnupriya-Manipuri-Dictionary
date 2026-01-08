@@ -148,15 +148,13 @@ onMounted(async () => {
                     </span>
                 </div>
                 <!-- MEANINGS -->
-                <div class="flex flex-col gap-2 pt-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
+                <div class="flex items-center gap-2 pt-2 pb-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
                     <span class="text-xl">অর্থ :</span>
-                    <span>
-                        {{ word.meaning?.join(", ") }}
-                    </span>
+                    <span>{{ word.meaning?.join(", ") }}</span>
                 </div>
                 <!-- Description -->
-                <div class="flex gap-6 pb-4 flex-wrap text-[#474747] dark:text-[#d8d8d8]">
-                    <span>{{ displayedDescription }}</span>
+                <div class="flex gap-6 mb-4 flex-wrap text-[#474747] dark:text-[#d8d8d8] bg-black/5 dark:bg-white/5 border-2 rounded-lg  dark:border-white/5">
+                    <span class="p-2">{{ displayedDescription }}</span>
                     <button v-if="shouldShowSeeMore" @click="isExpanded = !isExpanded" class=" text-nowrap text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 font-medium
                         transition-colors whitespace-nowrap">
                         {{ isExpanded ? 'See less' : 'See more' }}
@@ -334,7 +332,7 @@ onMounted(async () => {
                     <div v-if="word.grammar.gender" class="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl">
                         <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Gender</p>
                         <p class="text-xl font-semibold text-gray-900 dark:text-white capitalize">{{ word.grammar.gender
-                        }}</p>
+                            }}</p>
                     </div>
                     <div v-if="word.grammar.number?.plural" class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl">
                         <p class="text-sm text-gray-600 dark:text-gray-400 mb-1">Plural Form</p>
