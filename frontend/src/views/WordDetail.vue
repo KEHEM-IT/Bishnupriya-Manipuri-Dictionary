@@ -245,15 +245,11 @@ onMounted(async () => {
                             `{{ word.bpy }}`
                         </strong> - ওৱাইর ব্যবহার
                     </p>
-
-                    <ul class="p-4 border-l-2 border-indigo-400 pl-6 space-y-3
-                   bg-white/60 dark:bg-[#111827] rounded-lg">
-
+                    <ul
+                        class="p-4 border-l-2 border-indigo-400 pl-6 space-y-3  bg-white/60 dark:bg-[#111827] rounded-lg">
                         <li v-for="item in word.exampleSentences" :key="item" class="flex gap-3">
-
                             <i class="fas fa-quote-left text-indigo-400 mt-1"></i>
                             <span class="italic ">{{ item }}</span>
-
                         </li>
                     </ul>
                 </div>
